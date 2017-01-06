@@ -4,7 +4,7 @@ BASEVER := 1ac3d2d
 
 include ../latex/make.bookvars
 
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/phy456-qmII
 
 #ONCEFLAGS := -justonce
 
