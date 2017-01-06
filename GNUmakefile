@@ -1,5 +1,6 @@
 THISDIR := phy456-qmII
 THISBOOK := phy456
+BASEVER := 1ac3d2d
 
 include ../latex/make.bookvars
 
