@@ -3,14 +3,6 @@
 
 - periods in section, chapter, figure captions
 
-- strip out newlines surrounding 
-   section
-   subsection
-   makeexample
-   makeproblem
-   makeanswer
-   makesubanswer
-
 - customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
 
 - Fri, Oct 25, 2013 12:05:02 AM

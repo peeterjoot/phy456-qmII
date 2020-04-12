@@ -15,21 +15,21 @@ H_o = \frac{P^2}{2m} + \inv{2} m \omega^2 X^2
 \end{equation}
 %
 and denote the energy eigenstates by \(\ket{n}\), where \(n\) is the eigenvalue of the number operator.
-
+%
 \makesubproblem{Find \(\bra{n} X^4 \ket{n}\)}{pr:phy456ps1:1:a}
 \makesubproblem{Quadratic pertubation}{pr:phy456ps1:1:b}
-
+%
 Find the ground state energy of the Hamiltonian \(H = H_o + \gamma X^2\).  You may assume \(\gamma > 0\). [Hint: This is not a trick question.]
-
+%
 \makesubproblem{linear pertubation}{pr:phy456ps1:1:c}
-
+%
 Find the ground state energy of the Hamiltonian \(H = H_o - \alpha X\). [Hint: This is a bit harder than \partref{pr:phy456ps1:1:b} but not much. Try "completing the square."]
 } % makeoproblem
-
+%
 \makeanswer{pr:phy456ps1:1}{
-
+%
 \makeSubAnswer{\(X^4\)}{pr:phy456ps1:1:a}
-
+%
 Working through \ref{chap:phy456ps1SHO} we have now got enough context to attempt the first part of the question, calculation of
 %
 \begin{equation}\label{eqn:phy456ps1:320}
@@ -134,7 +134,7 @@ Squaring, utilizing the Hermitian nature of the \(X\) operator %, we have for \(
 %
 %It also looks like we can drop the \(n > 2\) restriction since the \(\sqrt{n-1}\) and \(\sqrt{n-2}\) factors kill off the
 \makeSubAnswer{Quadratic ground state}{pr:phy456ps1:1:b}
-
+%
 Find the ground state energy of the Hamiltonian \(H = H_0 + \gamma X^2\) for \(\gamma > 0\).
 
 The new Hamiltonian has the form
@@ -162,7 +162,7 @@ E_0 = \frac{\Hbar}{2} \sqrt{ \omega^2 + \frac{2 \gamma}{m} }
 \end{equation}
 %
 \makeSubAnswer{Linear ground state}{pr:phy456ps1:1:c}
-
+%
 Find the ground state energy of the Hamiltonian \(H = H_0 - \alpha X\).
 
 With a bit of play, this new Hamiltonian can be factored into
@@ -207,7 +207,7 @@ E_0 = \frac{\Hbar \omega }{2} - \frac{\alpha^2}{2 m \omega^2}.
 %
 This makes sense.  A translation of the entire position of the system should not effect the energy level distribution of the system, but we have set our reference potential differently, and have this constant energy adjustment to the entire system.
 } % makeanswer
-
+%
 \makeoproblem{Expectation values for position operators for spinless hydrogen}{pr:phy456ps1:2}{2011 ps1/p2}{
 Show that for all energy eigenstates \(\ket{\Phi_{nlm}}\) of the (spinless) hydrogen atom, where as usual \(n\), \(l\), and \(m\) are respectively the principal, azimuthal, and magnetic quantum numbers, we have
 %
@@ -228,7 +228,7 @@ Z
 %
 [Hint: Take note of the parity of the spherical harmonics (see "quick summary" notes on the spherical harmonics).]
 } % makeoproblem
-
+%
 \makeanswer{pr:phy456ps1:2}{
 %We are asked to show that for any eigenkets of the hydrogen atom \(\ket{\Phi_{nlm}}\) we have
 %
@@ -327,11 +327,11 @@ Here we have the product of two even functions, times one odd function (\(u\)), 
 
 I was not able to see how to exploit the parity result suggested in the problem, but it was not so bad to show these directly.
 } % makeanswer
-
+%
 \makeproblem{Angular momentum operator}{pr:phy456ps1:3}{2011 ps1/p3}{
 Working with the appropriate expressions in \it{Cartesian components}, confirm that \(L_i \ket{\psi} = 0\) for each component of angular momentum \(L_i\), if \(\braket{\Br}{\psi} = \psi(\Br)\) is in fact only a function of \(r = \Abs{\Br}\).
 } % makeoproblem
-
+%
 \makeanswer{pr:phy456ps1:3}{
 In order to proceed, we will have to consider a matrix element, so that we can operate on \(\ket{\psi}\) in position space.  For that matrix element, we can proceed to insert complete states, and reduce the problem to a question of wavefunctions.  That is
 %

@@ -16,9 +16,9 @@ Somewhat unexpectedly, once I take derivatives equate to zero, I find that the v
 
 I tried this twice on paper and pencil, both times getting the same thing.  This seems like a noteworthy problem, and one worth reflecting on a bit.
 
-
+%
 \subsubsection{Recap.  The variational method}
-
+%
 Given any, not necessarily normalized wavefunction, with a series representation specified using the energy eigenvectors for the space
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:10}
@@ -84,9 +84,9 @@ This calculation is performed using a trial function that was a solution of the 
 This is despite the fact that this is not a solution to the interaction Hamiltonian.  The end result ends up being pretty close to the measured value (although there is a pesky error in the book that appears to require a compensating error somewhere else).
 
 Part of the variational technique used in that problem, is to allow Z to vary, and then once the normalized expectation is computed, set the derivative of that equal to zero to calculate the trial wavefunction as a parameter of Z that has the lowest energy eigenstate for a function of that form.  We find considering the Harmonic oscillator that this final variation does not necessarily produce meaningful results.
-
+%
 \subsubsection{The Harmonic oscillator variational problem}
-
+%
 The problem asks for the use of the trial wavefunction
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:130}
@@ -205,9 +205,9 @@ It appears at first glance that we can not minimize \eqnref{eqn:variationHarmoni
 ?  This inequality would be expected if we can assume that the trial wavefunction has a Fourier series representation utilizing the actual energy eigenfunctions for the system.
 
 The resolution to this question is avoided once we include the singularity.  This is explored in the last part of these notes.
-
+%
 \subsubsection{Is our trial function representable?}
-
+%
 I thought perhaps that since the trial wave function for this problem lies outside the span of the Hilbert space that describes the solutions to the Harmonic oscillator.  Another thing of possible interest is the trouble near the origin for this wave function, when operated on by \(P^2/2m\), and this has been (incorrectly assumed to have zero contribution above).
 
 I had initially thought that part of the value of this variational method was that we can use it despite not even knowing what the exact solution is (and in the case of the Helium atom, I believe it was stated in class that an exact closed form solution is not even known).  This makes me wonder what restrictions must be imposed on the trial solutions to get a meaningful answer from the variational calculation?
@@ -295,9 +295,9 @@ Our normalized energy expectation is therefore the considerably messier
 \end{equation}
 %
 With a requirement to include the perpendicular cross terms the norm does not just cancel out, leaving us with a clean estimation of the ground state energy.  In order to utilize this variational method, we implicitly have an assumption that the \(\braket{\psi_\perp}{\psi_\perp}\) and \(\braket{\psi_m}{\psi_\perp}\) terms in the denominator are sufficiently small that they can be neglected.
-
+%
 \subsubsection{Calculating the Fourier terms}
-
+%
 In order to see how much a problem representing this trial function in the Harmonic oscillator wavefunction solution space, we can just calculate the Fourier fit.
 
 Our first few basis functions, with \(\alpha = \sqrt{m \omega/\Hbar}\) are
@@ -351,9 +351,9 @@ Note that all the brakets of even orders in \(n\) with the trial function are ze
 Details for this harmonic oscillator wavefunction fitting can be found in \nbref{gaussian_fitting_for_abs_function.nb} can be found separately, calculated using a Mathematica worksheet.
 
 The question of interest is why we can approximate the trial function so nicely (except at the origin) even with just a first order approximation (polynomial times Gaussian functions where the polynomials are Hankel functions), and we can get an exact value for the lowest energy state using the first order approximation of our trial function, why do we get garbage from the variational method, where enough terms are implicitly included that the peak should be sharp.  It must therefore be important to consider the origin, but how do we give some meaning to the derivative of the absolute value function?  The key (supplied when asking Professor Sipe in office hours for the course) is to express the absolute value function in terms of Heavyside step functions, for which the derivative can be identified as the delta function.
-
+%
 \subsubsection{Correcting, treating the origin this way}
-
+%
 Here is how we can express the absolute value function using the Heavyside step
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:330}
