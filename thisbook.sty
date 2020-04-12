@@ -1,16 +1,27 @@
 %-----------------------------------------
 \usepackage{macros_cal}
 
+%----------------------------------------
+\newcommand{\mychapter}[1]{%
+\chapter{#1}%
+\thispagestyle{empty}%
+}
+
+%-----------------------------------------
+%\usepackage{censor}
+
 %--------------------------------------------------------------------
 % 
 % index usage:
 %\index{gnat!size of}
 \RequirePackage{makeidx}
    \makeindex
-%   \newcommand{\index}[1]{}
 
-%\newcommand{\underlineAndIndex}[1]{\textunderline{#1}\index{#1}}
-%\newcommand{\paragraphAndIndex}[1]{\paragraph{#1}\index{#1}}
+\newcommand{\underlineAndIndex}[1]{\textunderline{#1}\index{#1}}
+\newcommand{\paragraphAndIndex}[1]{\paragraph{#1}\index{#1}}
+ 
+\usepackage{book_layout}
+%\usepackage{macros_bm}
 
 %--------------------------------------------------------------------
 \usepackage{peeters_figures}
@@ -30,6 +41,13 @@
 \newcommand{\nbref}[1]{
 \itemRef{phy456}{#1}
 }
+
+%%%% amsthm Command openbox already defined
+%%%% https://tex.stackexchange.com/a/41553/15
+%%%% alternatively ( https://tex.stackexchange.com/a/386742/15 )
+%%%% \let\openbox\undefined
+%%%\let\openbox\relax
+%%%\usepackage{amsthm}
 
 \usepackage{book_layout}
 \usepackage{peeters_layout_exercise}
