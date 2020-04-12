@@ -316,12 +316,10 @@ a^2 \sin\theta d\theta d\phi
 \\
 &=
 4 \pi
-\left( i k \epsilon - 1 \right) e^{i k \epsilon}
+\left( i k \epsilon - 1 \right) e^{i k \epsilon}.
 \end{aligned}
 \end{equation}
-
 Putting everything back together we have
-
 \begin{equation}\label{eqn:helmoltzGreens:510}
 \begin{aligned}
 -\inv{4\pi} \int_{\text{all space}} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br'
@@ -338,13 +336,8 @@ Putting everything back together we have
 \right)
 \end{aligned}
 \end{equation}
-
 But this is just
-
 \boxedEquation{eqn:shortTimeDepPertubation:330}{
 -\inv{4\pi} \int_{\text{all space}} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br' = s(\Br).
 }
-
 This completes the desired verification of the Green's function for the Helmholtz operator.  Observe the perfect cancellation here, so the limit of \(\epsilon \rightarrow 0\) can be independent of how large \(k\) is made.  You have to complete the integrals for both the Laplacian and the \(\Bk^2\) portions of the integrals and add them, \textunderline{before} taking any limits, or else you will get into trouble (as I did in my first attempt).
-
-
