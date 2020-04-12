@@ -35,4 +35,5 @@ $(THISBOOK).pdf :: $(EXTERNAL_DEPENDENCIES)
 
 backmatter.tex: ../latex/classicthesis_mine/backmatter_with_parts.tex
 	rm -f $@
-	ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
+	#ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
