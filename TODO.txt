@@ -1,5 +1,18 @@
 
-- strip out newlines surrounding equation,dmath,boxed
+- L24: "and can as in" what is meant here?
+
+- strip out newlines surrounding 
+   paragraph
+   align
+   imageFigure
+   section
+   subsection
+   pdfTexFigure
+   item
+   makeexample
+   makeproblem
+   makeanswer
+   makesubanswer
 
 - customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
 

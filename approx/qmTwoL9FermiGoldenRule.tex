@@ -6,7 +6,6 @@
 \label{chap:qmTwoL9FermiGoldenRule}
 %\section{Fermi's golden rule}
 \index{Fermi's golden rule}
-
 See \S 17.2 of the text \citep{desai2009quantum}.
 
 Fermi originally had two golden rules, but his first one has mostly been forgotten.  This refers to his second.
@@ -39,7 +38,10 @@ H_{mn}'(t) &= \bra{\psi_m} H'(t) \ket{\psi_n} \\
 \end{aligned}
 \end{equation}
 %
-\makeexample{Electric field potential}{l9:ex1}{
+\paragraph{Example: Electric field potential.}
+%\label{l9:ex1}
+%\makeexample{Electric field potential}{l9:ex1}
+% { % makeexample
 %
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:410}
 H'(t) = - \Bmu \cdot \BE(t).
@@ -59,14 +61,10 @@ c_m^{(1)}(t) = \inv{i\Hbar} \int_{t_0}^t H_{mi}'(t') e^{i \omega_{mi} t'} dt'.
 %
 Assume the perturbation vanishes before time \(t_0\).
 
-\paragraph{Reminder}.  Have considered this using \eqnref{eqn:qmTwoL9FermiGoldenRule:450} for a pulse as in \cref{fig:qmTwoL9FermiGoldenRule:gaussianWavePacket}
-
+\paragraph{Reminder}.  Have considered this using \eqnref{eqn:qmTwoL9FermiGoldenRule:450} for a pulse as in \cref{fig:qmTwoL9FermiGoldenRule:gaussianWavePacket}.
 \imageFigure{../figures/phy456-qmII/gaussianWavePacket}{Gaussian wave packet}{fig:qmTwoL9FermiGoldenRule:gaussianWavePacket}{0.2}
-
 Now we want to consider instead a non-terminating signal, that was zero before some initial time as illustrated in \cref{fig:qmTwoL9FermiGoldenRule:unitStepSine}, where the separation between two peaks is \(\Delta t = 2\pi/\omega_0\).
-
 \imageFigure{../figures/phy456-qmII/unitStepSine}{Sine only after an initial time}{fig:qmTwoL9FermiGoldenRule:unitStepSine}{0.2}
-
 Our matrix element is
 %
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:470}
@@ -102,7 +100,6 @@ e^{i (\omega_{mi} - \omega_0 t) }
 %
 \pdfTexFigure{../figures/phy456-qmII/qmTwoL9fig6.pdf_tex}{\(\omega_{mi}\) illustrated}{fig:qmTwoL9FermiGoldenRule:6}{0.3}
 %\cref{fig:qmTwoL9FermiGoldenRule:6}
-
 Suppose that
 %
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:530}
@@ -140,10 +137,7 @@ c_m^{(1)}(t) \approx \frac{A_{mi}}{\Hbar} t
 \end{equation}
 %
 Similarly for \(\omega_0 \approx \omega_{im}\) as in \cref{fig:qmTwoL9FermiGoldenRule:7}
-
 \pdfTexFigure{../figures/phy456-qmII/qmTwoL9fig7.pdf_tex}{FIXME: qmTwoL9fig7}{fig:qmTwoL9FermiGoldenRule:7}{0.3}
-
-then
 %
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:590}
 c_m^{(1)}(t) \approx
@@ -159,6 +153,5 @@ and we have
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:610}
 c_m^{(1)}(t) \approx -\frac{A_{mi}}{\Hbar} t
 \end{equation}
-}
-
-\shipoutAnswer
+%} % makeexample
+%\shipoutAnswer
