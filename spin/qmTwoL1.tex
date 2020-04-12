@@ -22,13 +22,13 @@
 READING: \S 30 of the text \citep{desai2009quantum} covers entangled states.  The rest of the composite state background is buried somewhere in some of the advanced material sections.  FIXME: what section?
 
 Example, one spin one half particle and one spin one particle.  We can describe either quantum mechanically, described by a pair of Hilbert spaces
-
+%
 \begin{equation}\label{eqn:qmTwoL1:10}
 H_1,
 \end{equation}
 %
 of dimension \(D_1\)
-
+%
 \begin{equation}\label{eqn:qmTwoL1:30}
 H_2,
 \end{equation}
@@ -38,7 +38,7 @@ of dimension \(D_2\)
 Recall that a Hilbert space (finite or infinite dimensional) is the set of states that describe the system.  There were some additional details (completeness, normalizable, \(L2\) integrable, ...) not really covered in the physics curriculum, but available in mathematical descriptions.
 
 We form the composite (Hilbert) space
-
+%
 \begin{equation}\label{eqn:qmTwoL1:50}
 H = H_1 \otimes H_2
 \end{equation}
@@ -48,13 +48,13 @@ H_1 : { \ket{\phi_1^{(i)}} }
 \end{equation}
 %
 for any ket in \(H_1\)
-
+%
 \begin{equation}\label{eqn:qmTwoL1:90}
 \ket{I} = \sum_{i=1}^{D_1} c_i \ket{\phi_1^{(i)}}
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:qmTwoL1:110}
 \braket{ \phi_1^{(i)}}{ \phi_1^{(j)}} = \delta^{i j}
 \end{equation}
@@ -65,13 +65,13 @@ H_2 : { \ket{\phi_2^{(i)}} }
 \end{equation}
 %
 for any ket in \(H_2\)
-
+%
 \begin{equation}\label{eqn:qmTwoL1:150}
 \ket{II} = \sum_{i=1}^{D_2} d_i \ket{\phi_2^{(i)}}
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:qmTwoL1:170}
 \braket{ \phi_2^{(i)}}{ \phi_2^{(j)}} = \delta^{i j}
 \end{equation}
@@ -79,7 +79,7 @@ where
 The composite Hilbert space has dimension \(D_1 D_2\)
 
 basis kets:
-
+%
 \begin{equation}\label{eqn:qmTwoL1:190}
 \ket{ \phi_1^{(i)}} \otimes \ket{ \phi_2^{(j)}}  = \ket{ \phi^{(ij)}},
 \end{equation}
@@ -90,7 +90,7 @@ where
 \end{equation}
 %
 Any ket in \(H\) can be written
-
+%
 \begin{equation}\label{eqn:qmTwoL1:412}
 \begin{aligned}
 \ket{\psi}
@@ -108,7 +108,7 @@ f_{ij}
 \end{equation}
 %
 \paragraph{Direct product of kets:}
-
+%
 \begin{equation}\label{eqn:qmTwoL1:432}
 \begin{aligned}
 \ket{I} \otimes \ket{II}
@@ -132,7 +132,7 @@ FIXME: insert a concrete example of this, with some low dimension.
 \section{Operators}
 
 With operators \(\calO_1\) and \(\calO_2\) on the respective Hilbert spaces.  We would now like to build
-
+%
 \begin{equation}\label{eqn:qmTwoL1:230}
 \calO_1 \otimes \calO_2
 \end{equation}
@@ -152,7 +152,7 @@ f_{ij}
 No.
 
 Special cases.  The identity operators.  Suppose that
-
+%
 \begin{equation}\label{eqn:qmTwoL1:270}
 \ket{\psi}
 =
@@ -163,7 +163,7 @@ f_{ij}
 \end{equation}
 %
 then
-
+%
 \begin{equation}\label{eqn:qmTwoL1:290}
 (\calO_1 \otimes \calI_2) \ket{\psi}
 =
@@ -176,13 +176,13 @@ f_{ij}
 \makeexample{A commutator}{l1:ex1}{
 
 Can do other operations.  Example:
-
+%
 \begin{equation}\label{eqn:qmTwoL1:310}
 \antisymmetric{ \calO_1 \otimes \calI_2 }{ \calI_1 \otimes \calO_2 } = 0
 \end{equation}
 %
 Let us verify this one.  Suppose that our state has the representation
-
+%
 \begin{equation}\label{eqn:qmTwoL1:330}
 \ket{\psi}
 =
@@ -254,13 +254,13 @@ f_{ij}
 \section{Generalizations}
 
 Can generalize to
-
+%
 \begin{equation}\label{eqn:qmTwoL1:370}
 H_1 \otimes H_2 \otimes H_3 \otimes \cdots
 \end{equation}
 %
 Can also start with \(H\) and seek factor spaces.  If \(H\) is not prime there are, in general, many ways to find factor spaces
-
+%
 \begin{equation}\label{eqn:qmTwoL1:390}
 H =
 H_1 \otimes H_2 =
@@ -288,13 +288,13 @@ Professor Sipe, when asked said of this
 ``It is complicated because not only would the spin of the electron interact with the magnetic field, but its translational motion would respond to the magnetic field too.  A simpler case is a neutral atom with an electron with an unpaired spin.  Then there is no Lorentz force on the atom itself.  The Hamiltonian is just the sum of a free particle Hamiltonian and a Zeeman term due to the spin interacting with the magnetic field.  This is precisely the Stern-Gerlach problem''
 
 I did not remember what the Zeeman term looked like, but wikipedia does \citep{wiki:zeeman}, and it is the magnetic field interaction
-
+%
 \begin{equation}\label{eqn:qmTwoL1:391}
 -\Bmu \cdot \BB
 \end{equation}
 %
 that we get when we gauge transform the Dirac equation for the electron as covered in \S 36.4 of the text (also introduced in chapter 6, which was not covered in class).  That does not look too much like how we studied the Stern-Gerlach problem?  I thought that for that problem we had a Hamiltonian of the form
-
+%
 \begin{equation}\label{eqn:qmTwoL1:392}
 H = a_{i j} \ket{i} \bra{j}
 \end{equation}

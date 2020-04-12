@@ -11,13 +11,13 @@
 For a QM problem I had need of a recurrence relation for Hermite polynomials.  I found it in \citep{abramowitz1964handbook} (also see: \cite[Eq.~18.9.25]{NIST:DLMF2020}), but thought I had try to derive the relation myself.
 
 The starting point I will use is the Rodgigues' formula definition of the Hermite polynomials
-
+%
 \begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:10}
 H_n = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}
 \end{equation}
 %
 Let us write \(D = d/dx\), and take the derivative of \(H_n\)
-
+%
 \begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:50}
 \begin{aligned}
 (-1)^n D H_n
@@ -43,7 +43,7 @@ Let us write \(D = d/dx\), and take the derivative of \(H_n\)
 \end{equation}
 %
 So we have the rather simple end result
-
+%
 \begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:30}
 \frac{d}{dx} H_n(x)
 =

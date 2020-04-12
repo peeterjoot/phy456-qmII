@@ -25,7 +25,7 @@ READING: \S 19, \S 20 of the text \citep{desai2009quantum}.
 \imageFigure{../figures/phy456-qmII/qmTwoL21Fig1}{classical collision of particles}{fig:qmTwoL21:qmTwoL21Fig1}{0.2}
 
 We will focus on point particle elastic collisions (no energy lost in the collision).  With particles of mass \(m_1\) and \(m_2\) we write for the total and reduced mass respectively
-
+%
 \begin{equation}\label{eqn:qmTwoL21:10}
 M = m_1 + m_2
 \end{equation}
@@ -35,7 +35,7 @@ M = m_1 + m_2
 \end{equation}
 %
 so that interaction due to a potential \(V(\Br_1 - \Br_2)\) that depends on the difference in position \(\Br = \Br_1 - \Br\) has, in the center of mass frame, the Hamiltonian
-
+%
 \begin{equation}\label{eqn:qmTwoL21:50}
 H = \frac{\Bp^2}{2 \mu} + V(\Br)
 \end{equation}
@@ -51,37 +51,37 @@ Now lets move to the QM picture where we assume that we have a particle that can
 \imageFigure{../figures/phy456-qmII/qmTwoL21Fig3}{Wave packet for a particle wavefunction \(\Re(\psi(x,0))\)}{fig:qmTwoL21:qmTwoL21Fig3}{0.2}
 
 First without any potential \(V(x) = 0\), lets consider the evolution.  Our position and momentum space representations are related by
-
+%
 \begin{equation}\label{eqn:qmTwoL21:70}
 \int \Abs{\psi(x, t)}^2 dx = 1 = \int \Abs{\psi(p, t)}^2 dp,
 \end{equation}
 %
 and by Fourier transform
-
+%
 \begin{equation}\label{eqn:qmTwoL21:90}
 \psi(x, t) = \int \frac{dp}{\sqrt{2 \pi \Hbar}} \overline{\psi}(p, t) e^{i p x/\Hbar}.
 \end{equation}
 %
 Schr\"{o}dinger's equation takes the form
-
+%
 \begin{equation}\label{eqn:qmTwoL21:110}
 i \Hbar \PD{t}{\psi(x,t)} = - \frac{\Hbar^2}{2 \mu} \PDSq{x}{\psi(x, t)},
 \end{equation}
 %
 or more simply in momentum space
-
+%
 \begin{equation}\label{eqn:qmTwoL21:130}
 i \Hbar \PD{t}{\overline{\psi}(p,t)} = \frac{p^2}{2 \mu} \PDSq{x}{\overline{\psi}(p, t)}.
 \end{equation}
 %
 Rearranging to integrate we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:150}
 \PD{t}{\overline{\psi}} = -\frac{i p^2}{2 \mu \Hbar} \overline{\psi},
 \end{equation}
 %
 and integrating
-
+%
 \begin{equation}\label{eqn:qmTwoL21:170}
 \ln \overline{\psi} = -\frac{i p^2 t}{2 \mu \Hbar} + \ln C,
 \end{equation}
@@ -94,19 +94,19 @@ or
 Time evolution in momentum space for the free particle changes only the phase of the wavefunction, the momentum probability density of that particle.
 
 Fourier transforming, we find our position space wavefunction to be
-
+%
 \begin{equation}\label{eqn:qmTwoL21:210}
 \psi(x, t) = \int \frac{dp}{\sqrt{2 \pi \Hbar}} \overline{\psi}(p, 0) e^{i p x/\Hbar} e^{-i p^2 t/2 \mu \Hbar}.
 \end{equation}
 %
 To clean things up, write
-
+%
 \begin{equation}\label{eqn:qmTwoL21:230}
 p = \Hbar k,
 \end{equation}
 %
 for
-
+%
 \begin{equation}\label{eqn:qmTwoL21:250}
 \psi(x, t) = \int \frac{dk}{\sqrt{2 \pi}} a(k, 0) ) e^{i k x} e^{-i \Hbar k^2 t/2 \mu},
 \end{equation}
@@ -117,19 +117,19 @@ a(k, 0) = \sqrt{\Hbar} \overline{\psi}(p, 0).
 \end{equation}
 %
 Putting
-
+%
 \begin{equation}\label{eqn:qmTwoL21:290}
 a(k, t) = a(k, 0) e^{ -i \Hbar k^2/2 \mu},
 \end{equation}
 %
 we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:310}
 \psi(x, t) = \int \frac{dk}{\sqrt{2 \pi}} a(k, t) ) e^{i k x}
 \end{equation}
 %
 Observe that we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:330}
 \int dk \Abs{ a(k, t)}^2 = \int dp \Abs{ \overline{\psi}(p, t)}^2 = 1.
 \end{equation}
@@ -141,13 +141,13 @@ Suppose that we have, as depicted in \cref{fig:qmTwoL21:qmTwoL21Fig4}
 \imageFigure{../figures/phy456-qmII/qmTwoL21Fig4}{Gaussian wave packet}{fig:qmTwoL21:qmTwoL21Fig4}{0.2}
 
 a Gaussian wave packet of the form
-
+%
 \begin{equation}\label{eqn:qmTwoL21:350}
 \psi(x, 0) = \frac{ (\pi \Delta^2)^{1/4}} e^{i k_0 x} e^{- x^2/2 \Delta^2}.
 \end{equation}
 %
 This is actually a minimum uncertainty packet with
-
+%
 \begin{equation}\label{eqn:qmTwoL21:370}
 \begin{aligned}
 \Delta x &= \frac{\Delta}{\sqrt{2}} \\
@@ -156,7 +156,7 @@ This is actually a minimum uncertainty packet with
 \end{equation}
 %
 Taking Fourier transforms we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:390}
 \begin{aligned}
 a(k, 0) &= \left(\frac{\Delta^2}{\pi}\right)^{1/4} e^{-(k - k_0)^2 \Delta^2/2} \\
@@ -184,7 +184,7 @@ This is even true for a negative potential as depicted in \cref{fig:qmTwoL21:qmT
 \imageFigure{../figures/phy456-qmII/qmTwoL21Fig9}{qmTwoL21Fig9}{fig:qmTwoL21:qmTwoL21Fig9}{0.2}
 
 Consider the probability for the particle to be found anywhere long after the interaction, summing over the transmitted and reflected wave functions, we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:630}
 \begin{aligned}
 1
@@ -196,7 +196,7 @@ Consider the probability for the particle to be found anywhere long after the in
 Observe that long after the interaction the cross terms in the probabilities will vanish because they are non-overlapping, leaving just the probably densities for the transmitted and reflected probably densities independently.
 
 We define
-
+%
 \begin{equation}\label{eqn:qmTwoL21:410}
 \begin{aligned}
 T &= \int \Abs{\psi_t(x, t)}^2 dx \\
@@ -213,13 +213,13 @@ The objective of most of our scattering problems will be the calculation of thes
 We are going to work through something that is going to seem at first to be completely unrelated.  We will (eventually) see that this can be applied to this problem, so a bit of patience will be required.
 
 We will be using the time independent Schr\"{o}dinger equation
-
+%
 \begin{equation}\label{eqn:qmTwoL21:430}
 - \frac{\Hbar^2}{2 \mu} \psi_k''(x) = V(x) \psi_k(x) = E \psi_k(x),
 \end{equation}
 %
 where we have added a subscript \(k\) to our wave function with the intention (later) of allowing this to vary.  For ``future use'' we define for \(k > 0\)
-
+%
 \begin{equation}\label{eqn:qmTwoL21:450}
 E = \frac{\Hbar^2 k^2}{2 \mu}.
 \end{equation}
@@ -229,13 +229,13 @@ Consider a potential as in \cref{fig:qmTwoL21:qmTwoL21Fig10}, where \(V(x) = 0\)
 \imageFigure{../figures/phy456-qmII/qmTwoL21Fig10}{potential zero outside of a specific region}{fig:qmTwoL21:qmTwoL21Fig10}{0.2}
 
 We will not have bound states here (repulsive potential).  There will be many possible solutions, but we want to look for a solution that is of the form
-
+%
 \begin{equation}\label{eqn:qmTwoL21:470}
 \psi_k(x) = C e^{i k x}, \qquad x > x_2
 \end{equation}
 %
 Suppose \(x = x_3 > x_2\), we have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:490}
 \psi_k(x_3) = C e^{i k x_3}
 \end{equation}
@@ -254,7 +254,7 @@ Defining
 \end{equation}
 %
 we write Schr\"{o}dinger's equation as a pair of coupled first order equations
-
+%
 \begin{equation}\label{eqn:qmTwoL21:570}
 \begin{aligned}
 \frac{d\psi_k}{dx} &= \phi_k(x) \\
@@ -263,7 +263,7 @@ we write Schr\"{o}dinger's equation as a pair of coupled first order equations
 \end{equation}
 %
 At this \(x = x_3\) specifically, we ``know'' both \(\phi_k(x_3)\) and \(\psi_k(x_3)\) and have
-
+%
 \begin{equation}\label{eqn:qmTwoL21:590}
 \begin{aligned}
 \evalbar{\frac{d\psi_k}{dx}}{x_3} &= \phi_k(x) \\
@@ -273,7 +273,7 @@ At this \(x = x_3\) specifically, we ``know'' both \(\phi_k(x_3)\) and \(\psi_k(
 \end{equation}
 %
 This allows us to find both
-
+%
 \begin{equation}\label{eqn:qmTwoL21:610}
 \begin{aligned}
 &\evalbar{\frac{d\psi_k}{dx}}{x_3} \\

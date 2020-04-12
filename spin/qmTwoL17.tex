@@ -24,19 +24,19 @@
 \section{More on two spin systems}
 
 READING: Covering \S 26.5 of the text \citep{desai2009quantum}.
-
+%
 \begin{equation}\label{eqn:qmTwoL17:20}
 \inv{2} \otimes \inv{2} = 1 \oplus 0
 \end{equation}
 %
 where \(1\) is a triplet state for \(s=1\) and \(0\) the ``singlet'' state with \(s=0\).  We want to consider the angular momentum of the entire system
-
+%
 \begin{equation}\label{eqn:qmTwoL17:40}
 j_1 \otimes j_2 = ?
 \end{equation}
 %
 Why bother?  Often it is true that
-
+%
 \begin{equation}\label{eqn:qmTwoL17:60}
 \antisymmetric{H}{\BJ} = 0,
 \end{equation}
@@ -44,7 +44,7 @@ Why bother?  Often it is true that
 so, in that case, the eigenstates of the total angular momentum are also energy eigenstates, so considering the angular momentum problem can help in finding these energy eigenstates.
 
 \paragraph{Rotation operator}
-
+%
 \begin{equation}\label{eqn:qmTwoL17:80}
 e^{-i \theta \ncap \cdot \BJ/\Hbar}
 \end{equation}
@@ -54,7 +54,7 @@ e^{-i \theta \ncap \cdot \BJ/\Hbar}
 \end{equation}
 %
 Recall the definitions of the raising or lowering operators
-
+%
 \begin{equation}\label{eqn:qmTwoL17:120}
 J_\pm = J_x \pm i J_y,
 \end{equation}
@@ -80,7 +80,7 @@ n_z J_z,
 \end{equation}
 %
 and
-
+%
 \begin{equation}\label{eqn:qmTwoL17:180}
 J_\pm \ket{j m} = \Hbar \Bigl(
 (j \mp m)(j \pm m_1)
@@ -89,13 +89,13 @@ J_\pm \ket{j m} = \Hbar \Bigl(
 \end{equation}
 %
 So
-
+%
 \begin{equation}\label{eqn:qmTwoL17:200}
 \bra{j' m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m} = 0
 \end{equation}
 %
 unless \(j = j'\).
-
+%
 \begin{equation}\label{eqn:qmTwoL17:220}
 \bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m}
 \end{equation}
@@ -103,7 +103,7 @@ unless \(j = j'\).
 is a \((2j + 1) \times (2 j+ 1)\) matrix.
 
 Combining rotations
-
+%
 \begin{equation}\label{eqn:qmTwoL17:240}
 \bra{j m'}
 e^{-i \theta_b \ncap_a \cdot \BJ/\Hbar}
@@ -127,7 +127,7 @@ e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
 \end{equation}
 %
 (something that may be hard to compute but possible), then
-
+%
 \begin{equation}\label{eqn:qmTwoL17:280}
 \bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m}
 =
@@ -144,7 +144,7 @@ For fixed \(j\), the matrices \(\bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \
 It may be that there may be big blocks of zeros in some of the matrices, but they cannot be simplified any further?
 
 Back to the two particle system
-
+%
 \begin{equation}\label{eqn:qmTwoL17:300}
 j_1 \otimes j_2 = ?
 \end{equation}
@@ -155,7 +155,7 @@ If we use
 \end{equation}
 %
 If a \(j_1\) and a \(j_2\) are picked then
-
+%
 \begin{equation}\label{eqn:qmTwoL17:340}
 \bra{j_1 m_1' ; j_2 m_2'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j_1 m_1 ; j_2 m_2}
 \end{equation}
@@ -165,7 +165,7 @@ is also a representation of the rotation group, but these sort of matrices can b
 A lot of this is motivation, and we still want a representation of \(j_1 \otimes j_2\).
 
 Recall that
-
+%
 \begin{equation}\label{eqn:qmTwoL17:360}
 \inv{2} \otimes \inv{2} = 1 \oplus 0
 =
@@ -175,7 +175,7 @@ Recall that
 \end{equation}
 %
 Might guess that, for \(j_1 \ge j_2\)
-
+%
 \begin{equation}\label{eqn:qmTwoL17:380}
 j_1 \otimes j_2 =
 \left( j_1 + j_2 \right)
@@ -187,7 +187,7 @@ j_1 \otimes j_2 =
 \end{equation}
 %
 Suppose that this is right.  Then
-
+%
 \begin{equation}\label{eqn:qmTwoL17:400}
 5 \otimes \inv{2} = \frac{11}{2} \oplus \frac{9}{2}
 \end{equation}
@@ -205,7 +205,7 @@ Check for dimensions.
 It was just made up.  We are creating a shorthand to say that we have a number of different basis states for each of the groupings.  \textunderline{I Need an example!}
 
 Check for dimensions in general
-
+%
 \begin{equation}\label{eqn:qmTwoL17:440}
 (2 j_1 + 1)(2 j_2 + 1) \questionEquals
 \end{equation}
@@ -224,7 +224,7 @@ We find
 \end{equation}
 %
 Using
-
+%
 \begin{equation}\label{eqn:qmTwoL17:460}
 \sum_{n=0}^N n = \frac{N(N+1)}{2}
 \end{equation}
@@ -239,7 +239,7 @@ j_1 \otimes j_2
 \end{equation}
 %
 In fact, this is correct.  Proof ``by construction'' to follow.
-
+%
 \begin{equation}\label{eqn:qmTwoL17:500}
 \ket{j_1 m_1}
 \otimes
@@ -261,7 +261,7 @@ denote also by
 but will often omit the \(; j_1 j_2\) portion.
 
 With
-
+%
 \begin{equation}\label{eqn:qmTwoL17:560}
 \begin{array}{| l | l | l | l | l |}
 \hline
@@ -290,7 +290,7 @@ j = & j_1 + j_2				& j_1 + j_2 -1 				& \cdots 	& j_1 - j_2 \\
 \end{equation}
 %
 Look at
-
+%
 \begin{equation}\label{eqn:qmTwoL17:580}
 \ket{j_1 + j_2, j_1 + j_2}
 \end{equation}
@@ -312,7 +312,7 @@ J_z
 \end{equation}
 %
 we must have
-
+%
 \begin{equation}\label{eqn:qmTwoL17:640}
 \ket{j_1 + j_2, j_1 + j_2}
 = e^{i\phi}
@@ -322,7 +322,7 @@ we must have
 So \(\ket{j_1 + j_2, j_1 + j_2}\) must be a superposition of states \(\ket{j_1 m_1} \otimes \ket{j_2 m_2} \) with \(m_1 + m_2 = j_1 + j_2\).  Choosing \(e^{i\phi} = 1\) is called the Clebsch-Gordan convention.
 % HAD in my notes?
 %Conbon Shotley
-
+%
 \begin{equation}\label{eqn:qmTwoL17:660}
 \ket{j_1 + j_2, j_1 + j_2}
 =
@@ -330,7 +330,7 @@ So \(\ket{j_1 + j_2, j_1 + j_2}\) must be a superposition of states \(\ket{j_1 m
 \end{equation}
 %
 We now move down column.
-
+%
 \begin{equation}\label{eqn:qmTwoL17:680}
 J_{-} \ket{j_1 + j_2, j_1 + j_2}
 =

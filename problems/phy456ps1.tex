@@ -9,7 +9,7 @@
 
 \makeoproblem{Harmonic oscillator}{pr:phy456ps1:1}{2011 ps1/p1}{
 Let \(H_o\) indicate the Hamiltonian of a 1D harmonic oscillator with mass \(m\) and frequency \(\omega\)
-
+%
 \begin{equation}\label{eqn:phy456ps1:99}
 H_o = \frac{P^2}{2m} + \inv{2} m \omega^2 X^2
 \end{equation}
@@ -31,7 +31,7 @@ Find the ground state energy of the Hamiltonian \(H = H_o - \alpha X\). [Hint: T
 \makeSubAnswer{\(X^4\)}{pr:phy456ps1:1:a}
 
 Working through \ref{chap:phy456ps1SHO} we have now got enough context to attempt the first part of the question, calculation of
-
+%
 \begin{equation}\label{eqn:phy456ps1:320}
 \bra{n} X^4 \ket{n}
 \end{equation}
@@ -46,7 +46,7 @@ We have calculated things like this before, such as
 \end{equation}
 %
 To continue we need an exact relation between \(\ket{n}\) and \(\ket{n \pm 1}\).  Recall that \(a \ket{n}\) was an eigenstate of \(a^\dagger a\) with eigenvalue \(n - 1\).  This implies that the eigenstates \(a \ket{n}\) and \(\ket{n-1}\) are proportional
-
+%
 \begin{equation}\label{eqn:phy456ps1:340}
 a \ket{n} = c_n \ket{n - 1},
 \end{equation}
@@ -61,13 +61,13 @@ n &=
 \end{equation}
 %
 so that
-
+%
 \begin{equation}\label{eqn:phy456ps1:380}
 a \ket{n} = \sqrt{n} \ket{n - 1}.
 \end{equation}
 %
 Similarly let
-
+%
 \begin{equation}\label{eqn:phy456ps1:400}
 a^\dagger \ket{n} = b_n \ket{n + 1},
 \end{equation}
@@ -82,13 +82,13 @@ or
 \end{equation}
 %
 so that
-
+%
 \begin{equation}\label{eqn:phy456ps1:440}
 a^\dagger \ket{n} = \sqrt{n+1} \ket{n + 1}.
 \end{equation}
 %
 We can now return to \eqnref{eqn:phy456ps1:320}, and find
-
+%
 \begin{equation}\label{eqn:phy456ps1:920}
 \begin{aligned}
 \bra{n} X^4 \ket{n}
@@ -98,7 +98,7 @@ We can now return to \eqnref{eqn:phy456ps1:320}, and find
 \end{equation}
 %
 Consider half of this braket
-
+%
 \begin{equation}\label{eqn:phy456ps1:940}
 \begin{aligned}
 (a + a^\dagger)^2 \ket{n}
@@ -119,7 +119,7 @@ Consider half of this braket
 \end{equation}
 %
 Squaring, utilizing the Hermitian nature of the \(X\) operator %, we have for \(n > 2\)
-
+%
 \begin{equation}\label{eqn:phy456ps1:500}
 \bra{n} X^4 \ket{n}
 =
@@ -138,7 +138,7 @@ Squaring, utilizing the Hermitian nature of the \(X\) operator %, we have for \(
 Find the ground state energy of the Hamiltonian \(H = H_0 + \gamma X^2\) for \(\gamma > 0\).
 
 The new Hamiltonian has the form
-
+%
 \begin{equation}\label{eqn:phy456ps1:520}
 H = \frac{P^2}{2m} + \inv{2} m \left(\omega^2 + \frac{2 \gamma}{m} \right) X^2 =
 \frac{P^2}{2m} + \inv{2} m {\omega'}^2 X^2,
@@ -150,13 +150,13 @@ where
 \end{equation}
 %
 The energy states of the Hamiltonian are thus
-
+%
 \begin{equation}\label{eqn:phy456ps1:560}
 E_n = \Hbar \sqrt{ \omega^2 + \frac{2 \gamma}{m} } \left( n + \inv{2} \right)
 \end{equation}
 %
 and the ground state of the modified Hamiltonian \(H\) is thus
-
+%
 \begin{equation}\label{eqn:phy456ps1:580}
 E_0 = \frac{\Hbar}{2} \sqrt{ \omega^2 + \frac{2 \gamma}{m} }
 \end{equation}
@@ -166,7 +166,7 @@ E_0 = \frac{\Hbar}{2} \sqrt{ \omega^2 + \frac{2 \gamma}{m} }
 Find the ground state energy of the Hamiltonian \(H = H_0 - \alpha X\).
 
 With a bit of play, this new Hamiltonian can be factored into
-
+%
 \begin{equation}\label{eqn:phy456ps1:590}
 H
 = \Hbar \omega \left( b^\dagger b + \inv{2} \right) - \frac{\alpha^2}{2 m \omega^2}
@@ -174,7 +174,7 @@ H
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:phy456ps1:600}
 \begin{aligned}
 b &= \sqrt{\frac{m \omega}{2\Hbar}} X + \frac{i P}{\sqrt{2 m \Hbar \omega}} - \frac{\alpha}{\omega \sqrt{ 2 m \Hbar \omega }} \\
@@ -183,19 +183,19 @@ b^\dagger &= \sqrt{\frac{m \omega}{2\Hbar}} X - \frac{i P}{\sqrt{2 m \Hbar \omeg
 \end{equation}
 %
 From \eqnref{eqn:phy456ps1:590} we see that we have the same sort of commutator relationship as in the original Hamiltonian
-
+%
 \begin{equation}\label{eqn:phy456ps1:610}
 \antisymmetric{b}{b^\dagger} = 1,
 \end{equation}
 %
 and because of this, all the preceding arguments follow unchanged with the exception that the energy eigenstates of this Hamiltonian are shifted by a constant
-
+%
 \begin{equation}\label{eqn:phy456ps1:620}
 H \ket{n} = \left( \Hbar \omega \left( n + \inv{2} \right) - \frac{\alpha^2}{2 m \omega^2} \right) \ket{n},
 \end{equation}
 %
 where the \(\ket{n}\) states are simultaneous eigenstates of the \(b^\dagger b\) operator
-
+%
 \begin{equation}\label{eqn:phy456ps1:630}
 b^\dagger b \ket{n} = n \ket{n}.
 \end{equation}
@@ -210,7 +210,7 @@ This makes sense.  A translation of the entire position of the system should not
 
 \makeoproblem{Expectation values for position operators for spinless hydrogen}{pr:phy456ps1:2}{2011 ps1/p2}{
 Show that for all energy eigenstates \(\ket{\Phi_{nlm}}\) of the (spinless) hydrogen atom, where as usual \(n\), \(l\), and \(m\) are respectively the principal, azimuthal, and magnetic quantum numbers, we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:98}
 \bra{\Phi_{nlm}}
 X
@@ -247,7 +247,7 @@ The summary sheet provides us with the wavefunction
 \end{equation}
 %
 where \(F_{nl}\) is a real valued function defined in terms of Lagueere polynomials.  Working with the expectation of the \(X\) operator to start with we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:960}
 \begin{aligned}
 \bra{\Phi_{nlm}} X \ket{\Phi_{nlm}}
@@ -268,13 +268,13 @@ where \(F_{nl}\) is a real valued function defined in terms of Lagueere polynomi
 \end{equation}
 %
 Recalling that the only \(\phi\) dependence in \(Y_l^m\) is \(e^{i m \phi}\) we can perform the \(d\phi\) integration directly, which is
-
+%
 \begin{equation}\label{eqn:phy456ps1:740}
 \int_{\phi=0}^{2\pi} \cos\phi d\phi e^{-i m \phi} e^{i m \phi} = 0.
 \end{equation}
 %
 We have the same story for the \(Y\) expectation which is
-
+%
 \begin{equation}\label{eqn:phy456ps1:760}
 \bra{\Phi_{nlm}} X \ket{\Phi_{nlm}}
 \sim
@@ -284,13 +284,13 @@ We have the same story for the \(Y\) expectation which is
 \end{equation}
 %
 Our \(\phi\) integral is then just
-
+%
 \begin{equation}\label{eqn:phy456ps1:780}
 \int_{\phi=0}^{2\pi} \sin\phi d\phi e^{-i m \phi} e^{i m \phi} = 0,
 \end{equation}
 %
 also zero.  The \(Z\) expectation is a slightly different story.  There we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:800}
 \begin{aligned}
 \bra{\Phi_{nlm}} Z \ket{\Phi_{nlm}}
@@ -305,7 +305,7 @@ also zero.  The \(Z\) expectation is a slightly different story.  There we have
 \end{equation}
 %
 Within this last integral we can make the substitution
-
+%
 \begin{equation}\label{eqn:phy456ps1:820}
 \begin{aligned}
 u &= \cos\theta \\
@@ -334,7 +334,7 @@ Working with the appropriate expressions in \it{Cartesian components}, confirm t
 
 \makeanswer{pr:phy456ps1:3}{
 In order to proceed, we will have to consider a matrix element, so that we can operate on \(\ket{\psi}\) in position space.  For that matrix element, we can proceed to insert complete states, and reduce the problem to a question of wavefunctions.  That is
-
+%
 \begin{equation}\label{eqn:phy456ps1:980}
 \begin{aligned}
 \bra{\Br} L_i \ket{\psi}
@@ -354,7 +354,7 @@ In order to proceed, we will have to consider a matrix element, so that we can o
 \end{equation}
 %
 With \(\psi(\Br) = \psi(r)\) we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:1000}
 \begin{aligned}
 \bra{\Br} L_i \ket{\psi}

@@ -24,13 +24,13 @@
 This is covered in \S 24 in the text \citep{desai2009quantum}.  Also \S 8 of \citep{griffiths2005introduction}.
 
 We start with the 1D time independent Schr\"{o}dinger equation
-
+%
 \begin{equation}\label{eqn:qmTwoL12:10}
 -\frac{\Hbar^2}{2m} \frac{d^2 U}{dx^2} + V(x) U(x) = E U(x)
 \end{equation}
 %
 which we can write as
-
+%
 \begin{equation}\label{eqn:qmTwoL12:30}
 \frac{d^2 U}{dx^2} + \frac{2m}{\Hbar^2} (E - V(x)) U(x) = 0
 \end{equation}
@@ -40,7 +40,7 @@ Consider a finite well potential as in \cref{fig:qmTwoL13:qmTwoL12fig1}
 \imageFigure{../figures/phy456-qmII/qmTwoL12fig1}{Finite well potential}{fig:qmTwoL13:qmTwoL12fig1}{0.2}
 
 With
-
+%
 \begin{equation}\label{eqn:qmTwoL12:90}
 \begin{aligned}
 k^2 &= \frac{2m (E - V)}{\Hbar},\qquad E > V \\
@@ -49,19 +49,19 @@ k^2 &= \frac{2m (E - V)}{\Hbar},\qquad E > V \\
 \end{equation}
 %
 we have for a bound state within the well
-
+%
 \begin{equation}\label{eqn:qmTwoL12:50}
 U \propto e^{\pm i k x}
 \end{equation}
 %
 and for that state outside the well
-
+%
 \begin{equation}\label{eqn:qmTwoL12:70}
 U \propto e^{\pm \kappa x}
 \end{equation}
 %
 In general we can hope for something similar.  Let us look for that something, but allow the constants \(k\) and \(\kappa\) to be functions of position
-
+%
 \begin{equation}\label{eqn:qmTwoL12:110}
 \begin{aligned}
 k^2(x) &= \frac{2m (E - V(x))}{\Hbar},\qquad E > V \\
@@ -70,25 +70,25 @@ k^2(x) &= \frac{2m (E - V(x))}{\Hbar},\qquad E > V \\
 \end{equation}
 %
 In terms of \(k\) Schr\"{o}dinger's equation is just
-
+%
 \begin{equation}\label{eqn:qmTwoL12:130}
 \frac{d^2 U(x)}{dx^2} + k^2(x) U(x) = 0.
 \end{equation}
 %
 We use the trial solution
-
+%
 \begin{equation}\label{eqn:qmTwoL12:150}
 U(x) = A e^{i \phi(x)},
 \end{equation}
 %
 allowing \(\phi(x)\) to be complex
-
+%
 \begin{equation}\label{eqn:qmTwoL12:170}
 \phi(x) = \phi_R(x) + i \phi_I(x).
 \end{equation}
 %
 We need second derivatives
-
+%
 \begin{equation}\label{eqn:qmTwoL12:530}
 \begin{aligned}
 (e^{i \phi})''
@@ -100,19 +100,19 @@ We need second derivatives
 \end{equation}
 %
 and plug back into our Schr\"{o}dinger equation to obtain
-
+%
 \begin{equation}\label{eqn:qmTwoL12:190}
 - (\phi'(x))^2 + i \phi''(x) + k^2(x) = 0.
 \end{equation}
 %
 For the first round of approximation we assume
-
+%
 \begin{equation}\label{eqn:qmTwoL12:210}
 \phi''(x) \approx 0,
 \end{equation}
 %
 and obtain
-
+%
 \begin{equation}\label{eqn:qmTwoL12:230}
 (\phi'(x))^2 = k^2(x),
 \end{equation}
@@ -123,13 +123,13 @@ or
 \end{equation}
 %
 A second round of approximation we use \eqnref{eqn:qmTwoL12:250} and obtain
-
+%
 \begin{equation}\label{eqn:qmTwoL12:250b}
 \phi''(x) = \pm k'(x)
 \end{equation}
 %
 Plugging back into \eqnref{eqn:qmTwoL12:190} we have
-
+%
 \begin{equation}\label{eqn:qmTwoL12:270}
 -(\phi'(x))^2 \pm i k'(x) + k^2(x) = 0,
 \end{equation}

@@ -26,13 +26,13 @@
 %% Sorry for what ended up being an incoherent interjection in class today.  I have attached a note attempting to explain what I was referring to.
 
 However, what I was referring to, was that a general rotation of a vector in a Pauli matrix basis
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5000}
 R(\sum a_k \sigma_k) = R( \Ba \cdot \Bsigma)
 \end{equation}
 %
 can be expressed by sandwiching the Pauli vector representation by two half angle rotation operators like our spin 1/2 operators from class today
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5020}
 R( \Ba \cdot \Bsigma) = e^{-\theta \ucap \cdot \Bsigma \vcap \cdot \Bsigma/2} \Ba \cdot \Bsigma e^{\theta \ucap \cdot \Bsigma \vcap \cdot \Bsigma/2}
 \end{equation}
@@ -40,14 +40,14 @@ R( \Ba \cdot \Bsigma) = e^{-\theta \ucap \cdot \Bsigma \vcap \cdot \Bsigma/2} \B
 where \(\ucap\) and \(\vcap\) are two non-colinear orthogonal unit vectors that define the oriented plane that we are rotating in.
 
 For example, rotating in the \(x-y\) plane, with \(\ucap = \xcap\) and \(\vcap = \ycap\), we have
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5040}
 R( \Ba \cdot \Bsigma)
 = e^{-\theta \sigma_1 \sigma_2/2} (a_1 \sigma_1 + a_2 \sigma_2 + a_3 \sigma_3) e^{\theta \sigma_1 \sigma_2/2}
 \end{equation}
 %
 Observe that these exponentials commute with \(\sigma_3\), leaving
-
+%
 \begin{equation}\label{eqn:qmTwoL15halfAngle:5120}
 \begin{aligned}
 R( \Ba \cdot \Bsigma)
@@ -65,7 +65,7 @@ a_3 \sigma_3 \\
 \end{equation}
 %
 yielding our usual coordinate rotation matrix.  Expressed in terms of a unit normal to that plane, we form the normal by multiplication with the unit spatial volume element \(I = \sigma_1 \sigma_2 \sigma_3\).  For example:
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5060}
 \sigma_1 \sigma_2 \sigma_3( \sigma_3 )
 =
@@ -73,7 +73,7 @@ yielding our usual coordinate rotation matrix.  Expressed in terms of a unit nor
 \end{equation}
 %
 and can in general write a spatial rotation in a Pauli basis representation as a sandwich of half angle rotation matrix exponentials
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5080}
 R( \Ba \cdot \Bsigma)
 =
@@ -83,7 +83,7 @@ e^{I \theta (\ncap \cdot \Bsigma)/2}
 \end{equation}
 %
 when \(\ncap \cdot \Ba = 0\) we get the complex-number like single sided exponential rotation exponentials (since \(\Ba \cdot \Bsigma\) commutes with \(\Bn \cdot \Bsigma\) in that case)
-
+%
 \begin{equation}\label{eqn:qmTwoL15:5100}
 R( \Ba \cdot \Bsigma)
 =

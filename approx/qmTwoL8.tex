@@ -30,19 +30,19 @@
 \section{Time dependent perturbation}
 
 We would gotten as far as calculating
-
+%
 \begin{equation}\label{eqn:qmTwoL8:10}
 c_m^{(1)}(\infty) = \inv{i \Hbar} \Bmu_{ms} \cdot \BE(\omega_{ms})
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:qmTwoL8:30}
 \BE(t) = \int \frac{d\omega}{2 \pi} \BE(\omega) e^{-i \omega t},
 \end{equation}
 %
 and
-
+%
 \begin{equation}\label{eqn:qmTwoL8:50}
 \omega_{ms} = \frac{E_m - E_s}{\Hbar}.
 \end{equation}
@@ -52,20 +52,20 @@ Graphically, these frequencies are illustrated in \cref{fig:qmTwoL8fig0Frequenci
 \pdfTexFigure{../figures/phy456-qmII/qmTwoL8fig0FrequenciesAbsorbtionAndEmission.pdf_tex}{Positive and negative frequencies}{fig:qmTwoL8fig0FrequenciesAbsorbtionAndEmission}{0.3}
 
 The probability for a transition from \(m\) to \(s\) is therefore
-
+%
 \begin{equation}\label{eqn:qmTwoL8:70}
 \rho_{m \rightarrow s} = \Abs{ c_m^{(1)}(\infty) }^2
 = \inv{\Hbar}^2 \Abs{\Bmu_{ms} \cdot \BE(\omega_{ms})}^2
 \end{equation}
 %
 Recall that because the electric field is real we had
-
+%
 \begin{equation}\label{eqn:qmTwoL8:90}
 \Abs{\BE(\omega)}^2 = \Abs{\BE(-\omega)}^2.
 \end{equation}
 %
 Suppose that we have a wave pulse, where our field magnitude is perhaps of the form
-
+%
 \begin{equation}\label{eqn:qmTwoL8:110}
 E(t) = e^{-t^2/T^2} \cos(\omega_0 t),
 \end{equation}
@@ -77,7 +77,7 @@ as illustrated with \(\omega = 10, T = 1\) in \cref{fig:qmTwoL8:gaussianWavePack
 We expect this to have a two lobe Fourier spectrum, with the lobes centered at \(\omega = \pm 10\), and width proportional to \(1/T\).
 
 For reference, as calculated using \nbref{qmTwoL8figures.nb} this Fourier transform is
-
+%
 \begin{equation}\label{eqn:qmTwoL8:130}
 E(\omega) = \frac{e^{-\frac{1}{4} T^2 (\omega_0+\omega )^2}}{2 \sqrt{\frac{2}{T^2}}}+\frac{e^{\omega_0 T^2 \omega -\frac{1}{4} T^2 (\omega_0+\omega )^2}}{2 \sqrt{\frac{2}{T^2}}}
 \end{equation}
@@ -94,7 +94,7 @@ FIXME: not sure what the point of this was?
 \index{sudden perturbation}
 
 Given our wave equation
-
+%
 \begin{equation}\label{eqn:qmTwoL8:150}
 i \Hbar \ddt{} \ket{\psi(t)} = H(t) \ket{\psi(t)}
 \end{equation}
@@ -104,7 +104,7 @@ and a sudden perturbation in the Hamiltonian, as illustrated in \cref{fig:qmTwoL
 \imageFigure{../figures/phy456-qmII/suddenStepHamiltonian}{Sudden step Hamiltonian}{fig:qmTwoL8:suddenStepHamiltonian}{0.2}
 
 Consider \(H_0\) and \(H_F\) fixed, and decrease \(\Delta t \rightarrow 0\).  We can formally integrate \eqnref{eqn:qmTwoL8:150}
-
+%
 \begin{equation}\label{eqn:qmTwoL8:150b}
 \ddt{} \ket{\psi(t)} = \inv{i \Hbar} H(t) \ket{\psi(t)}
 \end{equation}
@@ -116,7 +116,7 @@ For
 \end{equation}
 %
 While this is an exact solution, it is also not terribly useful since we do not know \(\ket{\psi(t)}\).  However, we can select the small interval \(\Delta t\), and write
-
+%
 \begin{equation}\label{eqn:qmTwoL8:150c}
 \ket{\psi(\Delta t/2)} =
 \ket{\psi(-\Delta t/2)}
@@ -124,7 +124,7 @@ While this is an exact solution, it is also not terribly useful since we do not 
 \end{equation}
 %
 Note that we could use the integral kernel iteration technique here and substitute \(\ket{\psi(t')} = \ket{\psi(-\Delta t/2)}\) and then develop this, to generate a power series with \((\Delta t/2)^k\) dependence.  However, we note that \eqnref{eqn:qmTwoL8:150c} is still an exact relation, and if \(\Delta t \rightarrow 0\), with the integration limits narrowing (provided \(H(t')\) is well behaved) we are left with just
-
+%
 \begin{equation}\label{eqn:qmTwoL8:180}
 \ket{\psi(\Delta t/2)} = \ket{\psi(-\Delta t/2)}
 \end{equation}
@@ -139,7 +139,7 @@ provided that we change the Hamiltonian fast enough.  On the surface there appea
 \makeexample{Harmonic oscillator}{l8:ex1}{
 
 Consider our harmonic oscillator Hamiltonian, with
-
+%
 \begin{equation}\label{eqn:qmTwoL8:220}
 \begin{aligned}
 H_0 &= \frac{P^2}{2m} + \inv{2} m \omega_0^2 X^2 \\
@@ -156,7 +156,7 @@ Imagine that \(\ket{\psi_{\text{before}}}\) is in the ground state of the harmon
 and we suddenly change the Hamiltonian with potential \(V_0 \rightarrow V_F\) (weakening the ``spring'').  Professor Sipe gives us a graphical demo of this, by impersonating a constrained wavefunction with his arms, doing weak chicken-flapping of them.  Now with the potential weakened, he wiggles and flaps his arms with more freedom and somewhat chaotically.  His ``wave function'' arms are now bouncing around in the new limiting potential (initially over doing it and then bouncing back).
 
 We had in this case the exact relation
-
+%
 \begin{equation}\label{eqn:qmTwoL8:240}
 H_0 \ket{\psi_0^{(0)}} = \inv{2} \Hbar \omega_0 \ket{\psi_0^{(0)}}
 \end{equation}
@@ -186,7 +186,7 @@ So
 \end{equation}
 %
 and at later times
-
+%
 \begin{equation}\label{eqn:qmTwoL8:530}
 \begin{aligned}
 \ket{\psi(t)^{(f)}}
@@ -198,7 +198,7 @@ and at later times
 \end{equation}
 %
 whereas
-
+%
 \begin{equation}\label{eqn:qmTwoL8:550}
 \begin{aligned}
 \ket{\psi(t)^{(o)}}
@@ -222,13 +222,13 @@ This is treated in \S 17.5.2 of the text \citep{desai2009quantum}.
 I wondered what Adiabatic meant in this context.  The usage in class sounds like it was just ``really slow and gradual'', yet this has a definition ``\href{http://www.thefreedictionary.com/adiabatic}{Of, relating to, or being a reversible thermodynamic process that occurs without gain or loss of heat and without a change in entropy}''.  Wikipedia \citep{wiki:AdiabaticTheorem} appears to confirm that the QM meaning of this term is just ``slow'' changing.
 
 This is the reverse case, and we now vary the Hamiltonian \(H(t)\) \textunderline{very slowly}.
-
+%
 \begin{equation}\label{eqn:qmTwoL8:150f}
 \ddt{} \ket{\psi(t)} = \inv{i \Hbar} H(t) \ket{\psi(t)}
 \end{equation}
 %
 We first consider only non-degenerate states, and at \(t = 0\) write
-
+%
 \begin{equation}\label{eqn:qmTwoL8:300}
 H(0) = H_0,
 \end{equation}
@@ -239,19 +239,19 @@ H_0 \ket{\psi_s^{(0)}} = E_s^{(0)} \ket{\psi_s^{(0)}}
 \end{equation}
 %
 Imagine that at each time \(t\) we can find the ``instantaneous'' energy eigenstates
-
+%
 \begin{equation}\label{eqn:qmTwoL8:340}
 H(t) \ket{\hat{\psi}_s(t)} = E_s(t) \ket{\hat{\psi}_s(t)}
 \end{equation}
 %
 These states do not satisfy Schr\"{o}dinger's equation, but are simply solutions to the eigen problem.  Our standard strategy in perturbation is based on analysis of
-
+%
 \begin{equation}\label{eqn:qmTwoL8:360}
 \ket{\psi(t)} = \sum_n c_n(t) e^{- i \omega_n^{(0)} t} \ket{\psi_n^{(0)} },
 \end{equation}
 %
 Here instead
-
+%
 \begin{equation}\label{eqn:qmTwoL8:380}
 \ket{\psi(t)} =
 \sum_n b_n(t) \ket{\hat{\psi}_n(t)}
@@ -259,7 +259,7 @@ Here instead
 \end{equation}
 %
 we will expand, not using our initial basis, but instead using the instantaneous kets.  Plugging into Schr\"{o}dinger's equation we have
-
+%
 \begin{equation}\label{eqn:qmTwoL8:570}
 \begin{aligned}
 H(t) \ket{\psi(t)}
@@ -269,7 +269,7 @@ H(t) \ket{\psi(t)}
 \end{equation}
 %
 This was complicated before with matrix elements all over the place.  Now it is easy, however, the time derivative becomes harder.  Doing that we find
-
+%
 \begin{equation}\label{eqn:qmTwoL8:590}
 \begin{aligned}
 i \Hbar \ddt{} \ket{\psi(t)}
@@ -286,7 +286,7 @@ i \Hbar
 \end{equation}
 %
 We bra \(\bra{\hat{\psi}_m(t)}\) into this
-
+%
 \begin{equation}\label{eqn:qmTwoL8:400}
 i \Hbar
 \sum_n
@@ -299,7 +299,7 @@ i \Hbar
 \end{equation}
 %
 and find
-
+%
 \begin{equation}\label{eqn:qmTwoL8:410}
 i \Hbar
 \ddt{b_m(t)}
@@ -311,7 +311,7 @@ i \Hbar
 \end{equation}
 %
 If the Hamiltonian is changed \textunderline{very very} slowly in time, we can imagine that \(\ket{\hat{\psi}_n(t)}'\) is also changing very very slowly, but we are not quite there yet.  Let us first split our sum of bra and ket products
-
+%
 \begin{equation}\label{eqn:qmTwoL8:430}
 \sum_n b_n(t)
 \bra{\hat{\psi}_m(t)}
@@ -319,14 +319,14 @@ If the Hamiltonian is changed \textunderline{very very} slowly in time, we can i
 \end{equation}
 %
 into \(n \ne m\) and \(n = m\) terms.  Looking at just the \(n = m\) term
-
+%
 \begin{equation}\label{eqn:qmTwoL8:450}
 \bra{\hat{\psi}_m(t)}
 \ddt{} \ket{\hat{\psi}_m(t)}
 \end{equation}
 %
 we note
-
+%
 \begin{equation}\label{eqn:qmTwoL8:610}
 \begin{aligned}
 0
@@ -339,13 +339,13 @@ we note
 \end{equation}
 %
 Something plus its complex conjugate equals 0
-
+%
 \begin{equation}\label{eqn:qmTwoL8:470}
 a + i b + (a + i b)^\conj = 2 a = 0 \implies a = 0,
 \end{equation}
 %
 so \(\bra{\hat{\psi}_m(t)} \ddt{} \ket{\hat{\psi}_m(t)}\) must be purely imaginary.  We write
-
+%
 \begin{equation}\label{eqn:qmTwoL8:490}
 \bra{\hat{\psi}_m(t)} \ddt{} \ket{\hat{\psi}_m(t)} = -i \Gamma_s(t),
 \end{equation}

@@ -15,13 +15,13 @@ In lecture 9, Prof Sipe developed the equations governing the evolution of the c
 \paragraph{Review}
 
 We assumed that an adiabatically changing Hamiltonian was known with instantaneous eigenkets governed by
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:10}
 H(t) \ket{\psihat_n(t)} = \Hbar \omega_n \ket{\psihat_n(t)}
 \end{equation}
 %
 The problem was to determine the time evolutions of the coefficients \(\barb_n(t)\) of some state \(\ket{\psi(t)}\), and this was found to be
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:30}
 \begin{aligned}
 \ket{\psi(t)} &= \sum_n \barb_n(t) e^{-i \gamma_n(t)} \ket{\psihat_n(t)} \\
@@ -31,25 +31,25 @@ The problem was to determine the time evolutions of the coefficients \(\barb_n(t
 \end{equation}
 %
 where the \(\barb_s(t)\) coefficient must satisfy the set of LDEs
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:50}
 \ddt{\barb_s(t)} = - \sum_{n \ne s} \barb_n(t) e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)},
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:70}
 \gamma_{sn}(t) = \gamma_{s}(t) - \gamma_{n}(t).
 \end{equation}
 %
 Solving these in general does not look terribly fun, but perhaps we can find an explicit solution for all the \(\barb_s\)'s, if we simplify the problem somewhat.  Suppose that our initial state is found to be in the \(m\)th energy level at the time before we start switching on the changing Hamiltonian.
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:90}
 \ket{\psi(0)} = \barb_m(0) \ket{\psihat_m(0)}.
 \end{equation}
 %
 We therefore require (up to a phase factor)
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:110}
 \begin{array}{l l}
 \barb_m(0) = 1 & \\
@@ -58,7 +58,7 @@ We therefore require (up to a phase factor)
 \end{equation}
 %
 Equivalently we can write
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:130}
 \barb_s(0) = \delta_{ms}
 \end{equation}
@@ -67,20 +67,20 @@ Equivalently we can write
 \paragraph{Going in circles with a \(\lambda\) expansion}
 
 In class it was hinted that we could try a \(\lambda\) expansion of the following form to determine a solution for the \(\barb_s\) coefficients at later times
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:150}
 \barb_s(t) = \delta_{ms} + \lambda \barb^{(1)}_s(t) + \cdots
 \end{equation}
 %
 I was not able to figure out how to make that work.  Trying this first to first order, and plugging in, we find
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:170}
 \lambda \ddt{} \barb^{(1)}_s(t) = - \sum_{n \ne s} ( \delta_{mn} + \lambda \barb^{(1)}_n(t) )
 e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)},
 \end{equation}
 %
 equating powers of \(\lambda\) yields two equations
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:190}
 \begin{aligned}
 \ddt{} \barb_s^{(1)}(t) &= - \sum_{n \ne s} \barb^{(1)}_n(t) e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)} \\
@@ -89,7 +89,7 @@ equating powers of \(\lambda\) yields two equations
 \end{equation}
 %
 Observe that the first identity is exactly what we started with in \eqnref{eqn:adiabaticApprox:50}, but has just replaced the \(\barb_n\)'s with \(\barb^{(1)}_n\)'s.  Worse is that the second equation is only satisfied for \(s = m\), and for \(s \ne m\) we have
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:210}
 0 = - e^{i \gamma_{sm}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_m(t)}.
 \end{equation}
@@ -99,7 +99,7 @@ So this \(\lambda\) power series only appears to work if we somehow had \(\ket{\
 \paragraph{A Taylor series expansion in time}
 
 What we can do is to expand the \(\barb_n\)'s in a power series parametrized by time.  That is, again, assuming we started with energy equal to \(\Hbar \omega_m\), form
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:230}
 \barb_s(t)
 = \delta_{sm}
@@ -109,7 +109,7 @@ What we can do is to expand the \(\barb_n\)'s in a power series parametrized by 
 \end{equation}
 %
 The first order term we can grab right from \eqnref{eqn:adiabaticApprox:50} and find
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:490}
 \begin{aligned}
 \evalbar{\ddt{\barb_s(t)}}{t=0}
@@ -131,7 +131,7 @@ The first order term we can grab right from \eqnref{eqn:adiabaticApprox:50} and 
 \end{equation}
 %
 Let us write
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:250}
 \begin{aligned}
 \ket{n} &= \ket{\psihat_n(0)} \\
@@ -140,7 +140,7 @@ Let us write
 \end{equation}
 %
 So we can write
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:270}
 \evalbar{\ddt{\barb_s(t)}}{t=0}
 =
@@ -149,7 +149,7 @@ So we can write
 \end{equation}
 %
 and form, to first order in time our approximation for the coefficient is
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:290}
 \barb_s(t)
 =
@@ -157,7 +157,7 @@ and form, to first order in time our approximation for the coefficient is
 \end{equation}
 %
 Let us do the second order term too.  For that we have
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:510}
 \begin{aligned}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
@@ -179,7 +179,7 @@ Let us do the second order term too.  For that we have
 \end{equation}
 %
 For the \(\gamma_{sn}\) derivative we note that
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:310}
 \evalbar{\ddt{} \gamma_s(t)}{t=0}
 =
@@ -187,7 +187,7 @@ For the \(\gamma_{sn}\) derivative we note that
 \end{equation}
 %
 So we have
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:530}
 \begin{aligned}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
@@ -212,7 +212,7 @@ So we have
 Again for \(s = m\), all terms are killed.  That is somewhat surprising, but suggests that we will need to normalize the coefficients after the perturbation calculation, since we have unity for one of them.
 
 For \(s \ne m\) we have
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:550}
 \begin{aligned}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
@@ -251,7 +251,7 @@ i
 \end{equation}
 %
 So we have, for \(s \ne m\)
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:330}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
 =
@@ -266,7 +266,7 @@ So we have, for \(s \ne m\)
 \end{equation}
 %
 It is not particularly illuminating looking, but possible to compute, and we can use it to form a second order approximate solution for our perturbed state.
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:350}
 \begin{aligned}
 \barb_s(t)
@@ -293,7 +293,7 @@ It is not particularly illuminating looking, but possible to compute, and we can
 Asking about this, Federico nicely explained.  ``The reason why you are going in circles when trying the lambda expansion is because you are not assuming the term \(\bra{\psi(t)} (d/dt) \ket{\psi(t)}\) to be of order lambda. This has to be assumed, otherwise it does not make sense at all trying a perturbative approach. This assumption means that the coupling between the level \(s\) and the other levels is assumed to be small because the time dependent part of the Hamiltonian is small or changes slowly with time. Making a Taylor expansion in time would be sensible only if you are interested in a short interval of time. The lambda-expansion approach would work for any time as long as the time dependent piece of the Hamiltonian does not change wildly or is too big.''
 
 In the tutorial he outlined another way to justify this.  We have written so far
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:370}
 H =
 \left\{
@@ -305,7 +305,7 @@ H_0 & \quad \mbox{\(t < 0\)}
 \end{equation}
 %
 where \(H(0) = H_0\).  We can make this explicit, and introduce a \(\lambda\) factor into the picture if we write
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:390}
 H(t) = H_0 + \lambda H'(t),
 \end{equation}
@@ -313,7 +313,7 @@ H(t) = H_0 + \lambda H'(t),
 where \(H_0\) has no time dependence, so that our Hamiltonian is then just the ``steady-state'' system for \(\lambda = 0\).
 
 Now recall the method from \citep{bohm1989qt} that we can use to relate our bra-derivative-ket to the Hamiltonian.  Taking derivatives of the energy identity, braketed between two independent kets (\(m \ne n\)) we have
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:570}
 \begin{aligned}
 0
@@ -342,7 +342,7 @@ H(t) \ket{\psihat_n(t)} - \Hbar \omega_n \ket{\psihat_n(t)}
 \end{equation}
 %
 So for \(m \ne n\) we find a dependence between the bra-derivative-ket and the time derivative of the Hamiltonian
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:410}
 \bra{\psihat_m(t)}
 \ddt{} \ket{\psihat_n(t)}
@@ -357,7 +357,7 @@ So for \(m \ne n\) we find a dependence between the bra-derivative-ket and the t
 \end{equation}
 %
 Referring back to \eqnref{eqn:adiabaticApprox:390} we see the \(\lambda\) dependence in this quantity, coming directly from the \(\lambda\) dependence imposed on the time dependent part of the Hamiltonian
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:430}
 \bra{\psihat_m(t)}
 \ddt{} \ket{\psihat_n(t)}
@@ -373,7 +373,7 @@ Referring back to \eqnref{eqn:adiabaticApprox:390} we see the \(\lambda\) depend
 \end{equation}
 %
 Given this \(\lambda\) dependence, let us revisit the perturbation attempt of \eqnref{eqn:adiabaticApprox:170}.  Our first order factors of \(\lambda\) are now
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:590}
 \begin{aligned}
 \ddt{} \barb_s^{(1)}(t)
@@ -391,7 +391,7 @@ Given this \(\lambda\) dependence, let us revisit the perturbation attempt of \e
 \end{equation}
 %
 So we find to first order
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:450}
 \barb_s(t)
 =
@@ -405,7 +405,7 @@ e^{i \gamma_{sm}(t') } \bra{\psihat_s(t')} \frac{d}{dt'} \ket{\psihat_m(t')}
 A couple observations of this result.  One is that the constant factor in the \(m = s\) case makes sense.  This would likely be a negative contribution since we have to decrease the probability coefficient for finding our wavefunction in the \(m = s\) state after perturbation, since we are increasing the probability for finding it elsewhere by changing the Hamiltonian.
 
 Also observe that since \(e^{i\gamma_{sm}} \sim 0\) for small \(t\) this is consistent with the first order Taylor series expansion where we found our first order contribution was
-
+%
 \begin{equation}\label{eqn:adiabaticApprox:470}
 - (1 - \delta_{ms}) t \bra{\psihat_s(t)} \frac{d}{dt} \ket{\psihat_m(t)}.
 \end{equation}

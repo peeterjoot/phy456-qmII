@@ -27,7 +27,7 @@
 Covered in \S 26 of the text \citep{desai2009quantum}.
 
 \makeexample{Time translation}{example:qmTwoL11:1}{
-
+%
 \begin{equation}\label{eqn:qmTwoL11:10}
 \ket{\psi(t)} = e^{-i H t/\Hbar} \ket{\psi(0)} .
 \end{equation}
@@ -36,7 +36,7 @@ The Hamiltonian ``generates'' evolution (or translation) in time.
 }
 
 \makeexample{Spatial translation}{example:qmTwoL11:2}{
-
+%
 \begin{equation}\label{eqn:qmTwoL11:30}
 \ket{\Br + \Ba} =
 e^{-i \Ba \cdot \BP/\Hbar}
@@ -47,7 +47,7 @@ e^{-i \Ba \cdot \BP/\Hbar}
 %\cref{fig:qmTwoL11:qmTwoL11fig1}
 
 \(\BP\) is the operator that generates translations.  Written out, we have
-
+%
 \begin{equation}\label{eqn:qmTwoL11:50}
 \begin{aligned}
 e^{-i \Ba \cdot \BP/\Hbar}
@@ -59,7 +59,7 @@ e^{- i a_z P_z/\Hbar},
 \end{equation}
 %
 where the factorization was possible because \(P_x\), \(P_y\), and \(P_z\) commute
-
+%
 \begin{equation}\label{eqn:qmTwoL11:70}
 \antisymmetric{P_i}{P_j} = 0,
 \end{equation}
@@ -73,13 +73,13 @@ In class we were rewarded with a graphic demo of translation component commutati
 \paragraph{Exponential commutation}
 
 Note that in general
-
+%
 \begin{equation}\label{eqn:qmTwoL11:90}
 e^{A + B} \ne e^A e^B,
 \end{equation}
 %
 unless \(\antisymmetric{A}{B} = 0\).  To show this one can compare
-
+%
 \begin{equation}\label{eqn:qmTwoL11:110}
 \begin{aligned}
 e^{A + B}
@@ -100,13 +100,13 @@ e^A e^B
 \end{equation}
 %
 Comparing the second order (for example) we see that we must have for equality
-
+%
 \begin{equation}\label{eqn:qmTwoL11:150}
 A B + B A = 2 A B,
 \end{equation}
 %
 or
-
+%
 \begin{equation}\label{eqn:qmTwoL11:170}
 B A = A B,
 \end{equation}
@@ -119,7 +119,7 @@ or
 \paragraph{Translating a ket}
 
 If we consider the quantity
-
+%
 \begin{equation}\label{eqn:qmTwoL11:210}
 e^{-i \Ba \cdot \BP/\Hbar}
 \ket{\psi} = \ket{\psi'} ,
@@ -130,14 +130,14 @@ does this ket ``translated'' by \(\Ba\) make any sense?  The vector \(\Ba\) live
 A student in class pointed out that \(\ket{\psi}\) can be dependent on many degrees of freedom, for example, the positions of eight different particles.  This translation gadget in such a case acts on the whole kit and caboodle.
 
 Now consider the matrix element
-
+%
 \begin{equation}\label{eqn:qmTwoL11:230}
 \braket{\Br}{\psi'}
 = \bra{\Br} e^{-i \Ba \cdot \BP/\Hbar} \ket{\psi}.
 \end{equation}
 %
 Note that
-
+%
 \begin{equation}\label{eqn:qmTwoL11:670}
 \begin{aligned}
 \bra{\Br} e^{-i \Ba \cdot \BP/\Hbar}
@@ -150,14 +150,14 @@ Note that
 \end{equation}
 %
 so
-
+%
 \begin{equation}\label{eqn:qmTwoL11:250}
 \braket{\Br}{\psi'}
 = \braket{\Br -\Ba}{\psi},
 \end{equation}
 %
 or
-
+%
 \begin{equation}\label{eqn:qmTwoL11:270}
 \psi'(\Br) = \psi(\Br - \Ba)
 \end{equation}
@@ -169,7 +169,7 @@ This is what we expect of a translated function, as illustrated in \cref{fig:qmT
 \makeexample{Spatial rotation}{example:qmTwoL11:3}{
 
 We have been introduced to the angular momentum operator
-
+%
 \begin{equation}\label{eqn:qmTwoL11:290}
 \BL = \BR \cross \BP,
 \end{equation}
@@ -184,7 +184,7 @@ L_z &= X P_y - Y P_x.
 \end{equation}
 %
 We also found that
-
+%
 \begin{equation}\label{eqn:qmTwoL11:330}
 \antisymmetric{L_i}{L_j} = i \Hbar \sum_k \epsilon_{ijk} L_k.
 \end{equation}
@@ -192,7 +192,7 @@ We also found that
 These non-zero commutators show that the components of angular momentum \textunderline{do not} commute.
 
 Define
-
+%
 \begin{equation}\label{eqn:qmTwoL11:350}
 \ket{\calR(\Br)} =
 e^{-i \theta \ncap \cdot \BL/\Hbar}
@@ -215,7 +215,7 @@ Rather amusingly, he points out that most things in life do not commute.  We get
 \paragraph{Rotating a ket}
 
 With a rotation gadget
-
+%
 \begin{equation}\label{eqn:qmTwoL11:370}
 \ket{\psi'} =
 e^{-i \theta \ncap \cdot \BL/\Hbar }
@@ -263,13 +263,13 @@ Recall what you did last year, where \(H\), \(\BP\), and \(\BL\) were defined me
 \end{itemize}
 
 For our mechanical definitions we have
-
+%
 \begin{equation}\label{eqn:qmTwoL11:450}
 \antisymmetric{P_i}{P_j} = 0,
 \end{equation}
 %
 and
-
+%
 \begin{equation}\label{eqn:qmTwoL11:470}
 \antisymmetric{L_i}{L_j} = i \Hbar \sum_k \epsilon_{ijk} L_k.
 \end{equation}
@@ -281,19 +281,19 @@ These are the relations that show us the way translations and rotations combine.
 \textunderline{Define} \(\BJ\) as the operator that generates rotations in space.
 
 In order that these match expectations, we require
-
+%
 \begin{equation}\label{eqn:qmTwoL11:490}
 \antisymmetric{P_i}{P_j} = 0,
 \end{equation}
 %
 and
-
+%
 \begin{equation}\label{eqn:qmTwoL11:510}
 \antisymmetric{J_i}{J_j} = i \Hbar \sum_k \epsilon_{ijk} J_k.
 \end{equation}
 %
 In the simple theory of a spin less particle we have
-
+%
 \begin{equation}\label{eqn:qmTwoL11:530}
 \BJ \equiv \BL = \BR \cross \BP.
 \end{equation}
@@ -303,7 +303,7 @@ We actually need a generalization of this since this is, in fact, not good enoug
 \paragraph{Many component wave functions}
 
 We are free to construct tuples of spatial vector functions like
-
+%
 \begin{equation}\label{eqn:qmTwoL11:550}
 \begin{bmatrix}
 \Psi_I(\Br, t) \\
@@ -333,13 +333,13 @@ We will see that these behave qualitatively different than one component wave fu
 
 \begin{enumerate}
 \item A temperature field
-
+%
 \begin{equation}\label{eqn:qmTwoL11:590}
 T(\Br)
 \end{equation}
 %
 \item Electric field
-
+%
 \begin{equation}\label{eqn:qmTwoL11:610}
 \begin{bmatrix}
 E_x(\Br) \\
@@ -354,7 +354,7 @@ These behave in a much different way.  If we rotate a scalar field like \(T(\Br)
 \imageFigure{../figures/phy456-qmII/qmTwoL11fig5}{Rotated temperature (scalar) field}{fig:qmTwoL11:qmTwoL11fig5}{0.2}
 
 Suppose we have a temperature field generated by, say, a match.  Rotating the match above, we have
-
+%
 \begin{equation}\label{eqn:qmTwoL11:630}
 T'(\Br) = T(\calR^{-1}(\Br)).
 \end{equation}

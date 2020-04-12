@@ -26,19 +26,19 @@
 Reading: See \S 26.5 in the text \citep{desai2009quantum}.
 
 We identified
-
+%
 \begin{equation}\label{eqn:qmTwoL13:10}
 \psi(\Br) = \braket{ \Br}{\psi}
 \end{equation}
 %
 with improper basis kets
-
+%
 \begin{equation}\label{eqn:qmTwoL13:30}
 \ket{\Br}
 \end{equation}
 %
 Now introduce many function spaces
-
+%
 \begin{equation}\label{eqn:qmTwoL13:50}
 \begin{bmatrix}
 \psi_1(\Br) \\
@@ -49,7 +49,7 @@ Now introduce many function spaces
 \end{equation}
 %
 with improper (unnormalizable) basis kets
-
+%
 \begin{equation}\label{eqn:qmTwoL13:70}
 \ket{\Br \alpha}, \qquad \alpha \in 1, 2, ... \gamma
 \end{equation}
@@ -61,7 +61,7 @@ with improper (unnormalizable) basis kets
 for an abstract ket \(\ket{\psi}\)
 
 We will try taking this Hilbert space
-
+%
 \begin{equation}\label{eqn:qmTwoL13:110}
 H = H_o \otimes H_s
 \end{equation}
@@ -69,19 +69,19 @@ H = H_o \otimes H_s
 Where \(H_o\) is the Hilbert space of "scalar" QM, ``o'' orbital and translational motion, associated with kets \(\ket{\Br}\) and \(H_s\) is the Hilbert space associated with the \(\gamma\) components \(\ket{\alpha}\).  This latter space we will label the ``spin'' or ``internal physics'' (class suggestion: or perhaps intrinsic).  This is ``unconnected'' with translational motion.
 
 We build up the basis kets for \(H\) by direct products
-
+%
 \begin{equation}\label{eqn:qmTwoL13:130}
 \ket{\Br \alpha} = \ket{\Br} \otimes \ket{\alpha}
 \end{equation}
 %
 Now, for a rotated ket we seek a general angular momentum operator \(\BJ\) such that
-
+%
 \begin{equation}\label{eqn:qmTwoL13:150}
 \ket{\psi'} = e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{\psi}
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:qmTwoL13:170}
 \BJ = \BL + \BS,
 \end{equation}
@@ -89,19 +89,19 @@ where
 where \(\BL\) acts over kets in \(H_o\), ``orbital angular momentum'', and \(\BS\) is the ``spin angular momentum'', acting on kets in \(H_s\).
 
 Strictly speaking this would be written as direct products involving the respective identities
-
+%
 \begin{equation}\label{eqn:qmTwoL13:190}
 \BJ = \BL \otimes I_s + I_o \otimes \BS.
 \end{equation}
 %
 We require
-
+%
 \begin{equation}\label{eqn:qmTwoL13:210}
 \antisymmetric{J_i}{J_j} = i \Hbar \sum \epsilon_{i j k} J_k
 \end{equation}
 %
 Since \(\BL\) and \(\BS\) ``act over separate Hilbert spaces''.   Since these come from legacy operators
-
+%
 \begin{equation}\label{eqn:qmTwoL13:230}
 \antisymmetric{L_i}{S_j} = 0
 \end{equation}
@@ -119,7 +119,7 @@ so
 as expected.  We could, in principle, have more complicated operators, where this would not be true.  This is a proposal of sorts.  Given such a definition of operators, let us see where we can go with it.
 
 For matrix elements of \(\BL\) we have
-
+%
 \begin{equation}\label{eqn:qmTwoL13:290}
 \bra{\Br} L_x \ket{\Br'} = -i \Hbar \left(
 y \PD{z}{}
@@ -127,7 +127,7 @@ y \PD{z}{}
 \end{equation}
 %
 What are the matrix elements of \(\bra{\alpha} S_i \ket{\alpha'}\)?  From the commutation relationships we know
-
+%
 \begin{equation}\label{eqn:qmTwoL13:310}
 \sum_{\alpha'' = 1}^\gamma
 \bra{\alpha} S_i \ket{\alpha''}
@@ -144,25 +144,25 @@ i \Hbar \sum_k \epsilon_{ijk}
 We see that our matrix element is tightly constrained by our choice of commutator relationships.  We have \(\gamma^2\) such matrix elements, and it turns out that it is possible to choose (or find) matrix elements that satisfy these constraints?
 
 The \(\bra{\alpha} S_i \ket{\alpha'}\) matrix elements that satisfy these constraints are found by imposing the commutation relations
-
+%
 \begin{equation}\label{eqn:qmTwoL13:330}
 \antisymmetric{S_i}{S_j} = i \Hbar \sum \epsilon_{i j k} S_k,
 \end{equation}
 %
 and with
-
+%
 \begin{equation}\label{eqn:qmTwoL13:350}
 S^2 = \sum_j S_j^2,
 \end{equation}
 %
 (this is just a definition).  We find
-
+%
 \begin{equation}\label{eqn:qmTwoL13:370}
 \antisymmetric{S^2}{S_i} = 0
 \end{equation}
 %
 and seeking eigenkets
-
+%
 \begin{equation}\label{eqn:qmTwoL13:390}
 \begin{aligned}
 S^2 \ket{s m_s} &= s(s+1) \Hbar^2 \ket{s m_s} \\
@@ -171,7 +171,7 @@ S_z \ket{s m_s} &= \Hbar m_s \ket{s m_s}
 \end{equation}
 %
 Find solutions for \(s = 1/2, 1, 3/2, 2, \cdots\), where \(m_s \in \{-s, \cdots, s\}\).  ie.  \(2 s + 1\) possible vectors \(\ket{s m_s}\) for a given \(s\).
-
+%
 \begin{equation}\label{eqn:qmTwoL13:610}
 \begin{aligned}
 s = \inv{2} &\implies \gamma = 2 \\
@@ -183,7 +183,7 @@ s = \frac{3}{2} &\implies \gamma = 4
 We start with the algebra (mathematically the Lie algebra), and one can compute the Hilbert spaces that are consistent with these algebraic constraints.
 
 We assume that for any type of given particle \(S\) is fixed, where this has to do with the nature of the particle.
-
+%
 \begin{equation}\label{eqn:qmTwoL13:630}
 \begin{aligned}
 s = \inv{2} &\qquad \text{A spin \(1/2\) particle} \\
@@ -207,7 +207,7 @@ There is a subtlety here, because we get into some logical trouble with the phot
 Reading: See \S 26.6 in the text \citep{desai2009quantum}.
 
 Let us start talking about the simplest case.  This includes electrons, all leptons (integer spin particles like photons and the weakly interacting W and Z bosons), and quarks.
-
+%
 \begin{equation}\label{eqn:qmTwoL13:410}
 \begin{aligned}
 s &= \inv{2} \\
@@ -216,13 +216,13 @@ m_s &= \pm \inv{2}
 \end{equation}
 %
 states
-
+%
 \begin{equation}\label{eqn:qmTwoL13:430}
 \ket{s m_s} = \ket{ \inv{2}, \inv{2} },\ket{ \inv{2}, -\inv{2} }
 \end{equation}
 %
 Note there is a convention
-
+%
 \begin{equation}\label{eqn:qmTwoL13:450}
 \begin{aligned}
 \ket{ \inv{2} \overline{\inv{2}} } &= \ket{ \inv{2}, -\inv{2} } \\
@@ -251,7 +251,7 @@ m_s \Hbar
 \end{equation}
 %
 For shorthand
-
+%
 \begin{equation}\label{eqn:qmTwoL13:510}
 \begin{aligned}
 \ket{ \inv{2} \inv{2} } &= \ket{ + } \\
@@ -277,7 +277,7 @@ S_z \rightarrow
 \end{equation}
 %
 One can easily work out from the commutation relationships that
-
+%
 \begin{equation}\label{eqn:qmTwoL13:570}
 S_x \rightarrow
 \frac{\Hbar}{2}

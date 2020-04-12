@@ -27,25 +27,25 @@ Now we repeat the derivation of the first order perturbation with degenerate sta
 Like the non-degenerate case, we are covering the time independent perturbation methods from \S 16.1 of the text \citep{desai2009quantum}.
 
 We start with a known Hamiltonian \(H_0\), and alter it with the addition of a ``small'' perturbation
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:10}
 H = H_0 + \lambda H', \qquad \lambda \in [0,1]
 \end{equation}
 %
 For the original operator, we assume that a complete set of eigenvectors and eigenkets is known
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:30}
 H_0 \ket{{\psi_{s \alpha}}^{(0)}} = {E_s}^{(0)} \ket{{\psi_{s \alpha}}^{(0)}}
 \end{equation}
 %
 We seek the perturbed eigensolution
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:50}
 H \ket{\psi_{s \alpha}} = E_{s \alpha} \ket{\psi_{s \alpha}}
 \end{equation}
 %
 and assumed a perturbative series representation for the energy eigenvalues in the new system
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:70}
 E_{s \alpha} = {E_s}^{(0)} + \lambda {E_{s \alpha}}^{(1)} + \lambda^2 {E_{s \alpha}}^{(2)} + \cdots
 \end{equation}
@@ -53,19 +53,19 @@ E_{s \alpha} = {E_s}^{(0)} + \lambda {E_{s \alpha}}^{(1)} + \lambda^2 {E_{s \alp
 Note that we do not assume that the perturbed energy states, if degenerate in the original system, are still degenerate after perturbation.
 
 Given an assumed representation for the new eigenkets in terms of the known basis
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:90}
 \ket{\psi_{s \alpha}} = \sum_{n, \beta} c_{ns;\beta \alpha} \ket{{\psi_{n \beta}}^{(0)}}
 \end{equation}
 %
 and a pertubative series representation for the probability coefficients
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:110}
 c_{ns;\beta \alpha} = {c_{ns;\beta \alpha}}^{(0)} + \lambda {c_{ns;\beta \alpha}}^{(1)} + \lambda^2 {c_{ns;\beta \alpha}}^{(2)},
 \end{equation}
 %
 so that
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:130}
 \ket{\psi_{s \alpha}} =
 \sum_{n, \beta} {c_{ns;\beta \alpha}}^{(0)} \ket{{\psi_{n \beta}}^{(0)}}
@@ -79,13 +79,13 @@ so that
 \end{equation}
 %
 Setting \(\lambda = 0\) requires
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:150}
 {c_{ns;\beta \alpha}}^{(0)} = \delta_{ns;\beta \alpha},
 \end{equation}
 %
 for
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:170}
 \begin{aligned}
 \ket{\psi_{s \alpha}}
@@ -117,7 +117,7 @@ for
 \end{equation}
 %
 We rescale our kets
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:190}
 \ket{\overbar{\psi}_{s \alpha}}
 =
@@ -144,7 +144,7 @@ where
 \end{equation}
 %
 The normalization of the rescaled kets is then
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:230}
 \braket{\overbar{\psi}_{s \alpha}}{\overbar{\psi}_{s \alpha}}
 =
@@ -158,7 +158,7 @@ The normalization of the rescaled kets is then
 \end{equation}
 %
 One can then construct a renormalized ket if desired
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:250}
 \ket{\overbar{\psi}_{s \alpha}}_R = Z_{s \alpha}^{1/2} \ket{\overbar{\psi}_{s \alpha}},
 \end{equation}
@@ -171,7 +171,7 @@ so that
 %\subsubsection{The meat}
 
 We continue by renaming terms in \eqnref{eqn:qmTwoL5a:190}
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:300}
 \ket{\overbar{\psi}_{s \alpha}}
 =
@@ -184,19 +184,19 @@ We continue by renaming terms in \eqnref{eqn:qmTwoL5a:190}
 \end{equation}
 %
 where
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:320}
 \ket{{\psi_{s \alpha}}^{(j)}} = \sum_{n\beta \ne s\alpha} {\overbar{c}_{ns;\beta \alpha}}^{(j)} \ket{{\psi_{n \beta}}^{(0)}}.
 \end{equation}
 %
 Now we act on this with the Hamiltonian
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:340}
 H \ket{\overbar{\psi}_{s \alpha}} = E_{s \alpha} \ket{\overbar{\psi}_{s \alpha}},
 \end{equation}
 %
 or
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:360}
 H \ket{\overbar{\psi}_{s \alpha}} - E_{s \alpha} \ket{\overbar{\psi}_{s \alpha}} = 0.
 \end{equation}
@@ -228,13 +228,13 @@ Expanding this, we have
 \end{equation}
 %
 We want to write this as
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:400}
 \ket{A} + \lambda \ket{B} + \lambda^2 \ket{C} + \cdots = 0.
 \end{equation}
 %
 This is
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:420}
 \begin{aligned}
 0 &=
@@ -256,7 +256,7 @@ This is
 \end{equation}
 %
 So we form
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:440}
 \begin{aligned}
 \ket{A} &=
@@ -280,7 +280,7 @@ Since \(H_0 \ket{{\psi_{s \alpha}}^{(0)}} = E_s^{(0)} \ket{{\psi_{s \alpha}}^{(0
 \paragraph{First order in \(\lambda\)}
 
 How about \(\ket{B} = 0\)?  For this to be zero we require that both of the following are simultaneously zero
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:460}
 \begin{aligned}
 \braket{{\psi_{s \alpha}}^{(0)}}{B} &= 0 \\
@@ -312,7 +312,7 @@ From the second condition we have
 \end{equation}
 %
 Utilizing the Hermitian nature of \(H_0\) we can act backwards on \(\bra{{\psi_m}^{(0)}}\)
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:560}
 \bra{{\psi_{m \beta}}^{(0)}} H_0
 =
@@ -320,7 +320,7 @@ E_m^{(0)} \bra{{\psi_{m \beta}}^{(0)}}.
 \end{equation}
 %
 We note that \(\braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(0)}} = 0, m \beta \ne s \alpha\).  We can also expand the \(\braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(1)}}\), which is
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:740}
 \begin{aligned}
 \braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(1)}}
@@ -333,7 +333,7 @@ We note that \(\braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(0)}} = 0, m \
 \end{equation}
 %
 I found that reducing this sum was not obvious until some actual integers were plugged in.  Suppose that \(s = 3\,1\), and \(m \beta = 2\,2\), then this is
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:760}
 \begin{aligned}
 \braket{{\psi_{2\,2}}^{(0)}}{{\psi_{3\,1}}^{(1)}}
@@ -350,7 +350,7 @@ I found that reducing this sum was not obvious until some actual integers were p
 \end{equation}
 %
 Observe that we can also replace the superscript \((1)\) with \((j)\) in the above manipulation without impacting anything else.  That and putting back in the abstract indices, we have the general result
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:580}
 \braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(j)}}
 =
@@ -358,7 +358,7 @@ Observe that we can also replace the superscript \((1)\) with \((j)\) in the abo
 \end{equation}
 %
 Utilizing this gives us, for \(\color{red}{m \beta \ne s \alpha}\)
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:600}
 0 =
 ( E_m^{(0)} - E_s^{(0)})
@@ -368,7 +368,7 @@ Utilizing this gives us, for \(\color{red}{m \beta \ne s \alpha}\)
 \end{equation}
 %
 Here we see our first sign of the trouble hinted at in lecture 5.  Just because \(m \beta \ne s \alpha\) does not mean that \(m \ne s\).  For example, with \(m \beta = 1\,1\) and \(s\alpha = 1\,2\) we would have
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:620a}
 \begin{aligned}
 E_{1 2}^{(1)} &= {H'}_{1\,1 ; 2 2} \\
@@ -382,7 +382,7 @@ E_{1 2}^{(1)} &= {H'}_{1\,1 ; 2 2} \\
 We have got a \(\color{red}{\text{divide by zero}}\) unless additional restrictions are imposed!
 
 If we return to \eqnref{eqn:qmTwoL5a:600}, we see that, for the result to be valid, when \(m = s\), and there exists degeneracy for the \(s\) state, we require for \(\beta \ne \alpha\)
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:610}
 {H'}_{ss ; \beta \alpha} = 0
 \end{equation}
@@ -390,7 +390,7 @@ If we return to \eqnref{eqn:qmTwoL5a:600}, we see that, for the result to be val
 (then \eqnref{eqn:qmTwoL5a:600} becomes a \(0 = 0\) equality, and all is still okay)
 
 And summarizing what we learn from our \(\ket{B} = 0\) conditions we have
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:620}
 \begin{aligned}
 E_{s \alpha}^{(1)} &= {H'}_{ss ; \alpha \alpha} \\
@@ -405,14 +405,14 @@ E_{s \alpha}^{(1)} &= {H'}_{ss ; \alpha \alpha} \\
 \paragraph{Second order in \(\lambda\)}
 
 Doing the same thing for \(\ket{C} = 0\) we form (or assume)
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:640}
 \braket{{\psi_{s \alpha}}^{(0)}}{C} = 0
 \end{equation}
 % not used:
 %\braket{{\psi_{m \beta}}^{(0)}}{C} &= 0, \qquad m \ne s
 % not used:
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:780}
 \begin{aligned}
 0
@@ -435,7 +435,7 @@ Doing the same thing for \(\ket{C} = 0\) we form (or assume)
 \end{equation}
 %
 We need to know what the \(\braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(1)}}\) is, and find that it is zero
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:660}
 \braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(1)}}
 =
@@ -445,7 +445,7 @@ We need to know what the \(\braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(
 %
 %Again, suppose that \(s = 3\).  Our sum ranges over all \(n \ne 3\), so all the brakets are zero.
 Utilizing that we have
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:800}
 \begin{aligned}
 E_{s \alpha}^{(2)}
@@ -459,7 +459,7 @@ E_{s \alpha}^{(2)}
 \end{equation}
 %
 From \eqnref{eqn:qmTwoL5a:620}, treating the \(\color{red}{m \ne s}\) case carefully, we have
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:700}
 E_{s \alpha}^{(2)}
 =
@@ -472,7 +472,7 @@ E_{s \alpha}^{(2)}
 \end{equation}
 %
 Again, only if \(H_{ss ; \alpha \beta} = 0\) for \(\beta \ne \alpha\) do we have a result we can use.  If that is the case, the first sum is killed without a divide by zero, leaving
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:700b}
 E_{s \alpha}^{(2)}
 =
@@ -482,7 +482,7 @@ E_{s \alpha}^{(2)}
 \end{equation}
 %
 We can now summarize by forming the first order terms of the perturbed energy and the corresponding kets
-
+%
 \begin{equation}\label{eqn:qmTwoL5a:720}
 \begin{aligned}
 E_{s \alpha} &= E_s^{(0)} + \lambda {H'}_{ss ; \alpha \alpha} + \lambda^2

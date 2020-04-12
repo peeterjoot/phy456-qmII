@@ -9,7 +9,7 @@
 READING: \S 28 of \citep{desai2009quantum}.
 
 \paragraph{Example}: Consider two electrons, 1 in each of 2 quantum dots.
-
+%
 \begin{equation}\label{eqn:qmTwoL16:190}
 H = H_{1} \otimes H_{2}
 \end{equation}
@@ -17,7 +17,7 @@ H = H_{1} \otimes H_{2}
 where \(H_1\) and \(H_2\) are both spin Hamiltonian's for respective 2D Hilbert spaces.  Our complete Hilbert space is thus a 4D space.
 
 We will write
-
+%
 \begin{equation}\label{eqn:qmTwoL16:210}
 \begin{aligned}
 \ket{+}_1 \otimes \ket{+}_2 &= \ket{++} \\
@@ -28,7 +28,7 @@ We will write
 \end{equation}
 %
 Can introduce
-
+%
 \begin{equation}\label{eqn:qmTwoL16:230}
 \begin{aligned}
 \BS_1 &= \BS_1^{(1)} \otimes I^{(2)} \\
@@ -39,7 +39,7 @@ Can introduce
 Here we ``promote'' each of the individual spin operators to spin operators in the complete Hilbert space.
 
 We write
-
+%
 \begin{equation}\label{eqn:qmTwoL16:250}
 \begin{aligned}
 S_{1z}\ket{++} &= \frac{\Hbar}{2} \ket{++} \\
@@ -53,7 +53,7 @@ Write
 \end{equation}
 %
 for the full spin angular momentum operator.  The \(z\) component of this operator is
-
+%
 \begin{equation}\label{eqn:qmTwoL16:290}
 S_z = S_{1z} + S_{2z}
 \end{equation}
@@ -68,7 +68,7 @@ S_z\ket{--} &= (S_{1z} + S_{2z}) \ket{--} = \left( -\frac{\Hbar}{2} -\frac{\Hbar
 \end{equation}
 %
 So, we find that \(\ket{x x}\) are all eigenkets of \(S_z\).  These will also all be eigenkets of \(\BS_1^2 = S_{1x}^2 +S_{1y}^2 +S_{1z}^2\) since we have
-
+%
 \begin{equation}\label{eqn:qmTwoL16:330}
 \begin{aligned}
 S_1^2 \ket{x x} &= \Hbar^2 \left(\inv{2}\right) \left(1 + \inv{2}\right) \ket{x x} = \frac{3}{4} \Hbar^2 \ket{x x} \\
@@ -92,7 +92,7 @@ S_1^2 + S_2^2 + 2 \BS_1 \cdot \BS_2
 Note that we have a commutation assumption here \(\antisymmetric{S_{1i}}{S_{2i}} = 0\), since we have written \(2 \BS_1 \cdot \BS_2\) instead of \(\sum_i S_{1i}S_{2i} + S_{2i}S_{1i}\).  The justification for this appears to be the promotion of the spin operators in \eqnref{eqn:qmTwoL16:230} to operators in the complete Hilbert space, since each of these spin operators acts only on the kets associated with their index.
 
 Are all the product kets also eigenkets of \(\BS^2\)?  Calculate
-
+%
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:630}
 \begin{aligned}
 \BS^2 \ket{+-}
@@ -108,7 +108,7 @@ Are all the product kets also eigenkets of \(\BS^2\)?  Calculate
 \end{equation}
 %
 For the \(z\) mixed terms, we have
-
+%
 \begin{equation}\label{eqn:qmTwoL16:370}
 2 S_{1z} S_{2z} \ket{+-}  =
 2
@@ -118,7 +118,7 @@ For the \(z\) mixed terms, we have
 \end{equation}
 %
 So
-
+%
 \begin{equation}\label{eqn:qmTwoL16:390}
 \BS^2\ket{+-} =
 \Hbar^2 \ket{+-}
@@ -127,7 +127,7 @@ So
 \end{equation}
 %
 Since we have set our spin direction in the z direction with
-
+%
 \begin{equation}\label{eqn:qmTwoL16:410}
 \begin{aligned}
 \ket{+} &\rightarrow
@@ -207,13 +207,13 @@ S_y\ket{-} &\rightarrow
 \end{equation}
 %
 And are able to arrive at the action of \(\BS^2\) on our mixed composite state
-
+%
 \begin{equation}\label{eqn:qmTwoL16:430}
 \BS^2\ket{+-} = \Hbar^2 (\ket{+-} + \ket{-+} ).
 \end{equation}
 %
 For the action on the \(\ket{++}\) state we have
-
+%
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:670}
 \begin{aligned}
 \BS^2 \ket{++}
@@ -233,7 +233,7 @@ For the action on the \(\ket{++}\) state we have
 \end{equation}
 %
 and on the \(\ket{--}\) state we have
-
+%
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:690}
 \begin{aligned}
 \BS^2 \ket{--}
@@ -253,7 +253,7 @@ and on the \(\ket{--}\) state we have
 \end{equation}
 %
 All of this can be assembled into a tidier matrix form
-
+%
 \begin{equation}\label{eqn:qmTwoL16:450}
 \BS^2
 \rightarrow
@@ -267,7 +267,7 @@ All of this can be assembled into a tidier matrix form
 \end{equation}
 %
 where the matrix is taken with respect to the (ordered) basis
-
+%
 \begin{equation}\label{eqn:qmTwoL16:470}
 \{
 \ket{++},
@@ -278,7 +278,7 @@ where the matrix is taken with respect to the (ordered) basis
 \end{equation}
 %
 However,
-
+%
 \begin{equation}\label{eqn:qmTwoL16:490}
 \begin{aligned}
 \antisymmetric{\BS^2}{S_z} &= 0 \\
@@ -289,7 +289,7 @@ However,
 (Also, \(\antisymmetric{\BS^2}{S_i} = 0\).)
 
 It should be possible to find eigenkets of \(\BS^2\) and \(S_z\)
-
+%
 \begin{equation}\label{eqn:qmTwoL16:510}
 \begin{aligned}
 \BS^2 \ket{s m_s} &= s(s+1)\Hbar^2 \ket{s m_s} \\
@@ -298,7 +298,7 @@ S_z \ket{s m_s} &= \Hbar m_s \ket{s m_s}
 \end{equation}
 %
 An orthonormal set of eigenkets of \(\BS^2\) and \(S_z\) is found to be
-
+%
 \begin{equation}\label{eqn:qmTwoL16:530}
 \begin{array}{l l}
 \ket{++}
@@ -315,13 +315,13 @@ An orthonormal set of eigenkets of \(\BS^2\) and \(S_z\) is found to be
 The first three kets here can be grouped into a triplet in a 3D Hilbert space, whereas the last treated as a singlet in a 1D Hilbert space.
 
 Form a grouping
-
+%
 \begin{equation}\label{eqn:qmTwoL16:550}
 H = H_1 \otimes H_2
 \end{equation}
 %
 Can write
-
+%
 \begin{equation}\label{eqn:qmTwoL16:570}
 \inv{2} \otimes \inv{2} = 1 \oplus 0
 \end{equation}
@@ -331,7 +331,7 @@ where the \(1\) and \(0\) here refer to the spin index \(s\).
 \paragraph{Other examples}
 
 Consider, perhaps, the \(l=5\) state of the hydrogen atom
-
+%
 \begin{equation}\label{eqn:qmTwoL16:590}
 \begin{aligned}
 J_1^2 \ket{j_1 m_1} &= j_1(j_1+1)\Hbar^2 \ket{j_1 m_1} \\

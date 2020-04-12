@@ -16,7 +16,7 @@
 \subsubsection{Helium atom, variational method, first steps}
 
 To verify (24.69) from \citep{desai2009quantum}, a six fold integral is required
-
+%
 \begin{equation}\label{eqn:variationalHelium:60}
 \begin{aligned}
 \expectation{
@@ -58,7 +58,7 @@ e^{-(r_1 + r_2) Z/a_0} \\
 \end{equation}
 %
 Making a change of variables
-
+%
 \begin{equation}\label{eqn:variationalHelium:80}
 \begin{aligned}
 x &= \frac{Z r_1 }{a_0} \\
@@ -67,7 +67,7 @@ y &= \frac{Z r_2 }{a_0}
 \end{equation}
 %
 we have
-
+%
 \begin{equation}\label{eqn:variationalHelium:100}
 \begin{aligned}
 \expectation{
@@ -125,13 +125,13 @@ e^{-2 x - 2 y}
 \end{equation}
 %
 With
-
+%
 \begin{equation}\label{eqn:desaiCh24:20}
 a_0 = \frac{\Hbar^2}{m e^2},
 \end{equation}
 %
 We have the result from the text
-
+%
 \begin{equation}\label{eqn:desaiCh24:40}
 \expectation{
 -\frac{\Hbar^2}{2m}
@@ -142,7 +142,7 @@ We have the result from the text
 \end{equation}
 %
 Verification of (24.70) follows in a similar fashion.  We have
-
+%
 \begin{equation}\label{eqn:variationalHelium:120}
 \begin{aligned}
 \expectation{ 2 e^2
@@ -166,7 +166,7 @@ Verification of (24.70) follows in a similar fashion.  We have
 In \S 24.2.1 of the text \citep{desai2009quantum} is an expectation value calculation associated with the Helium atom.  One of the equations (24.76) seems wrong (according to hand calculation as shown below and according to Mathematica).  Is there another compensating error somewhere?  Here I work the entire calculation in detail to attempt to find this.
 
 We start with
-
+%
 \begin{equation}\label{eqn:variationalHelium:140}
 \begin{aligned}
 \expectation{\frac{e^2}{\Abs{\Br_1 - \Br_2}}}
@@ -186,7 +186,7 @@ e^{-i \Bk \cdot \Br_2 } e^{ -2 Z r_2/a_0} \\
 \end{equation}
 %
 To evaluate the two last integrals, I figure the author has aligned the axis for the \(d^3 r_1\) volume elements to make the integrals easier.  Specifically, for the first so that \(\Bk \cdot \Br_1 = k r_1 \cos\theta\), so the integral takes the form
-
+%
 \begin{equation}\label{eqn:variationalHelium:160}
 \begin{aligned}
 \int
@@ -214,7 +214,7 @@ r dr
 \end{equation}
 %
 For this last, Mathematica gives me (24.75) from the text
-
+%
 \begin{equation}\label{eqn:variationalHelium:10}
 \int
 d^3 r_1
@@ -224,7 +224,7 @@ e^{i \Bk \cdot \Br_1 } e^{ -2 Z r_1 /a_0}
 \end{equation}
 %
 For the second integral, if we align the axis so that \(-\Bk \cdot \Br_2 = k r \cos\theta\) and repeat, then we have
-
+%
 \begin{equation}\label{eqn:variationalHelium:180}
 \begin{aligned}
 \expectation{\frac{e^2}{\Abs{\Br_1 - \Br_2}}}
@@ -250,7 +250,7 @@ For the second integral, if we align the axis so that \(-\Bk \cdot \Br_2 = k r \
 \end{equation}
 %
 With \(k a_0 = 2 Z \kappa\) this is
-
+%
 \begin{equation}\label{eqn:variationalHelium:200}
 \begin{aligned}
 \expectation{\frac{e^2}{\Abs{\Br_1 - \Br_2}}}
@@ -269,7 +269,7 @@ With \(k a_0 = 2 Z \kappa\) this is
 \end{equation}
 %
 This gives us
-
+%
 \begin{equation}\label{eqn:variationalHelium:260}
 \begin{aligned}
 \expectation{\frac{e^2}{\Abs{\Br_1 - \Br_2}}}

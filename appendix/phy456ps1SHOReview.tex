@@ -12,7 +12,7 @@ H_0 = \frac{P^2}{2m} + \inv{2} m \omega^2 X^2
 Since it has been a while let us compute the raising and lowering factorization that was used so extensively for this problem.
 
 It was of the form
-
+%
 \begin{equation}\label{eqn:phy456ps1:30}
 H_0 = (a X - i b P)(a X + i b P) + \cdots
 \end{equation}
@@ -20,7 +20,7 @@ H_0 = (a X - i b P)(a X + i b P) + \cdots
 Why this factorization has an imaginary in it is a good question.  It is not one that is given any sort of rationale in the text \citep{desai2009quantum}.
 
 It is clear that we want \(a = \sqrt{m/2} \omega\) and \(b = 1/\sqrt{2m}\).  The difference is then
-
+%
 \begin{equation}\label{eqn:phy456ps1:50}
 H_0 - (a X - i b P)(a X + i b P)
 =
@@ -28,7 +28,7 @@ H_0 - (a X - i b P)(a X + i b P)
 \end{equation}
 %
 That commutator is an \(i\Hbar\) value, but what was the sign?  Let us compute so we do not get it wrong
-
+%
 \begin{equation}\label{eqn:phy456ps1SHOReview:320}
 \begin{aligned}
 \antisymmetric{x}{ p} \psi
@@ -40,7 +40,7 @@ That commutator is an \(i\Hbar\) value, but what was the sign?  Let us compute s
 \end{equation}
 %
 So we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:70}
 H_0 =
 \left(\omega \sqrt{\frac{m}{2}} X - i \sqrt{\frac{1}{2m}} P\right)\left(\omega \sqrt{\frac{m}{2}} X + i \sqrt{\frac{1}{2m}} P\right)
@@ -48,7 +48,7 @@ H_0 =
 \end{equation}
 %
 Factoring out an \(\Hbar \omega\) produces the form of the Hamiltonian that we used before
-
+%
 \begin{equation}\label{eqn:phy456ps1:90}
 H_0 =
 \Hbar \omega \left(
@@ -59,7 +59,7 @@ H_0 =
 \end{equation}
 %
 The factors were labeled the uppering (\(a^\dagger\)) and lowering (\(a\)) operators respectively, and written
-
+%
 \begin{equation}\label{eqn:phy456ps1:110}
 \begin{aligned}
 H_0 &= \Hbar \omega \left( a^\dagger a + \inv{2} \right) \\
@@ -69,7 +69,7 @@ a^\dagger &= \sqrt{\frac{m \omega}{2 \Hbar}} X - i \sqrt{\frac{1}{2m \Hbar \omeg
 \end{equation}
 %
 Observe that we can find the inverse relations
-
+%
 \begin{equation}\label{eqn:phy456ps1:115}
 \begin{aligned}
 X &= \sqrt{ \frac{\Hbar}{2 m \omega} } \left( a + a^\dagger \right) \\
@@ -79,25 +79,25 @@ P &= i \sqrt{ \frac{m \Hbar \omega}{2} } \left( a^\dagger  - a \right)
 %
 \paragraph{Question}
 What is a good reason that we chose this particular factorization?  For example, a quick computation shows that we could have also picked
-
+%
 \begin{equation}\label{eqn:phy456ps1:130}
 H_0 = \Hbar \omega \left( a a^\dagger - \inv{2} \right).
 \end{equation}
 %
 I do not know that answer.  That said, this second factorization is useful in that it provides the commutator relation between the raising and lowering operators, since subtracting \eqnref{eqn:phy456ps1:130} and \eqnref{eqn:phy456ps1:110} yields
-
+%
 \begin{equation}\label{eqn:phy456ps1:150}
 \antisymmetric{a}{a^\dagger} = 1.
 \end{equation}
 %
 If we suppose that we have eigenstates for the operator \(a^\dagger a\) of the form
-
+%
 \begin{equation}\label{eqn:phy456ps1:200}
 a^\dagger a \ket{n} = \lambda_n \ket{n},
 \end{equation}
 %
 then the problem of finding the eigensolution of \(H_0\) reduces to solving this problem.  Because \(a^\dagger a\) commutes with \(1/2\), an eigenstate of \(a^\dagger a\) is also an eigenstate of \(H_0\).  Utilizing \eqnref{eqn:phy456ps1:150} we then have
-
+%
 \begin{equation}\label{eqn:phy456ps1SHOReview:340}
 \begin{aligned}
 a^\dagger a ( a \ket{n} )
@@ -111,7 +111,7 @@ a^\dagger a ( a \ket{n} )
 so we see that \(a \ket{n}\) is an eigenstate of \(a^\dagger a\) with eigenvalue \(\lambda_n - 1\).
 
 Similarly for the raising operator
-
+%
 \begin{equation}\label{eqn:phy456ps1SHOReview:360}
 \begin{aligned}
 a^\dagger a ( a^\dagger \ket{n} )
@@ -127,19 +127,19 @@ a^\dagger (\lambda_n + 1) \ket{n} ),
 and find that \(a^\dagger \ket{n}\) is also an eigenstate of \(a^\dagger a\) with eigenvalue \(\lambda_n + 1\).
 
 Supposing that there is a lowest energy level (because the potential \(V(x) = m \omega x^2 /2\) has a lower bound of zero) then the state \(\ket{0}\) for which the energy is the lowest when operated on by \(a\) we have
-
+%
 \begin{equation}\label{eqn:phy456ps1:220}
 a \ket{0} = 0
 \end{equation}
 %
 Thus
-
+%
 \begin{equation}\label{eqn:phy456ps1:240}
 a^\dagger a \ket{0} = 0,
 \end{equation}
 %
 and
-
+%
 \begin{equation}\label{eqn:phy456ps1:260}
 \lambda_0 = 0.
 \end{equation}
@@ -147,13 +147,13 @@ and
 This seems like a small bit of slight of hand, since it sneakily supplies an integer value to \(\lambda_0\) where up to this point \(0\) was just a label.
 
 If the eigenvalue equation we are trying to solve for the Hamiltonian is
-
+%
 \begin{equation}\label{eqn:phy456ps1:280}
 H_0 \ket{n} = E_n \ket{n}.
 \end{equation}
 %
 Then we must then have
-
+%
 \begin{equation}\label{eqn:phy456ps1:300}
 E_n = \Hbar \omega \left(\lambda_n + \inv{2} \right) = \Hbar \omega \left(n + \inv{2} \right)
 \end{equation}
