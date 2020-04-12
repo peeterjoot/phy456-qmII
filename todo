@@ -1,4 +1,26 @@
+- lots of equations overflow printable regions.
+
+- update page count on my blog when I repost the next version.
+
+- update chapter layout on my blog when I repost the next version.
+
+- switch link in 
+
+      https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
+
+   when a new version is posted.
+
 - use nicer table formatting (like gabook)
+
+- mathematica notebook paths are too big in some cases.
+
+- spell check chapters.tex and rest of the .tex files.
+
+- shorten chapter names so they don't overlap the chapter numbers.
+
+- shorten section names so they go out of the printable region.
+
+- some figures still too big.
 
 - figures without valid captions:
 
@@ -10,6 +32,10 @@ qmTwoL2fig5
 qmTwoL2fig6
 qmTwoL21Fig9
 qmTwoL9fig7
+
+- messed up figure:
+
+Sine only after an initial time
 
 - L24: "and can as in" what is meant here?
 
