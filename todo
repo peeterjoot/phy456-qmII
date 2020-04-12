@@ -1,12 +1,11 @@
 
 - L24: "and can as in" what is meant here?
 
+- periods in section, chapter, figure captions
+
 - strip out newlines surrounding 
-   imageFigure
    section
    subsection
-   pdfTexFigure
-   item
    makeexample
    makeproblem
    makeanswer
