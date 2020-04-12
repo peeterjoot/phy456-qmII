@@ -18,17 +18,17 @@ Returning to general time dependent equations with
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:330}
 H = H_0 + H'(t)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:350}
 \ket{\psi(t)} = \sum_n c_n(t) e^{-i\omega_n t} \ket{\psi_n}
 \end{equation}
-
+%
 and
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:370}
 i \Hbar \dot{c}_n = \sum_n H_{mn}' e^{i \omega_{mn} t} c_n(t)
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:390}
@@ -38,25 +38,25 @@ H_{mn}'(t) &= \bra{\psi_m} H'(t) \ket{\psi_n} \\
 \omega_{mn} &= \omega_m - \omega_n
 \end{aligned}
 \end{equation}
-
+%
 \makeexample{Electric field potential}{l9:ex1}{
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:410}
 H'(t) = - \Bmu \cdot \BE(t).
 \end{equation}
-
+%
 If \(c_m^{(0)} = \delta_{mi}\), then to first order
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:430}
 i \Hbar \dot{c}^{(1)}(t) = H_{mi}'(t) e^{i \omega_{mi} t},
 \end{equation}
-
+%
 and
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:450}
 c_m^{(1)}(t) = \inv{i\Hbar} \int_{t_0}^t H_{mi}'(t') e^{i \omega_{mi} t'} dt'.
 \end{equation}
-
+%
 Assume the perturbation vanishes before time \(t_0\).
 
 \paragraph{Reminder}.  Have considered this using \eqnref{eqn:qmTwoL9FermiGoldenRule:450} for a pulse as in \cref{fig:qmTwoL9FermiGoldenRule:gaussianWavePacket}
@@ -78,7 +78,7 @@ H_{mi}'(t) = - \bra{\psi_m} \Bmu \ket{\psi_i} \cdot \BE(t) =
 \end{array}
 \right.
 \end{equation}
-
+%
 Here the factor of 2 has been included for consistency with the text.
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:490}
@@ -88,7 +88,7 @@ e^{-i \omega_0 t}
 -e^{i \omega_0 t}
 \right)
 \end{equation}
-
+%
 Plug this into the perturbation
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:510}
@@ -99,7 +99,7 @@ e^{i (\omega_{mi} - \omega_0 t) }
 -e^{i (\omega_{mi} + \omega_0 t) }
 \right)
 \end{equation}
-
+%
 \pdfTexFigure{../figures/phy456-qmII/qmTwoL9fig6.pdf_tex}{\(\omega_{mi}\) illustrated}{fig:qmTwoL9FermiGoldenRule:6}{0.3}
 %\cref{fig:qmTwoL9FermiGoldenRule:6}
 
@@ -108,7 +108,7 @@ Suppose that
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:530}
 \omega_0 \approx \omega_{mi},
 \end{equation}
-
+%
 then
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:550}
@@ -119,7 +119,7 @@ c_m^{(1)}(t) \approx
 -e^{2 i \omega_0 t }
 \right),
 \end{equation}
-
+%
 but the exponential has essentially no contribution
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:630}
@@ -132,13 +132,13 @@ but the exponential has essentially no contribution
 &\sim \inv{\omega_0}
 \end{aligned}
 \end{equation}
-
+%
 so for \(t \gg \inv{\omega_0}\) and \(\omega_0 \approx \omega_{mi}\) we have
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:570}
 c_m^{(1)}(t) \approx \frac{A_{mi}}{\Hbar} t
 \end{equation}
-
+%
 Similarly for \(\omega_0 \approx \omega_{im}\) as in \cref{fig:qmTwoL9FermiGoldenRule:7}
 
 \pdfTexFigure{../figures/phy456-qmII/qmTwoL9fig7.pdf_tex}{FIXME: qmTwoL9fig7}{fig:qmTwoL9FermiGoldenRule:7}{0.3}
@@ -153,7 +153,7 @@ e^{-2 i \omega_0 t }
 -1
 \right),
 \end{equation}
-
+%
 and we have
 
 \begin{equation}\label{eqn:qmTwoL9FermiGoldenRule:610}

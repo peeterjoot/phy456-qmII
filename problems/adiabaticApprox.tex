@@ -19,7 +19,7 @@ We assumed that an adiabatically changing Hamiltonian was known with instantaneo
 \begin{equation}\label{eqn:adiabaticApprox:10}
 H(t) \ket{\psihat_n(t)} = \Hbar \omega_n \ket{\psihat_n(t)}
 \end{equation}
-
+%
 The problem was to determine the time evolutions of the coefficients \(\barb_n(t)\) of some state \(\ket{\psi(t)}\), and this was found to be
 
 \begin{equation}\label{eqn:adiabaticApprox:30}
@@ -29,25 +29,25 @@ The problem was to determine the time evolutions of the coefficients \(\barb_n(t
 \Gamma_s(t) &= i \bra{\psihat_s(t)} \ddt{} \ket{\psihat_s(t)}
 \end{aligned}
 \end{equation}
-
+%
 where the \(\barb_s(t)\) coefficient must satisfy the set of LDEs
 
 \begin{equation}\label{eqn:adiabaticApprox:50}
 \ddt{\barb_s(t)} = - \sum_{n \ne s} \barb_n(t) e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)},
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:adiabaticApprox:70}
 \gamma_{sn}(t) = \gamma_{s}(t) - \gamma_{n}(t).
 \end{equation}
-
+%
 Solving these in general does not look terribly fun, but perhaps we can find an explicit solution for all the \(\barb_s\)'s, if we simplify the problem somewhat.  Suppose that our initial state is found to be in the \(m\)th energy level at the time before we start switching on the changing Hamiltonian.
 
 \begin{equation}\label{eqn:adiabaticApprox:90}
 \ket{\psi(0)} = \barb_m(0) \ket{\psihat_m(0)}.
 \end{equation}
-
+%
 We therefore require (up to a phase factor)
 
 \begin{equation}\label{eqn:adiabaticApprox:110}
@@ -56,13 +56,13 @@ We therefore require (up to a phase factor)
 \barb_s(0) = 0 & \quad \mbox{if \(s \ne m\)}.
 \end{array}
 \end{equation}
-
+%
 Equivalently we can write
 
 \begin{equation}\label{eqn:adiabaticApprox:130}
 \barb_s(0) = \delta_{ms}
 \end{equation}
-
+%
 %\section{Going in circles with a \texorpdfstring{\(\lambda\)}{lambda} expansion}
 \paragraph{Going in circles with a \(\lambda\) expansion}
 
@@ -71,14 +71,14 @@ In class it was hinted that we could try a \(\lambda\) expansion of the followin
 \begin{equation}\label{eqn:adiabaticApprox:150}
 \barb_s(t) = \delta_{ms} + \lambda \barb^{(1)}_s(t) + \cdots
 \end{equation}
-
+%
 I was not able to figure out how to make that work.  Trying this first to first order, and plugging in, we find
 
 \begin{equation}\label{eqn:adiabaticApprox:170}
 \lambda \ddt{} \barb^{(1)}_s(t) = - \sum_{n \ne s} ( \delta_{mn} + \lambda \barb^{(1)}_n(t) )
 e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)},
 \end{equation}
-
+%
 equating powers of \(\lambda\) yields two equations
 
 \begin{equation}\label{eqn:adiabaticApprox:190}
@@ -87,13 +87,13 @@ equating powers of \(\lambda\) yields two equations
 0 &= - \sum_{n \ne s} \delta_{mn} e^{i \gamma_{sn}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_n(t)}.
 \end{aligned}
 \end{equation}
-
+%
 Observe that the first identity is exactly what we started with in \eqnref{eqn:adiabaticApprox:50}, but has just replaced the \(\barb_n\)'s with \(\barb^{(1)}_n\)'s.  Worse is that the second equation is only satisfied for \(s = m\), and for \(s \ne m\) we have
 
 \begin{equation}\label{eqn:adiabaticApprox:210}
 0 = - e^{i \gamma_{sm}(t) } \bra{\psihat_s(t)} \ddt{} \ket{\psihat_m(t)}.
 \end{equation}
-
+%
 So this \(\lambda\) power series only appears to work if we somehow had \(\ket{\psihat_s(t)}\) always orthonormal to the derivative of \(\ket{\psihat_m(t)}\).  Perhaps this could be done if the Hamiltonian was also expanded in powers of \(\lambda\), but such a beastie seems foreign to the problem.  Note that we do not even have any explicit dependence on the Hamiltonian in the final \(\barb_n\) differential equations, as we would probably need for such an expansion to work out.
 
 \paragraph{A Taylor series expansion in time}
@@ -107,7 +107,7 @@ What we can do is to expand the \(\barb_n\)'s in a power series parametrized by 
 + \frac{t^2}{2!} \left( \evalbar{ \frac{d^2}{dt^2} \barb_s(t) }{t=0} \right)
 + \cdots
 \end{equation}
-
+%
 The first order term we can grab right from \eqnref{eqn:adiabaticApprox:50} and find
 
 \begin{equation}\label{eqn:adiabaticApprox:490}
@@ -129,7 +129,7 @@ The first order term we can grab right from \eqnref{eqn:adiabaticApprox:50} and 
 \right.
 \end{aligned}
 \end{equation}
-
+%
 Let us write
 
 \begin{equation}\label{eqn:adiabaticApprox:250}
@@ -138,7 +138,7 @@ Let us write
 \ket{n'} &= \evalbar{ \ddt{}\ket{\psihat_n(t)} }{t=0}
 \end{aligned}
 \end{equation}
-
+%
 So we can write
 
 \begin{equation}\label{eqn:adiabaticApprox:270}
@@ -147,7 +147,7 @@ So we can write
 -
 (1 - \delta_{sm}) \braket{s}{m'},
 \end{equation}
-
+%
 and form, to first order in time our approximation for the coefficient is
 
 \begin{equation}\label{eqn:adiabaticApprox:290}
@@ -155,7 +155,7 @@ and form, to first order in time our approximation for the coefficient is
 =
 \delta_{sm} - t (1 - \delta_{sm}) \braket{s}{m'}.
 \end{equation}
-
+%
 Let us do the second order term too.  For that we have
 
 \begin{equation}\label{eqn:adiabaticApprox:510}
@@ -177,7 +177,7 @@ Let us do the second order term too.  For that we have
 }{t=0}
 \end{aligned}
 \end{equation}
-
+%
 For the \(\gamma_{sn}\) derivative we note that
 
 \begin{equation}\label{eqn:adiabaticApprox:310}
@@ -185,7 +185,7 @@ For the \(\gamma_{sn}\) derivative we note that
 =
 \omega_s(0) - i\braket{s}{s'},
 \end{equation}
-
+%
 So we have
 
 \begin{equation}\label{eqn:adiabaticApprox:530}
@@ -208,7 +208,7 @@ So we have
 \Bigr)
 \end{aligned}
 \end{equation}
-
+%
 Again for \(s = m\), all terms are killed.  That is somewhat surprising, but suggests that we will need to normalize the coefficients after the perturbation calculation, since we have unity for one of them.
 
 For \(s \ne m\) we have
@@ -249,7 +249,7 @@ i
 \braket{n}{m'} \braket{s}{n'}.
 \end{aligned}
 \end{equation}
-
+%
 So we have, for \(s \ne m\)
 
 \begin{equation}\label{eqn:adiabaticApprox:330}
@@ -264,7 +264,7 @@ So we have, for \(s \ne m\)
 \sum_{n \ne s}
 \braket{n}{m'} \braket{s}{n'}.
 \end{equation}
-
+%
 It is not particularly illuminating looking, but possible to compute, and we can use it to form a second order approximate solution for our perturbed state.
 
 \begin{equation}\label{eqn:adiabaticApprox:350}
@@ -286,7 +286,7 @@ It is not particularly illuminating looking, but possible to compute, and we can
 \right) \frac{t^2}{2}
 \end{aligned}
 \end{equation}
-
+%
 %\paragraph{New info.  How to do the \texorpdfstring{\(\lambda\)}{lambda} expansion}
 \paragraph{New info.  How to do the \(\lambda\) expansion}
 
@@ -303,13 +303,13 @@ H_0 & \quad \mbox{\(t < 0\)}
 \end{array}
 \right.
 \end{equation}
-
+%
 where \(H(0) = H_0\).  We can make this explicit, and introduce a \(\lambda\) factor into the picture if we write
 
 \begin{equation}\label{eqn:adiabaticApprox:390}
 H(t) = H_0 + \lambda H'(t),
 \end{equation}
-
+%
 where \(H_0\) has no time dependence, so that our Hamiltonian is then just the ``steady-state'' system for \(\lambda = 0\).
 
 Now recall the method from \citep{bohm1989qt} that we can use to relate our bra-derivative-ket to the Hamiltonian.  Taking derivatives of the energy identity, braketed between two independent kets (\(m \ne n\)) we have
@@ -340,7 +340,7 @@ H(t) \ket{\psihat_n(t)} - \Hbar \omega_n \ket{\psihat_n(t)}
 \ddt{H(t)} \ket{\psihat_n(t)}
 \end{aligned}
 \end{equation}
-
+%
 So for \(m \ne n\) we find a dependence between the bra-derivative-ket and the time derivative of the Hamiltonian
 
 \begin{equation}\label{eqn:adiabaticApprox:410}
@@ -355,7 +355,7 @@ So for \(m \ne n\) we find a dependence between the bra-derivative-ket and the t
 \Hbar (\omega_n - \omega_m)
 }
 \end{equation}
-
+%
 Referring back to \eqnref{eqn:adiabaticApprox:390} we see the \(\lambda\) dependence in this quantity, coming directly from the \(\lambda\) dependence imposed on the time dependent part of the Hamiltonian
 
 \begin{equation}\label{eqn:adiabaticApprox:430}
@@ -371,7 +371,7 @@ Referring back to \eqnref{eqn:adiabaticApprox:390} we see the \(\lambda\) depend
 \Hbar (\omega_n - \omega_m)
 }
 \end{equation}
-
+%
 Given this \(\lambda\) dependence, let us revisit the perturbation attempt of \eqnref{eqn:adiabaticApprox:170}.  Our first order factors of \(\lambda\) are now
 
 \begin{equation}\label{eqn:adiabaticApprox:590}
@@ -389,7 +389,7 @@ Given this \(\lambda\) dependence, let us revisit the perturbation attempt of \e
 \right.
 \end{aligned}
 \end{equation}
-
+%
 So we find to first order
 
 \begin{equation}\label{eqn:adiabaticApprox:450}
@@ -401,7 +401,7 @@ So we find to first order
 \int_0^t dt'
 e^{i \gamma_{sm}(t') } \bra{\psihat_s(t')} \frac{d}{dt'} \ket{\psihat_m(t')}
 \end{equation}
-
+%
 A couple observations of this result.  One is that the constant factor in the \(m = s\) case makes sense.  This would likely be a negative contribution since we have to decrease the probability coefficient for finding our wavefunction in the \(m = s\) state after perturbation, since we are increasing the probability for finding it elsewhere by changing the Hamiltonian.
 
 Also observe that since \(e^{i\gamma_{sm}} \sim 0\) for small \(t\) this is consistent with the first order Taylor series expansion where we found our first order contribution was
@@ -409,7 +409,7 @@ Also observe that since \(e^{i\gamma_{sm}} \sim 0\) for small \(t\) this is cons
 \begin{equation}\label{eqn:adiabaticApprox:470}
 - (1 - \delta_{ms}) t \bra{\psihat_s(t)} \frac{d}{dt} \ket{\psihat_m(t)}.
 \end{equation}
-
+%
 Also note that this \(-e^{i \gamma_{sm}(t') } \bra{\psihat_s(t')} \frac{d}{dt'} \ket{\psihat_m(t')}\) is exactly the difference from \(0\) that was mentioned in class when the trial solution of \(\barb_s = \delta_{sm}\) was tested by plugging it into \eqnref{eqn:adiabaticApprox:50}, so it is not too surprising that we should have a factor of exactly this form when we refine our approximation.
 
 A question to consider should we wish to refine the \(\lambda\) perturbation to higher than first order in \(\lambda\): is there any sort of \(\lambda\) dependence in the \(e^{i \gamma_{sm}}\) coming from the \(\Gamma_{sm}\) term in that exponential?

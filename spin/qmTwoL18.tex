@@ -52,7 +52,7 @@ j = & j_1 + j_2				& j_1 + j_2 -1 				& \cdots 	& j_1 - j_2 \\
 \hline
 \end{array}
 \end{equation}
-
+%
 \paragraph{First column}
 
 Let us start with computation of the kets in the lowest position of the first column, which we will obtain by successive application of the lowering operator to the state
@@ -60,13 +60,13 @@ Let us start with computation of the kets in the lowest position of the first co
 \begin{equation}\label{eqn:qmTwoL18:30}
 \ket{j_1 + j_2, j_1 + j_2} = \ket{j_1 j_1} \otimes \ket{j_2 j_2}.
 \end{equation}
-
+%
 Recall that our lowering operator was found to be (or defined as)
 
 \begin{equation}\label{eqn:qmTwoL18:570}
 J_{-} \ket{j, m} = \sqrt{(j+m)(j-m+1)} \Hbar \ket{j, m-1},
 \end{equation}
-
+%
 so that application of the lowering operator gives us
 
 \begin{equation}\label{eqn:qmTwoL18:610}
@@ -109,7 +109,7 @@ so that application of the lowering operator gives us
  \\
 \end{aligned}
 \end{equation}
-
+%
 Proceeding iteratively would allow us to finish off this column.
 
 \paragraph{Second column}
@@ -119,7 +119,7 @@ Moving on to the second column, the top most element in the table
 \begin{equation}\label{eqn:qmTwoL18:50}
 \ket{j_1 + j_2 - 1, j_1 + j_2 -1} ,
 \end{equation}
-
+%
 can only be made up of \(\ket{j_1 m_1} \otimes \ket{j_2 m_2}\) with \(m_1 + m_2 = j_1 + j_2 -1\).  There are two possibilities
 
 \begin{equation}\label{eqn:qmTwoL18:70}
@@ -128,7 +128,7 @@ m_1 &= j_1 	& m_2 &= j_2 - 1 \\
 m_1 &= j_1 - 1  & m_2 &= j_2
 \end{array}
 \end{equation}
-
+%
 So for some \(A\) and \(B\) to be determined we must have
 
 \begin{equation}\label{eqn:qmTwoL18:90}
@@ -140,7 +140,7 @@ A
 B
 \ket{j_1 (j_1-1)} \otimes \ket{j_2 j_2}
 \end{equation}
-
+%
 Observe that these are the same kets that we ended up with by application of the lowering operator on the topmost element of the first column in our table.  Since \(\ket{j_1 + j_2, j_1 + j_2 -1}\) and \(\ket{j_1 + j_2 - 1, j_1 + j_2 -1}\) are orthogonal, we can construct our ket for the top of the second column by just seeking such an orthonormal superposition.  Consider for example
 
 \begin{equation}\label{eqn:qmTwoL18:630}
@@ -152,7 +152,7 @@ Observe that these are the same kets that we ended up with by application of the
 a A + c C
 \end{aligned}
 \end{equation}
-
+%
 With \(A = 1\) we find that \(C = -a/c\), so we have
 
 \begin{equation}\label{eqn:qmTwoL18:650}
@@ -164,13 +164,13 @@ A \ket{b} + C \ket{d}
 c \ket{b} - a \ket{d}  \\
 \end{aligned}
 \end{equation}
-
+%
 So we find, for real \(a\) and \(c\) that
 
 \begin{equation}\label{eqn:qmTwoL18:590}
 0 = (a \bra{b} + c \bra{d})( c \ket{b} - a \ket{d}),
 \end{equation}
-
+%
 for any orthonormal pair of kets \(\ket{a}\) and \(\ket{d}\).  Using this we find
 
 \begin{equation}\label{eqn:qmTwoL18:110}
@@ -182,7 +182,7 @@ for any orthonormal pair of kets \(\ket{a}\) and \(\ket{d}\).  Using this we fin
 \left(\frac{j_1}{j_1 + j_2}\right)^{1/2}
 \ket{j_1 (j_1-1)} \otimes \ket{j_2 j_2}
 \end{equation}
-
+%
 This will work, although we could also multiply by any phase factor if desired.  Such a choice of phase factors is essentially just a convention.
 
 \paragraph{The Clebsch-Gordon convention}
@@ -201,7 +201,7 @@ Moving on to the third column
 \begin{equation}\label{eqn:qmTwoL18:130}
 \ket{j_1 + j_2 - 2, j_1 + j_2 -2}
 \end{equation}
-
+%
 can only be made up of \(\ket{j_1 m_1} \otimes \ket{j_2 m_2}\) with \(m_1 + m_2 = j_1 + j_2 -2\).  There are now three possibilities
 
 \begin{equation}\label{eqn:qmTwoL18:150}
@@ -211,7 +211,7 @@ m_1 &= j_1 - 2  &  m_2 &= j_2 \\
 m_1 &= j_1 - 1  &  m_2 &= j_2 - 1
 \end{array}
 \end{equation}
-
+%
 and 2 orthogonality conditions, plus conventions.  This is enough to determine the ket in the third column.
 
 We can formally write
@@ -222,7 +222,7 @@ We can formally write
 \ket{ j_1 m_1, j_2 m_2}
 \braket{ j_1 m_1, j_2 m_2}{jm ; j_1 j_2}
 \end{equation}
-
+%
 where
 \begin{equation}\label{eqn:qmTwoL18:190}
 \ket{ j_1 m_1, j_2 m_2} = \ket{j_1 m_1} \otimes \ket{j_2 m_2},
@@ -237,7 +237,7 @@ are the Clebsch-Gordon coefficients, sometimes written as
 \begin{equation}\label{eqn:qmTwoL18:230}
 \braket{ j_1 m_1, j_2 m_2 }{ jm }
 \end{equation}
-
+%
 Properties
 \begin{enumerate}
 \item \(\braket{ j_1 m_1, j_2 m_2 }{ jm } \ne 0\) only if \(j_1 - j_2 \le j \le j_1 + j+2\)
@@ -285,7 +285,7 @@ Note that the \(\braket{ j_1 m_1, j_2 m_2 }{ j m }\) are all real.  So, they can
 \ket{--}
 \end{bmatrix}
 \end{equation}
-
+%
 \paragraph{Example.  Electrons}
 
 Consider the special case of an electron, a spin \(1/2\) particle with \(s = 1/2\) and \(m_s = \pm 1/2\) where we have
@@ -293,11 +293,11 @@ Consider the special case of an electron, a spin \(1/2\) particle with \(s = 1/2
 \begin{equation}\label{eqn:qmTwoL18:290}
 \BJ = \BL + \BS
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL18:310}
 \ket{lm} \otimes \ket{\inv{2} m_s}
 \end{equation}
-
+%
 possible values of \(j\) are \(l \pm 1/2\)
 
 \begin{equation}\label{eqn:qmTwoL18:330}
@@ -310,7 +310,7 @@ l + \inv{2}
 l - \inv{2}
 \right)
 \end{equation}
-
+%
 Our table representation is then
 
 \begin{equation}\label{eqn:qmTwoL18:350}
@@ -329,7 +329,7 @@ j = & l + \inv{2} 			& l - \inv{2} \\
 \hline
 \end{array}
 \end{equation}
-
+%
 Here \(\ket{l + \inv{2}, m}\)
 
 can \textunderline{only} have contributions from
@@ -340,7 +340,7 @@ can \textunderline{only} have contributions from
 \ket{l, m+\inv{2}} &\otimes \ket{\inv{2}\overline{\inv{2}}}
 \end{aligned}
 \end{equation}
-
+%
 \(\ket{l - \inv{2}, m}\) from the same two.  So using this and conventions we can work out (in \S 28 page 524, of our text \citep{desai2009quantum}).
 
 \begin{equation}\label{eqn:qmTwoL18:390}
@@ -356,7 +356,7 @@ can \textunderline{only} have contributions from
 \ket{l, m + \inv{2}} \times \ket{\inv{2} \overline{\inv{2}}}
 \end{aligned}
 \end{equation}
-
+%
 \section{Tensor operators}
 \index{tensor operator}
 
@@ -367,7 +367,7 @@ Recall how we characterized a rotation
 \begin{equation}\label{eqn:qmTwoL18:410}
 \Br \rightarrow \calR(\Br).
 \end{equation}
-
+%
 Here we are using an active rotation as depicted in \cref{fig:qmTwoL18:qmTwoL18fig2}
 
 \imageFigure{../figures/phy456-qmII/qmTwoL18fig2}{active rotation}{fig:qmTwoL18:qmTwoL18fig2}{0.2}
@@ -382,12 +382,12 @@ Suppose that
 =
 \sum_j M_{ij} r_j
 \end{equation}
-
+%
 so that
 \begin{equation}\label{eqn:qmTwoL18:450}
 U = e^{-i \theta \ncap \cdot \BJ/\Hbar}
 \end{equation}
-
+%
 rotates in the same way.  Rotating a ket as in \cref{fig:qmTwoL18:qmTwoL18fig3}
 \imageFigure{../figures/phy456-qmII/qmTwoL18fig3}{Rotating a wavefunction}{fig:qmTwoL18:qmTwoL18fig3}{0.2}
 
@@ -396,25 +396,25 @@ Rotating a ket
 \begin{equation}\label{eqn:qmTwoL18:470}
 \ket{\psi}
 \end{equation}
-
+%
 using the prescription
 
 \begin{equation}\label{eqn:qmTwoL18:490}
 \ket{\psi'} = e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{\psi}
 \end{equation}
-
+%
 and write
 
 \begin{equation}\label{eqn:qmTwoL18:510}
 \ket{\psi'} = U[M] \ket{\psi}
 \end{equation}
-
+%
 Now look at
 
 \begin{equation}\label{eqn:qmTwoL18:530}
 \bra{\psi} \calO \ket{\psi}
 \end{equation}
-
+%
 and compare with
 
 \begin{equation}\label{eqn:qmTwoL18:550}
@@ -422,7 +422,7 @@ and compare with
 =
 \bra{\psi} \mathLabelBox{U^\dagger[M] \calO U[M]}{\((\conj)\)} \ket{\psi}
 \end{equation}
-
+%
 We will be looking in more detail at \((\conj)\).
 
 

@@ -29,13 +29,13 @@ E_1 &\sim \ket{\psi_1} \\
 E_0 &\sim \ket{\psi_0}
 \end{aligned}
 \end{equation}
-
+%
 and consider a state that is ``very close'' to \(\ket{\psi_n}\).
 
 \begin{equation}\label{eqn:qmTwoL3:10}
 \ket{\psi} = \ket{\psi_n} + \ket{\delta \psi_n}
 \end{equation}
-
+%
 We form projections onto \(\ket{\psi_n}\) ``direction''.  The difference from this projection will be written \(\ket{\psi_{n \perp}}\), as depicted in \cref{fig:qmTwoL3:1}.  This illustration cannot not be interpreted literally, but illustrates the idea nicely.
 
 \imageFigure{../figures/phy456-qmII/qmTwoL3fig1}{Pictorial illustration of ket projections}{fig:qmTwoL3:1}{0.4}
@@ -45,7 +45,7 @@ For the amount along the projection onto \(\ket{\psi_n}\) we write
 \begin{equation}\label{eqn:qmTwoL3:30}
 \braket{\psi_n}{\delta \psi_n} = \delta \alpha
 \end{equation}
-
+%
 so that the total deviation from the original state is
 
 \begin{equation}\label{eqn:qmTwoL3:50}
@@ -53,19 +53,19 @@ so that the total deviation from the original state is
 = \delta \alpha \ket{\psi_n}
 + \ket{\delta \psi_{n \perp}} .
 \end{equation}
-
+%
 The varied ket is then
 \begin{equation}\label{eqn:qmTwoL3:70}
 \ket{\psi}
 = (1 + \delta \alpha )\ket{\psi_n} + \ket{\delta \psi_{n \perp}}
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL3:90}
 (\delta \alpha)^2, \braket{\delta \psi_{n \perp}}{\delta \psi_{n \perp}}  \ll 1
 \end{equation}
-
+%
 In terms of these projections our kets magnitude is
 
 \begin{equation}\label{eqn:qmTwoL3:330}
@@ -88,7 +88,7 @@ In terms of these projections our kets magnitude is
 (1 + \delta \alpha )\braket{\delta \psi_{n \perp}}{\delta \psi_n}
 \end{aligned}
 \end{equation}
-
+%
 Because \(\braket{\delta \psi_{n \perp}}{\delta \psi_n} = 0\) this is
 
 \begin{equation}\label{eqn:qmTwoL3:110}
@@ -97,7 +97,7 @@ Because \(\braket{\delta \psi_{n \perp}}{\delta \psi_n} = 0\) this is
 \Abs{1 + \delta \alpha }^2
 \braket{\delta \psi_{n \perp}}{\delta \psi_{n \perp}}.
 \end{equation}
-
+%
 Similarly for the energy expectation we have
 
 \begin{equation}\label{eqn:qmTwoL3:350}
@@ -121,7 +121,7 @@ H
 (1 + \delta \alpha ) E_n \braket{\delta \psi_{n \perp}}{\delta \psi_n}
 \end{aligned}
 \end{equation}
-
+%
 Or
 \begin{equation}\label{eqn:qmTwoL3:130}
 \bra{\psi} H \ket{\psi}
@@ -130,7 +130,7 @@ E_n \Abs{1 + \delta \alpha }^2
 +
 \bra{\delta \psi_{n \perp}} H \ket{\delta \psi_{n \perp}}.
 \end{equation}
-
+%
 This gives
 
 \begin{equation}\label{eqn:qmTwoL3:370}
@@ -173,14 +173,14 @@ E_n \left( 1 -
 E_n\left[1 + \calO\left((\delta \psi_{n \perp})^2\right)\right]
 \end{aligned}
 \end{equation}
-
+%
 where
 \begin{equation}\label{eqn:qmTwoL3:150}
 (\delta \psi_{n \perp})^2
 \sim
 \braket{\delta \psi_{n \perp}}{\delta \psi_{n \perp}}
 \end{equation}
-
+%
 \imageFigure{../figures/phy456-qmII/qmTwoL3fig2}{Illustration of variation of energy with variation of Hamiltonian}{fig:qmTwoL3:2}{0.4}
 %\cref{fig:qmTwoL3:2}
 
@@ -199,7 +199,7 @@ E_1 &\sim \ket{\psi_1} \\
 E_0 &\sim \ket{\psi_0}
 \end{aligned}
 \end{equation}
-
+%
 Suppose we wanted an estimate of \(E_1\).  If we knew the ground state \(\ket{\psi_0}\).  For any trial \(\ket{\psi}\) form
 
 \begin{equation}\label{eqn:qmTwoL3:170}
@@ -207,7 +207,7 @@ Suppose we wanted an estimate of \(E_1\).  If we knew the ground state \(\ket{\p
 \ket{\psi} -
 \ket{\psi_0}  \braket{\psi_0}{\psi}
 \end{equation}
-
+%
 We are taking out the projection of the ground state from an arbitrary trial function.
 
 For a state written in terms of the basis states, allowing for an \(\alpha\) degeneracy
@@ -218,19 +218,19 @@ c_0 \ket{\psi_0}
 +
 \sum_{n> 0, \alpha} c_{n \alpha} \ket{\psi_{n \alpha}}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL3:210}
 \braket{\psi_0}{\psi} =
 c_0
 \end{equation}
-
+%
 and
 
 \begin{equation}\label{eqn:qmTwoL3:230}
 \ket{\psi'} =
 \sum_{n> 0, \alpha} c_{n \alpha} \ket{\psi_{n \alpha}}
 \end{equation}
-
+%
 (note that there are some theorems that tell us that the ground state is generally non-degenerate).
 
 \begin{equation}\label{eqn:qmTwoL3:410}
@@ -253,7 +253,7 @@ E[\psi']
 \ge E_1
 \end{aligned}
 \end{equation}
-
+%
 Often do not know the exact ground state, although we might have a guess \(\ket{\tilde{\psi}_0}\).
 
 for
@@ -263,7 +263,7 @@ for
 \ket{\tilde{\psi}_0}
 \braket{\tilde{\psi}_0}{\psi}
 \end{equation}
-
+%
 but cannot prove that
 \begin{equation}\label{eqn:qmTwoL3:270}
 \frac{
@@ -274,7 +274,7 @@ but cannot prove that
 }
 \ge E_1
 \end{equation}
-
+%
 %But sometimes, even if you do not know the ground state \(\ket{\psi_0}\), can choose trial kets \(\ket{\psi'''}\) such that \(\braket{\psi_0}{\psi'''} = 0\).
 
 Then
@@ -290,6 +290,6 @@ FIXME: missed something here.
 }
 \ge E_1
 \end{equation}
-
+%
 Somewhat remarkably, this is often possible.  We talked last time about the Hydrogen atom.  In that case, you can guess that the excited state is in the \(2s\) orbital and and therefore orthogonal to the \(1s\) (?) orbital.
 

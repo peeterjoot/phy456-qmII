@@ -30,7 +30,7 @@ H_{mi}'(t)
 &= i A_{mi} ( e^{-i \omega_0 t} - e^{i \omega_0 t} ) \theta(t),
 \end{aligned}
 \end{equation}
-
+%
 and we found
 
 \begin{equation}\label{eqn:qmTwoL10:30}
@@ -40,13 +40,13 @@ e^{i (\omega_{mi} - \omega_0) t'}
 e^{i (\omega_{mi} + \omega_0) t'}
 \right),
 \end{equation}
-
+%
 and argued that
 
 \begin{equation}\label{eqn:qmTwoL10:50}
 \Abs{ c_m^{(1)}(t) }^2  \sim \left( \frac{A_{mi}}{\Hbar} \right)^2 t^2 + \cdots
 \end{equation}
-
+%
 where \(\omega_0 t \gg 1\) for \(\omega_{mi} \sim \pm \omega_0\).
 
 We can also just integrate \eqnref{eqn:qmTwoL10:30} directly
@@ -65,7 +65,7 @@ c_m^{(1)}(t)
 A_{mi}(\omega_0, t) - A_{mi}(-\omega_0, t),
 \end{aligned}
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL10:70}
@@ -74,7 +74,7 @@ A_{mi}(\omega_0, t) =
 \frac{e^{i (\omega_{mi} - \omega_0) t} - 1}
 { i (\omega_{mi} - \omega_0) }
 \end{equation}
-
+%
 Factoring out the phase term, we have
 
 \begin{equation}\label{eqn:qmTwoL10:90}
@@ -88,7 +88,7 @@ e^{i (\omega_{mi} - \omega_0) t/2}
 }
 { (\omega_{mi} - \omega_0) }
 \end{equation}
-
+%
 We we will have two lobes, centered on \(\pm \omega_0\), as illustrated in \cref{fig:qmTwoL10:qmTwoL10fig3}
 \imageFigure{../figures/phy456-qmII/qmTwoL10fig3}{Two sinc lobes}{fig:qmTwoL10:qmTwoL10fig3}{0.2}
 
@@ -110,7 +110,7 @@ Note that we can have reflection from the well even in the continuum states wher
 \braket{\psi_p}{\psi_p'} &= \delta(p - p')
 \end{aligned}
 \end{equation}
-
+%
 or in 3d
 
 \begin{equation}\label{eqn:qmTwoL10:130}
@@ -119,7 +119,7 @@ or in 3d
 \braket{\psi_{\Bp}}{\psi_{\Bp'}} &= \delta^3(\Bp - \Bp')
 \end{aligned}
 \end{equation}
-
+%
 Let us consider the 1d model for the quantum well in more detail.  Including both discrete and continuous states we have
 
 \begin{equation}\label{eqn:qmTwoL10:150}
@@ -127,13 +127,13 @@ Let us consider the 1d model for the quantum well in more detail.  Including bot
 \sum_n c_n(t) e^{-i \omega_n t} \ket{\psi_n} +
 \int dp c_p(t) e^{-i \omega_p t} \ket{\psi_p}
 \end{equation}
-
+%
 Imagine at \(t=0\) that the wave function started in some discrete state, and look at the probability that we ``kick the electron out of the well''.  Calculate
 
 \begin{equation}\label{eqn:qmTwoL10:170}
 \calP = \int dp \Abs{c_p^{(1)}(t)}^2
 \end{equation}
-
+%
 Now, we assume that our matrix element has the following form
 
 \begin{equation}\label{eqn:qmTwoL10:190}
@@ -141,7 +141,7 @@ H_{pi}'(t) = \left(
 \overbar{A}_{pi} e^{-i \omega_0 t}
 +\overbar{B}_{pi} e^{i \omega_0 t} \right) \theta(t)
 \end{equation}
-
+%
 generalizing the wave train matrix element that we had previously
 
 \begin{equation}\label{eqn:qmTwoL10:210}
@@ -149,7 +149,7 @@ H_{mi}'(t) = i A_{mi} \left(
 e^{-i \omega_0 t}
 - e^{i \omega_0 t} \right) \theta(t)
 \end{equation}
-
+%
 Doing the perturbation we have
 
 \begin{equation}\label{eqn:qmTwoL10:230}
@@ -158,7 +158,7 @@ A_{pi}(\omega_0, t)
 + B_{pi}(-\omega_0, t)
 }^2
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL10:250}
@@ -169,7 +169,7 @@ e^{i (\omega_{pi} - \omega_0) t/2}
 \omega_{pi} - \omega_0
 }
 \end{equation}
-
+%
 which is peaked at \(\omega_{pi} = \omega_0\), and
 
 \begin{equation}\label{eqn:qmTwoL10:270}
@@ -180,7 +180,7 @@ e^{i (\omega_{pi} + \omega_0) t/2}
 \omega_{pi} + \omega_0
 }
 \end{equation}
-
+%
 which is peaked at \(\omega_{pi} = -\omega_0\).
 
 FIXME: show that this is the perturbation result.
@@ -196,19 +196,19 @@ Our probability to find the particle in the continuum range is now approximately
 A_{pi}(\omega_0, t)
 }^2
 \end{equation}
-
+%
 With
 
 \begin{equation}\label{eqn:qmTwoL10:310}
 \omega_{pi} - \omega_0 = \inv{\Hbar}\left( \frac{p^2}{2m} - E_i \right) - \omega_0,
 \end{equation}
-
+%
 define \(\overbar{p}\) so that
 
 \begin{equation}\label{eqn:qmTwoL10:330}
 0 = \inv{\Hbar}\left( \frac{\overbar{p}^2}{2m} - E_i \right) - \omega_0.
 \end{equation}
-
+%
 In momentum space, we know have the sinc functions peaked at \(\pm \overbar{p}\) as in \cref{fig:qmTwoL10:qmTwoL10fig7}
 
 \imageFigure{../figures/phy456-qmII/qmTwoL10fig7}{Momentum space view}{fig:qmTwoL10:qmTwoL10fig7}{0.2}
@@ -235,14 +235,14 @@ c_p^{(1)}(t)
 },
 \end{aligned}
 \end{equation}
-
+%
 with
 
 \begin{equation}\label{eqn:qmTwoL10:370}
 \omega_{pi} = \inv{\Hbar}\left( \frac{p^2}{2m} - E_i
 \right)
 \end{equation}
-
+%
 we have with a change of variables
 
 \begin{equation}\label{eqn:qmTwoL10:390}
@@ -260,7 +260,7 @@ we have with a change of variables
 \left( \omega_{pi} - \omega_0 \right)^2
 }.
 \end{equation}
-
+%
 Now suppose we have \(t\) small enough so that \(\calP_{+} \ll 1\) and \(t\) large enough so
 
 \begin{equation}\label{eqn:qmTwoL10:410}
@@ -269,7 +269,7 @@ Now suppose we have \(t\) small enough so that \(\calP_{+} \ll 1\) and \(t\) lar
 }^2
 \frac{dp}{d\omega_{pi}}
 \end{equation}
-
+%
 is roughly constant over \(\Delta \omega\).  This is a sort of ``Goldilocks condition'', a time that can not be too small, and can not be too large, but instead has to be ``just right''.  Given such a condition
 
 \begin{equation}\label{eqn:qmTwoL10:430}
@@ -287,7 +287,7 @@ is roughly constant over \(\Delta \omega\).  This is a sort of ``Goldilocks cond
 \left( \omega_{pi} - \omega_0 \right)^2
 },
 \end{equation}
-
+%
 where we can pull stuff out of the integral since the main contribution is at the peak.  Provided \(\overbar{p}\) is large enough, using \eqnref{eqn:sincIntegral:50}, then
 
 \begin{equation}\label{eqn:qmTwoL10:450}
@@ -309,7 +309,7 @@ where we can pull stuff out of the integral since the main contribution is at th
 \frac{t}{2} \pi,
 \end{aligned}
 \end{equation}
-
+%
 leaving the probability of the electron with a going right continuum state as
 
 \begin{equation}\label{eqn:qmTwoL10:470}
@@ -328,7 +328,7 @@ leaving the probability of the electron with a going right continuum state as
 {\evalbar{\frac{dp}{d\omega_{pi}}}{\overbar{p}}}{density of states}
 \frac{t}{2} \pi.
 \end{equation}
-
+%
 The \(dp/d\omega_{pi}\) is something like ``how many continuous states are associated with a transition from a discrete frequency interval.''
 
 We can also get this formally from \eqnref{eqn:qmTwoL10:430} with
@@ -342,7 +342,7 @@ We can also get this formally from \eqnref{eqn:qmTwoL10:430} with
 \rightarrow
 \frac{t}{2} \pi \delta(\omega_{pi} - \omega_0),
 \end{equation}
-
+%
 so
 
 \begin{equation}\label{eqn:qmTwoL10:510}
@@ -361,7 +361,7 @@ c_p^{(1)}(t)
 \delta(E_{pi} - \Hbar \omega_0)
 \end{aligned}
 \end{equation}
-
+%
 where \(\delta(ax) = \delta(x)/\Abs{a}\) has been used to pull in a factor of \(\Hbar\) into the delta.
 
 The ratio of the coefficient to time is then
@@ -375,7 +375,7 @@ The ratio of the coefficient to time is then
 }^2
 \delta(E_{pi} - \Hbar \omega_0).
 \end{equation}
-
+%
 or ``between friends''
 
 \begin{equation}\label{eqn:qmTwoL10:550}
@@ -387,7 +387,7 @@ or ``between friends''
 }^2
 \delta(E_{pi} - \Hbar \omega_0),
 \end{equation}
-
+%
 roughly speaking we have a ``rate'' or transitions from the discrete into the continuous.  Here ``rate'' is in quotes since it does not hold for small t.
 
 This has been worked out for \(\calP_{+}\).  This can also be done for \(\calP_{-}\), the probability that the electron will end up in a left trending continuum state.

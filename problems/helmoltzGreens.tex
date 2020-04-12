@@ -15,25 +15,25 @@ In class this week, looking at an instance of the Helmholtz equation
 \begin{equation}\label{eqn:helmholtzGreens:10}
 \left( \spacegrad^2 + \Bk^2\right) \psi_\Bk(\Br) = s(\Br).
 \end{equation}
-
+%
 We were told that the Green's function
 
 \begin{equation}\label{eqn:helmholtzGreens:30}
 \left( \spacegrad^2 + \Bk^2\right) G^0(\Br, \Br') = \delta(\Br- \Br')
 \end{equation}
-
+%
 that can be used to solve for a particular solution this differential equation via convolution
 
 \begin{equation}\label{eqn:helmholtzGreens:50}
 \psi_\Bk(\Br) = \int G^0(\Br, \Br') s(\Br') d^3 \Br',
 \end{equation}
-
+%
 had the value
 
 \begin{equation}\label{eqn:helmholtzGreens:70}
 G^0(\Br, \Br') = - \inv{4 \pi} \frac{e^{i k \Abs{\Br - \Br'}} }{\Abs{\Br - \Br'}}.
 \end{equation}
-
+%
 Let us try to verify this.
 
 %\section{Guts}
@@ -47,7 +47,7 @@ Application of the Helmholtz differential operator \(\spacegrad^2 + \Bk^2\) on t
 \frac{e^{i k \Abs{\Br - \Br'}} }{\Abs{\Br - \Br'}}
 s(\Br') d^3 \Br'.
 \end{equation}
-
+%
 % http://tex.stackexchange.com/questions/57947/tex-capacity-exceeded-when-flexisym-scrreport-hyperref-and-section-heading-wi/57950#57950
 %\subsection{When \(\Br \ne \Br'\)}
 %\subsection{When \texorpdfstring{\(\Br \ne \Br'\)}{r not equal to r prime}}
@@ -58,7 +58,7 @@ To proceed we will need to evaluate
 \begin{equation}\label{eqn:helmholtzGreens:110}
 \spacegrad^2 \frac{e^{i k \Abs{\Br - \Br'}} }{\Abs{\Br - \Br'}}.
 \end{equation}
-
+%
 Writing \(\mu = \Abs{\Br - \Br'}\) we start with the computation of
 
 \begin{equation}\label{eqn:helmoltzGreens:350}
@@ -70,13 +70,13 @@ Writing \(\mu = \Abs{\Br - \Br'}\) we start with the computation of
 \PD{x}{\mu} \left( i k - \inv{\mu} \right) \frac{e^{i k \mu}}{\mu}
 \end{aligned}
 \end{equation}
-
+%
 We see that we will have
 
 \begin{equation}\label{eqn:helmholtzGreens:130}
 \spacegrad \frac{e^{i k \mu} }{\mu} = \left( i k - \inv{\mu} \right) \frac{e^{i k \mu}}{\mu} \spacegrad \mu.
 \end{equation}
-
+%
 Taking second derivatives with respect to \(x\) we find
 
 \begin{equation}\label{eqn:helmoltzGreens:370}
@@ -93,7 +93,7 @@ Taking second derivatives with respect to \(x\) we find
 \frac{e^{i k \mu}}{\mu}.
 \end{aligned}
 \end{equation}
-
+%
 Our Laplacian is then
 
 \begin{equation}\label{eqn:helmholtzGreens:150}
@@ -104,7 +104,7 @@ Our Laplacian is then
 \left( -k^2 - \frac{ 2 i k }{\mu} + \frac{2}{\mu^2} \right)
 \frac{e^{i k \mu}}{\mu} (\spacegrad \mu)^2.
 \end{equation}
-
+%
 Now lets calculate the derivatives of \(\mu\).  Working on \(x\) again, we have
 
 \begin{equation}\label{eqn:helmoltzGreens:390}
@@ -127,7 +127,7 @@ Now lets calculate the derivatives of \(\mu\).  Working on \(x\) again, we have
 \frac{x - x'}{\mu}.
 \end{aligned}
 \end{equation}
-
+%
 So we have
 
 \begin{equation}\label{eqn:helmholtzGreens:170}
@@ -136,7 +136,7 @@ So we have
 (\spacegrad \mu)^2 &= 1
 \end{aligned}
 \end{equation}
-
+%
 Taking second derivatives with respect to \(x\) we find
 
 \begin{equation}\label{eqn:helmoltzGreens:410}
@@ -157,7 +157,7 @@ Taking second derivatives with respect to \(x\) we find
 - (x - x')^2 \inv{\mu^3}.
 \end{aligned}
 \end{equation}
-
+%
 So we find
 
 \begin{equation}\label{eqn:helmholtzGreens:190}
@@ -165,13 +165,13 @@ So we find
 \frac{3}{\mu}
 - \inv{\mu},
 \end{equation}
-
+%
 or
 
 \begin{equation}\label{eqn:helmholtzGreens:210}
 \spacegrad^2 \mu = \frac{2}{\mu}.
 \end{equation}
-
+%
 Inserting this and \((\spacegrad \mu)^2\) into \eqnref{eqn:helmholtzGreens:150} we find
 
 \begin{equation}\label{eqn:helmholtzGreens:220}
@@ -187,13 +187,13 @@ Inserting this and \((\spacegrad \mu)^2\) into \eqnref{eqn:helmholtzGreens:150} 
 -k^2 \frac{e^{i k \mu}}{\mu}
 \end{aligned}
 \end{equation}
-
+%
 This shows us that provided \(\Br \ne \Br'\) we have
 
 \begin{equation}\label{eqn:helmholtzGreens:35}
 \left(\spacegrad^2 + \Bk^2\right) G^0(\Br, \Br') = 0.
 \end{equation}
-
+%
 %\subsection{\texorpdfstring{In the neighborhood of \(\Abs{\Br - \Br'} < \epsilon\)}{When r is close to r prime}}
 \paragraph{In the neighborhood of \(\Abs{\Br - \Br'} < \epsilon\)}
 
@@ -204,7 +204,7 @@ Having shown that we end up with zero everywhere that \(\Br \ne \Br'\) we are le
 =
 -\inv{4\pi} \int_{\Abs{\Br - \Br'} < \epsilon} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br'
 \end{equation}
-
+%
 We make the change of variables \(\Br' = \Br + \Ba\).  We add an explicit \(\Br\) suffix to our Laplacian at the same time to remind us that it is taking derivatives with respect to the coordinates of \(\Br = (x, y, z)\), and not the coordinates of our integration variable \(\Ba = (a_x, a_y, a_z)\).  Assuming sufficient continuity and ``well behavedness'' of \(s(\Br')\) we will be able to pull it out of the integral, giving
 
 \begin{equation}\label{eqn:helmoltzGreens:430}
@@ -216,7 +216,7 @@ We make the change of variables \(\Br' = \Br + \Ba\).  We add an explicit \(\Br\
 -\frac{s(\Br)}{4\pi} \int_{\Abs{\Ba} < \epsilon} \left( \spacegrad_\Br^2 + \Bk^2 \right) \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba
 \end{aligned}
 \end{equation}
-
+%
 Recalling the dependencies on the derivatives of \(\Abs{\Br - \Br'}\) in our previous gradient evaluations, we note that we have
 
 \begin{equation}\label{eqn:shortTimeDepPertubation:300}
@@ -226,7 +226,7 @@ Recalling the dependencies on the derivatives of \(\Abs{\Br - \Br'}\) in our pre
 \spacegrad_\Br^2 \Abs{\Br - \Br'} &= \spacegrad_\Ba^2 \Abs{\Ba},
 \end{aligned}
 \end{equation}
-
+%
 so with \(\Ba = \Br - \Br'\), we can rewrite our Laplacian as
 
 \begin{equation}\label{eqn:shortTimeDepPertubation:310}
@@ -236,7 +236,7 @@ so with \(\Ba = \Br - \Br'\), we can rewrite our Laplacian as
 =
 \spacegrad_\Ba \cdot \left(\spacegrad_\Ba \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} \right)
 \end{equation}
-
+%
 This gives us
 
 \begin{equation}\label{eqn:helmoltzGreens:450}
@@ -256,7 +256,7 @@ This gives us
 \Bk^2 \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba
 \end{aligned}
 \end{equation}
-
+%
 To complete these evaluations, we can now employ a spherical coordinate change of variables.  Let us do the \(\Bk^2\) volume integral first.  We have
 
 \begin{equation}\label{eqn:helmoltzGreens:470}
@@ -282,7 +282,7 @@ u e^{i u} du  \\
 4 \pi \left( (-i k \epsilon + 1)e^{i k \epsilon} - 1 \right)
 \end{aligned}
 \end{equation}
-
+%
 To evaluate the surface integral we note that we will require only the radial portion of the gradient, so have
 
 \begin{equation}\label{eqn:helmoltzGreens:490}
@@ -300,7 +300,7 @@ e^{i k a} \\
 \frac{e^{i k a}}{a^2}
 \end{aligned}
 \end{equation}
-
+%
 Our area element is \(a^2 \sin\theta d\theta d\phi\), so we are left with
 
 \begin{equation}\label{eqn:shortTimeDepPertubation:320}

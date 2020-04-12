@@ -23,7 +23,7 @@ In many situations one has a Hamiltonian \(H\)
 \begin{equation}\label{eqn:qmTwoL2:10}
 H \ket{\Psi_{n \alpha}} = E_n \ket{\Psi_{n \alpha}}
 \end{equation}
-
+%
 Here \(\alpha\) is a ``degeneracy index'' (example: as in Hydrogen atom).
 
 \paragraph{Why?}
@@ -43,7 +43,7 @@ take
 = \sum_{n\alpha} c_{n \alpha} \ket{\Psi_{n \alpha}}
 \end{aligned}
 \end{equation}
-
+%
 Then
 \begin{equation}\label{eqn:qmTwoL2:750}
 \begin{aligned}
@@ -61,7 +61,7 @@ e^{-i E_n t/\Hbar}
 \ket{\Psi_{n \alpha}}
 \end{aligned}
 \end{equation}
-
+%
 \item ``Applied  field"' can often be thought of a driving the system from one eigenstate to another.
 
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig1}{qmTwoL2fig1}{fig:qmTwoL2:1}{0.4}
@@ -76,13 +76,13 @@ In thermal equilibrium
 Z
 }
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL2:50}
 \beta = \inv{\kB T},
 \end{equation}
-
+%
 and
 
 \begin{equation}\label{eqn:qmTwoL2:70}
@@ -98,19 +98,19 @@ Consider any ket
 \begin{equation}\label{eqn:qmTwoL2:90}
 \ket{\Psi} = \sum_{n \alpha} c_{n \alpha} \ket{\Psi_{n \alpha}}
 \end{equation}
-
+%
 (perhaps not even normalized), and where
 
 \begin{equation}\label{eqn:qmTwoL2:110}
 c_{n \alpha} = \braket{\Psi_{n \alpha}}{\Psi}
 \end{equation}
-
+%
 but we do not know these.
 
 \begin{equation}\label{eqn:qmTwoL2:130}
 \braket{\Psi}{\Psi} = \sum_{n \alpha} \Abs{c_{n \alpha}}^2
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:770}
 \begin{aligned}
 \frac{
@@ -134,7 +134,7 @@ but we do not know these.
 E_0
 \end{aligned}
 \end{equation}
-
+%
 So for any ket we can form the upper bound for the ground state energy
 
 \begin{equation}\label{eqn:qmTwoL2:150}
@@ -145,7 +145,7 @@ So for any ket we can form the upper bound for the ground state energy
 }
 \ge E_0
 \end{equation}
-
+%
 There is a whole set of strategies based on estimating the ground state energy.  This is called the Variational principle for ground state.  See \S 24.2 in the text \citep{desai2009quantum}.
 
 We define the functional
@@ -159,25 +159,25 @@ E[\Psi] =
 }
 \ge E_0
 \end{equation}
-
+%
 If \(\ket{\Psi} = c \ket{\Psi_0}\) where \(\ket{\Psi_0}\) is the normalized ground state, then
 
 \begin{equation}\label{eqn:qmTwoL2:190}
 E[ c \Psi_0 ] = E_0
 \end{equation}
-
+%
 \makeexample{Hydrogen atom}{approx:ex1}{
 
 \begin{equation}\label{eqn:qmTwoL2:210}
 \bra{\Br} H \ket{\Br'} = \calH \delta^3(\Br - \Br')
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL2:230}
 \calH = -\frac{\Hbar^2}{2 \mu} \spacegrad^2 - \frac{e^2}{r}
 \end{equation}
-
+%
 Here \(\mu\) is the reduced mass.
 
 We know the exact solution:
@@ -185,23 +185,23 @@ We know the exact solution:
 \begin{equation}\label{eqn:qmTwoL2:250}
 H \ket{\Psi_0}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:270}
 E_0 = -R_y
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:290}
 R_y = \frac{\mu e^4}{2 \Hbar^2} \approx 13.6 \text{eV}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:310}
 \braket{\Br}{\Psi_0} = \Phi_{100}(\Br) = \left( \inv{\pi a_0^3}\right)^{1/2} e^{-r/a_0}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:330}
 a_0 = \frac{\Hbar^2}{\mu e^2} \approx 0.53 \angstrom
 \end{equation}
-
+%
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig2}{qmTwoL2fig2}{fig:qmTwoL2:2}{0.4}
 
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig3}{qmTwoL2fig3}{fig:qmTwoL2:3}{0.4}
@@ -214,7 +214,7 @@ estimate
 \braket{\Psi}{\Psi} &= \int d^3 \Br \Abs{\Psi(\Br)}^2
 \end{aligned}
 \end{equation}
-
+%
 Or guess shape
 
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig4}{qmTwoL2fig4}{fig:qmTwoL2:4}{0.4}
@@ -224,26 +224,26 @@ Using the trial wave function \(e^{-\alpha r^2}\)
 \begin{equation}\label{eqn:qmTwoL2:370}
 E[\Psi] \rightarrow E(\alpha)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:390}
 E(\alpha) =
 \frac{\int d^3 \Br e^{-\alpha r^2} \left( -\frac{\Hbar^2}{2 \mu} \spacegrad^2 - \frac{e^2}{r} \right) e^{-\alpha r^2}}{
 \int d^3\Br e^{-2 \alpha r^2}
 }
 \end{equation}
-
+%
 find
 \begin{equation}\label{eqn:qmTwoL2:410}
 E(\alpha) = A \alpha - B \alpha^{1/2}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:430}
 \begin{aligned}
 A &= \frac{3 \Hbar^2}{2\mu} \\
 B &= 2 e^2 \left( \frac{2}{\pi} \right)^{1/2}
 \end{aligned}
 \end{equation}
-
+%
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig5}{qmTwoL2fig5}{fig:qmTwoL2:5}{0.4}
 
 Minimum at
@@ -252,14 +252,14 @@ Minimum at
 \alpha_0 =
 \left( \frac{\mu e^2}{ \Hbar^2 } \right) \frac{8 }{9 \pi}
 \end{equation}
-
+%
 So
 
 \begin{equation}\label{eqn:qmTwoL2:470}
 E(\alpha_0) =
 - \frac{\mu e^4 }{2 \Hbar^2} \frac{8 }{3 \pi} = -0.85 R_y
 \end{equation}
-
+%
 maybe not too bad...
 }
 
@@ -274,7 +274,7 @@ ground state wavefunction
 \begin{equation}\label{eqn:qmTwoL2:490}
 \Psi_0(\Br_1, \Br_2)
 \end{equation}
-
+%
 The problem that we want to solve is
 
 \begin{equation}\label{eqn:qmTwoL2:510}
@@ -287,7 +287,7 @@ The problem that we want to solve is
 \right)
 \Psi_0(\Br_1, \Br_2) = E_0 \Psi_0(\Br_1, \Br_2)
 \end{equation}
-
+%
 Nobody can solve this problem.  It is one of the simplest real problems in QM that cannot be solved exactly.
 
 Suppose that we neglected the electron, electron repulsion.  Then
@@ -298,7 +298,7 @@ Suppose that we neglected the electron, electron repulsion.  Then
 \overbar{\Phi}_{100}(\Br_1)
 \overbar{\Phi}_{100}(\Br_2)
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL2:550}
@@ -306,17 +306,17 @@ where
 - \frac{2 e}{r} \right)
 \overbar{\Phi}_{100}(\Br) = \epsilon \overbar{\Phi}_{100}(\Br)
 \end{equation}
-
+%
 with
 
 \begin{equation}\label{eqn:qmTwoL2:570}
 \epsilon = - 4 R_y
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:590}
 R_y = \frac{m e^4}{2 \Hbar^2}
 \end{equation}
-
+%
 This is the solution to
 
 \begin{equation}\label{eqn:qmTwoL2:610}
@@ -329,11 +329,11 @@ This is the solution to
 =
 E_0^{(0)} \Psi_0^{(0)}(\Br_1, \Br_2)
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:630}
 E_0^{(0)} = - 8 R_y.
 \end{equation}
-
+%
 Now we want to put back in the electron electron repulsion, and make an estimate.
 
 Trial wavefunction
@@ -347,7 +347,7 @@ Trial wavefunction
 \left(\frac{Z^3}{ \pi a_0^3 }\right)^{1/2} e^{-Z r_2/a_0}
 \right)
 \end{equation}
-
+%
 expect that the best estimate is for \(Z \in [1,2]\).
 
 This can be calculated numerically, and we find
@@ -355,7 +355,7 @@ This can be calculated numerically, and we find
 \begin{equation}\label{eqn:qmTwoL2:670}
 E(Z) = 2 R_Y \left( Z^2 - 4 Z + \frac{5}{8} Z \right)
 \end{equation}
-
+%
 The \(Z^2\) comes from the kinetic energy.  The \(-4 Z\) is the electron nuclear attraction, and the final term is from the electron-electron repulsion.
 
 The actual minimum is
@@ -363,11 +363,11 @@ The actual minimum is
 \begin{equation}\label{eqn:qmTwoL2:690}
 Z = 2 - \frac{5}{16}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL2:710}
 E(2 - 5/16) = -77.5 \text{eV}
 \end{equation}
-
+%
 Whereas the measured value is \(-78.6 \text{eV}\).
 }
 

@@ -35,7 +35,7 @@ From 1D we have learned to build up solutions from time independent solutions (n
 \begin{equation}\label{eqn:qmTwoL23:510}
 e^{i \Bk \cdot \Br} = e^{i k \ncap \cdot \Br}
 \end{equation}
-
+%
 This is a solution of the time independent Schr\"{o}dinger equation
 
 \begin{equation}\label{eqn:qmTwoL23:530}
@@ -43,13 +43,13 @@ This is a solution of the time independent Schr\"{o}dinger equation
 = E
 e^{i \Bk \cdot \Br},
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL23:550}
 E = \frac{\Hbar^2 \Bk^2}{2 \mu}.
 \end{equation}
-
+%
 In the presence of a potential expect scattered waves.
 %We will next be indentifying the nature of these solutions.
 %-------------- scattering/qmTwoL23.tex ------------------------
@@ -62,7 +62,7 @@ Here we have \(V(r) = 0\) for \(r > r_0\).  The wave function
 \begin{equation}\label{eqn:qmTwoL23:20}
 e^{i k \ncap \cdot \Br}
 \end{equation}
-
+%
 is found to be a solution of the free particle Schr\"{o}dinger equation.
 
 \begin{equation}\label{eqn:qmTwoL23:40}
@@ -71,7 +71,7 @@ e^{i k \ncap \cdot \Br}
  = \frac{\Hbar^2 \Bk^2}{2 \mu}
 e^{i k \ncap \cdot \Br}
 \end{equation}
-
+%
 \section{Seeking a post scattering solution away from the potential}
 
 What other solutions can be found for \(r > r_0\), where our potential \(V(r) = 0\)?  We are looking for \(\Phi(\Br)\) such that
@@ -82,7 +82,7 @@ What other solutions can be found for \(r > r_0\), where our potential \(V(r) = 
  = \frac{\Hbar^2 \Bk^2}{2 \mu}
 \Phi(r)
 \end{equation}
-
+%
 What can we find?
 
 We split our Laplacian into radial and angular components as we did for the hydrogen atom
@@ -94,7 +94,7 @@ We split our Laplacian into radial and angular components as we did for the hydr
 =
 E \Phi(\Br),
 \end{equation}
-
+%
 where
 
 \begin{equation}\label{eqn:qmTwoL23:100}
@@ -104,19 +104,19 @@ where
 + \inv{\sin^2\theta} \PDSq{\phi}{}
 \right)
 \end{equation}
-
+%
 Assuming a solution of
 
 \begin{equation}\label{eqn:qmTwoL23:120}
 \Phi(\Br) = R(r) Y_l^m(\theta, \phi),
 \end{equation}
-
+%
 and noting that
 
 \begin{equation}\label{eqn:qmTwoL23:140}
 \calL^2 Y_l^m(\theta, \phi) = \Hbar^2 l (l+1) Y_l^m(\theta, \phi),
 \end{equation}
-
+%
 we find that our radial equation becomes
 
 \begin{equation}\label{eqn:qmTwoL23:160}
@@ -129,13 +129,13 @@ E R(r)
 =
 \frac{\Hbar^2 k^2}{2\mu} R(r).
 \end{equation}
-
+%
 Writing
 
 \begin{equation}\label{eqn:qmTwoL23:180}
 R(r) = \frac{u(r)}{r},
 \end{equation}
-
+%
 we have
 
 \begin{equation}\label{eqn:qmTwoL23:200}
@@ -147,19 +147,19 @@ u(r)
 \frac{\Hbar^2 k^2}{2\mu}
  \frac{u(r)}{r},
 \end{equation}
-
+%
 or
 
 \begin{equation}\label{eqn:qmTwoL23:220}
 \left( \frac{d^2}{dr^2} + k^2 -\frac{l (l+1) }{r^2} \right) u(r) = 0
 \end{equation}
-
+%
 Writing \(\rho = k r\), we have
 
 \begin{equation}\label{eqn:qmTwoL23:240}
 \left( \frac{d^2}{d\rho^2} + 1 -\frac{l (l+1) }{\rho^2} \right) u(r) = 0
 \end{equation}
-
+%
 \section{The radial equation and its solution}
 
 With a last substitution of \(u(r) = U( k r ) = U(\rho)\), and introducing an explicit \(l\) suffix on our eigenfunction \(U(\rho)\) we have
@@ -167,7 +167,7 @@ With a last substitution of \(u(r) = U( k r ) = U(\rho)\), and introducing an ex
 \begin{equation}\label{eqn:qmTwoL23:260}
 \left( -\frac{d^2}{d\rho^2} +\frac{l (l+1) }{\rho^2} \right) U_l(\rho) = U_l(\rho).
 \end{equation}
-
+%
 We would not have done this before with the hydrogen atom since we had only finite \(E = \Hbar^2 k^2/2 \mu\).  Now this can be anything.
 
 Making one final substitution, \(U_l(\rho) = \rho f_l(\rho)\) we can rewrite \eqnref{eqn:qmTwoL23:260} as
@@ -175,7 +175,7 @@ Making one final substitution, \(U_l(\rho) = \rho f_l(\rho)\) we can rewrite \eq
 \begin{equation}\label{eqn:qmTwoL23:260b}
 \left( \rho^2 \frac{d^2}{d\rho^2} + 2 \rho \ddrho{} + (\rho^2 - l(l+1)) \right) f_l = 0.
 \end{equation}
-
+%
 This is the spherical Bessel equation of order \(l\) and has solutions called the Bessel and Neumann functions of order \(l\), which are
 
 \begin{subequations}
@@ -195,7 +195,7 @@ U_0(\rho) &= \rho j_0(\rho) = \sin\rho \\
 U_1(\rho) &= \rho j_1(\rho) = -\cos\rho + \frac{\sin\rho}{\rho}
 \end{aligned}
 \end{equation}
-
+%
 and can plug these into \eqnref{eqn:qmTwoL23:260} to verify that they are a solution.  A more general proof looks a bit trickier.
 
 Observe that the Neumann functions are less well behaved at the origin.  To calculate the first few Bessel and Neumann functions we first compute
@@ -212,7 +212,7 @@ Observe that the Neumann functions are less well behaved at the origin.  To calc
 -\frac{\sin\rho}{\rho^3}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL23:1280}
 \begin{aligned}
 \left( \inv{\rho} \ddrho{} \right)^2 \frac{\sin\rho}{\rho}
@@ -230,7 +230,7 @@ Observe that the Neumann functions are less well behaved at the origin.  To calc
 -3\frac{\cos\rho}{\rho^4}
 \end{aligned}
 \end{equation}
-
+%
 and
 \begin{equation}\label{eqn:qmTwoL23:1300}
 \begin{aligned}
@@ -244,7 +244,7 @@ and
 +\frac{\cos\rho}{\rho^3}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL23:1320}
 \begin{aligned}
 \left( \inv{\rho} \ddrho{} \right)^2 -\frac{\cos\rho}{\rho}
@@ -262,7 +262,7 @@ and
 -3\frac{\sin\rho}{\rho^4}
 \end{aligned}
 \end{equation}
-
+%
 so we find
 
 \begin{equation}\label{eqn:qmTwoL23:340}
@@ -273,7 +273,7 @@ j_2(\rho) &= \sin\rho \left(-\frac{1}{\rho} + \frac{3}{\rho^3} \right) +\cos\rho
 & n_2(\rho) &= \cos\rho \left(\frac{1}{\rho} - \frac{3}{\rho^3} \right) +\sin\rho \left(-\frac{3}{\rho^2} \right)
 \end{array}
 \end{equation}
-
+%
 Observe that our radial functions \(R(r)\) are proportional to these Bessel and Neumann functions
 
 \begin{equation}\label{eqn:qmTwoL23:1340}
@@ -297,13 +297,13 @@ R(r)
 \right.
 \end{aligned}
 \end{equation}
-
+%
 Or
 
 \begin{equation}\label{eqn:qmTwoL23:360}
 R(r) \sim j_l(\rho), n_l(\rho).
 \end{equation}
-
+%
 \section{Limits of spherical Bessel and Neumann functions}
 \index{Bessel function}
 \index{Neumann function}
@@ -313,7 +313,7 @@ With \(n!!\) denoting the double factorial, like factorial but skipping every ot
 \begin{equation}\label{eqn:qmTwoL23:400}
 n!! = n(n-2)(n-4) \cdots,
 \end{equation}
-
+%
 we can show that in the limit as \(\rho \rightarrow 0\) we have
 
 \begin{subequations}
@@ -348,7 +348,7 @@ For \(r > r_0\) we can construct (for fixed \(k\)) a superposition of the spheri
 \begin{equation}\label{eqn:qmTwoL23:480}
 \sum_l \sum_m \left( A_l j_l( k r ) + B_l n_l(k r) \right) Y_l^m(\theta, \phi)
 \end{equation}
-
+%
 we want outgoing waves, and as \(r \rightarrow \infty\), we have
 
 \begin{subequations}
@@ -368,7 +368,7 @@ Put \(A_l/B_l = -i\) for a given \(l\) we have
 -\frac{\cos\left(kr - \frac{l \pi}{2}\right)}{k r} \right)
 \sim \inv{k r} e^{i (k r - \pi l/2)}
 \end{equation}
-
+%
 For
 
 \begin{equation}\label{eqn:qmTwoL23:540}
@@ -376,7 +376,7 @@ For
 \sum_m B_l
 \inv{k r} e^{i (k r - \pi l/2)} Y_l^m(\theta, \phi).
 \end{equation}
-
+%
 Making this choice to achieve \textunderline{outgoing} waves (and factoring a \((-i)^l\) out of \(B_l\) for some reason, we have another wave function that satisfies our Hamiltonian equation
 
 \begin{equation}\label{eqn:qmTwoL23:560}
@@ -387,13 +387,13 @@ Making this choice to achieve \textunderline{outgoing} waves (and factoring a \(
 B_l
 Y_l^m(\theta, \phi).
 \end{equation}
-
+%
 The \(B_l\) coefficients will depend on \(V(r)\) for the incident wave \(e^{i \Bk \cdot \Br}\).  Suppose we encapsulate that dependence in a helper function \(f_\Bk(\theta, \phi)\) and write
 
 \begin{equation}\label{eqn:qmTwoL23:580}
 \frac{e^{i k r}}{r} f_\Bk(\theta, \phi)
 \end{equation}
-
+%
 We seek a solution \(\psi_\Bk(\Br)\)
 
 \begin{equation}\label{eqn:qmTwoL23:60b}
@@ -404,19 +404,19 @@ We seek a solution \(\psi_\Bk(\Br)\)
  = \frac{\Hbar^2 \Bk^2}{2 \mu}
 \psi_\Bk(\Br),
 \end{equation}
-
+%
 where as \(r \rightarrow \infty\)
 
 \begin{equation}\label{eqn:qmTwoL23:600}
 \psi_\Bk(\Br) \rightarrow e^{i \Bk \cdot \Br} + \frac{e^{i k r}}{r} f_\Bk(\theta, \phi).
 \end{equation}
-
+%
 Note that for \(r < r_0\) in general for finite \(r\), \(\psi_k(\Br)\), is much more complicated.  This is the analogue of the plane wave result
 
 \begin{equation}\label{eqn:qmTwoL23:620}
 \psi(x) = e^{i k x} + \beta_k e^{-i k x}
 \end{equation}
-
+%
 
 \section{Scattering geometry and nomenclature}
 
@@ -432,7 +432,7 @@ Write \(P\) for the number density
 \begin{equation}\label{eqn:qmTwoL23:680}
 P = \frac{\text{number of particles}}{\text{unit volume}},
 \end{equation}
-
+%
 and
 
 \begin{equation}\label{eqn:qmTwoL23:700}
@@ -443,25 +443,25 @@ J = P v_0 =
 \text{a unit area in unit time}
 }
 \end{equation}
-
+%
 We want to count the rate of particles per unit time \(dN\) through this solid angle \(d\Omega\) and write
 
 \begin{equation}\label{eqn:qmTwoL23:720}
 dN = J \left( \frac{d \sigma(\Omega)}{d\Omega} \right) d\Omega.
 \end{equation}
-
+%
 The factor
 
 \begin{equation}\label{eqn:qmTwoL23:740}
 \frac{d \sigma(\Omega)}{d\Omega},
 \end{equation}
-
+%
 is called the differential cross section, and has ``units'' of
 
 \begin{equation}\label{eqn:qmTwoL23:760}
 \frac{\text{area}}{\text{steradians}}
 \end{equation}
-
+%
 (recalling that steradians are radian like measures of solid angle \citep{wiki:steradian}).
 
 The total number of particles through the volume per unit time is then
@@ -471,7 +471,7 @@ The total number of particles through the volume per unit time is then
 = J \int \frac{d \sigma(\Omega)}{d\Omega} d\Omega
 = J \sigma
 \end{equation}
-
+%
 where \(\sigma\) is the total cross section and has units of area.  The cross section \(\sigma\) his the effective size of the area required to collect all particles, and characterizes the scattering, but is not necessarily entirely geometrical.  For example, in photon scattering we may have frequency matching with atomic resonance, finding \(\sigma \sim \lambda^2\), something that can be much bigger than the actual total area involved.
 
 
@@ -486,14 +486,14 @@ Curious about this, I find an orthogonality condition in \citep{wiki:bessel}
 \begin{equation}\label{eqn:qmTwoL23:640}
 \int_0^\infty J_\alpha(z) J_\beta(z) \frac{dz}{z} = \frac{2}{\pi} \frac{\sin\left(\frac{\pi}{2}\left( \alpha - \beta\right) \right) }{\alpha^2 - \beta^2},
 \end{equation}
-
+%
 from which we find for the spherical Bessel functions
 
 \begin{equation}\label{eqn:qmTwoL23:660}
 \int_0^\infty j_l(\rho) j_m(\rho) d\rho =
 \frac{\sin\left(\frac{\pi}{2}\left( l - m \right) \right) }{(l+ 1/2)^2 - (m + 1/2)^2}.
 \end{equation}
-
+%
 Is this a satisfactory orthogonality integral?  At a glance it does not appear to be well behaved for \(l = m\), but perhaps the limit can be taken?
 
 
@@ -531,7 +531,7 @@ Writing the \(\sinc\) function in series form
 \begin{equation}\label{eqn:qmTwoL23:800}
 \frac{\sin x}{x} = \sum_{k=0}^\infty (-1)^k \frac{x^{2k}}{(2k + 1)!},
 \end{equation}
-
+%
 we can differentiate easily
 
 \begin{equation}\label{eqn:qmTwoL23:820}
@@ -546,7 +546,7 @@ we can differentiate easily
 &= (-1) \sum_{k=0}^\infty (-1)^k \inv{2k + 3} \frac{x^{2k}}{(2k + 1)!} \\
 \end{aligned}
 \end{equation}
-
+%
 Performing the derivative operation a second time we find
 
 \begin{equation}\label{eqn:qmTwoL23:840}
@@ -556,7 +556,7 @@ Performing the derivative operation a second time we find
 &= \sum_{k=0}^\infty (-1)^k \inv{2k + 5} \inv{2k + 3} \frac{x^{2k}}{(2k + 1)!}
 \end{aligned}
 \end{equation}
-
+%
 It appears reasonable to form the inductive hypotheses
 
 \begin{equation}\label{eqn:qmTwoL23:860}
@@ -565,7 +565,7 @@ It appears reasonable to form the inductive hypotheses
 \sum_{k=0}^\infty (-1)^k \frac{(2k+1)!!}{(2(k + l) + 1)!!}
 \frac{x^{2k}}{(2k + 1)!},
 \end{equation}
-
+%
 and this proves to be correct.  We find then that the spherical Bessel function has the power series expansion of
 
 \begin{equation}\label{eqn:qmTwoL23:880}
@@ -573,7 +573,7 @@ j_l(x) =
 \sum_{k=0}^\infty (-1)^k \frac{(2k+1)!!}{(2(k + l) + 1)!!}
 \frac{x^{2k + l}}{(2k + 1)!}
 \end{equation}
-
+%
 and from this the Bessel function limit of \eqnref{eqn:qmTwoL23:380a} follows immediately.
 
 Finding the matching induction series for the Neumann functions is a bit harder.  It is not really any more difficult to write it, but it is harder to put it in a tidy form that is.
@@ -589,7 +589,7 @@ We find
 -\frac{\cos x}{x} &= - \sum_{k=0}^\infty (-1)^k \frac{(2k-1)(2k -3)}{2k(2k -2)} \frac{x^{2k-3}}{(2k-4)!}
 \end{aligned}
 \end{equation}
-
+%
 The general expression, after a bit of messing around (and I got it wrong the first time), can be found to be
 
 \begin{equation}\label{eqn:qmTwoL23:920}
@@ -605,7 +605,7 @@ The general expression, after a bit of messing around (and I got it wrong the fi
 \frac{x^{2k-1}}{(2(k + l)!}.
 \end{aligned}
 \end{equation}
-
+%
 We really only need the lowest order term (which dominates for small \(x\)) to confirm the small limit \eqnref{eqn:qmTwoL23:380b} of the Neumann function, and this follows immediately.
 
 For completeness, we note that the series expansion of the Neumann function is
@@ -621,7 +621,7 @@ n_l(x)
 \frac{x^{2k-1}}{(2(k + l)!}.
 \end{aligned}
 \end{equation}
-
+%
 \section{Verifying the solution to the spherical Bessel equation}
 \index{Bessel equation}
 
@@ -630,13 +630,13 @@ One way to verify that \eqnref{eqn:qmTwoL23:280} is a solution to the Bessel equ
 \begin{equation}\label{eqn:qmTwoL23:1020}
 f = x^r \sum_{k=0}^\infty a_k x^k
 \end{equation}
-
+%
 Writing our differential operator as
 
 \begin{equation}\label{eqn:qmTwoL23:1040}
 L = x^2 \frac{d^2}{dx^2} + 2 x \ddx{} + x^2 - l(l+1),
 \end{equation}
-
+%
 we get
 
 \begin{equation}\label{eqn:qmTwoL23:1360}
@@ -655,19 +655,19 @@ a_1 \Bigl(
 &+\sum_{k=2}^\infty a_k \Bigl( (k+r)(k+r-1) + 2 (k + r) - l (l+1) + a_{k-2} \Bigr) x^{k + r}
 \end{aligned}
 \end{equation}
-
+%
 Since we require this to be zero for all \(x\) including non-zero values, we must have constraints on \(r\).  Assuming first that \(a_0\) is non-zero we must then have
 
 \begin{equation}\label{eqn:qmTwoL23:1060}
 0 = r( r + 1) - l(l + 1).
 \end{equation}
-
+%
 One solution is obviously \(r = l\).  Assuming we have another solution \(r = l + k\) for some integer \(k\) we find that \(r = -l-1\) is also a solution.  Restricting attention first to \(r = l\), we must have \(a_1 = 0\) since for non-negative \(l\) we have \((l+1)(l+2) - l(l+1) = 2(l+1) \ne 0\).  Thus for non-zero \(a_0\) we find that our function is of the form
 
 \begin{equation}\label{eqn:qmTwoL23:1080}
 f = \sum_k a_{2k} x^{2k + l}.
 \end{equation}
-
+%
 It does not matter that we started with \(a_0 \ne 0\).  If we instead start with \(a_1 \ne 0\) we find that we must have \(r = l-1, -l-2\), so end up with exactly the same functional form as \eqnref{eqn:qmTwoL23:1080}.  It ends up slightly simpler if we start with \eqnref{eqn:qmTwoL23:1080} instead, since we now know that we do not have any odd powered \(a_k\)'s to deal with.  Doing so we find
 
 \begin{equation}\label{eqn:qmTwoL23:1380}
@@ -684,7 +684,7 @@ a_{2k} 2k (2 (k+l) + 1) + a_{2(k-1)}
 \Bigr) x^{2k + l}
 \end{aligned}
 \end{equation}
-
+%
 We find
 
 \begin{equation}\label{eqn:qmTwoL23:1100}
@@ -696,19 +696,19 @@ a_{2k}
 2k (2 (k+l) + 1)
 }.
 \end{equation}
-
+%
 Proceeding recursively, we find
 
 \begin{equation}\label{eqn:qmTwoL23:1120}
 f = a_0 (2 l + 1)!! \sum_{k=0}^\infty \frac{(-1)^k}{(2k)!! (2 (k+l) + 1)!!} x^{2k + l}.
 \end{equation}
-
+%
 With \(a_0 = 1/(2l + 1)!!\) and the observation that
 
 \begin{equation}\label{eqn:qmTwoL23:1140}
 \inv{(2k)!!} = \frac{(2k + 1)!!}{(2k+1)!},
 \end{equation}
-
+%
 we have \(f = j_l(x)\) as given in \eqnref{eqn:qmTwoL23:880}.
 
 If we do the same for the \(r = -l-1\) case, we find
@@ -722,14 +722,14 @@ a_{2k}
 2k (2 (k-l) - 1)
 },
 \end{equation}
-
+%
 and find
 
 \begin{equation}\label{eqn:qmTwoL23:1160}
 \frac{a_{2k}}{a_0} =
 \frac{(-1)^k}{(2k)!! (2(k-l) -1)(2(k-l)-3)\cdots(-2l + 1)}.
 \end{equation}
-
+%
 Flipping signs around, we can rewrite this as
 \begin{equation}\label{eqn:qmTwoL23:1200}
 \frac{
@@ -741,7 +741,7 @@ a_{2k}
 (2(l-k) + 1) (2(l-k) + 3) \cdots (2 l - 1)
 }.
 \end{equation}
-
+%
 For those values of \(l > k\) we can write this as
 
 \begin{equation}\label{eqn:qmTwoL23:1220}
@@ -753,13 +753,13 @@ a_{2k}
 (2k)!! (2 l - 1)!!
 }.
 \end{equation}
-
+%
 Comparing to the small limit \eqnref{eqn:qmTwoL23:380b}, the \(k=0\) term, we find that we must have
 
 \begin{equation}\label{eqn:qmTwoL23:1240}
 \frac{a_0}{(2 l - 1)!!} = -1.
 \end{equation}
-
+%
 After some play we find
 \begin{equation}\label{eqn:qmTwoL23:1230}
 a_{2k}
@@ -771,7 +771,7 @@ a_{2k}
 \end{array}
 \right.
 \end{equation}
-
+%
 Putting this all together we have
 
 \begin{equation}\label{eqn:qmTwoL23:1180}
@@ -783,7 +783,7 @@ n_l(x) =
 \frac{(-1)^{k-l}} { (2 (k-l) -1)!! }
 \frac{x^{2k -l -1}}{(2k)!!}
 \end{equation}
-
+%
 FIXME: check that this matches the series calculated earlier \eqnref{eqn:qmTwoL23:920b}.
 
 

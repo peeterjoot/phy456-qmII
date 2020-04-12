@@ -30,13 +30,13 @@ READING: \S 29 of \citep{desai2009quantum}.
 U[M] T(k, q) U^{-1}[M]
 = \sum_{q'} T(k, q') D^{(k)}_{q q'}
 \end{equation}
-
+%
 where \(D^{(k)}_{q q'}\) was the matrix element of the rotation operator
 
 \begin{equation}\label{eqn:qmTwoL20:20}
 D^{(k)}_{q q'} = \bra{k q'} U[M] \ket{k q''}.
 \end{equation}
-
+%
 So, if we have a Cartesian vector operator with components \(V_x, V_y, V_z\) then we can construct a corresponding spherical vector operator
 
 \begin{equation}\label{eqn:qmTwoL20:30}
@@ -46,7 +46,7 @@ T(1, 0) &= V_z &\equiv V_0 \\
 T(1, -1) &= - \frac{V_x - i V_y}{\sqrt{2}} &\equiv V_{-1}
 \end{array}.
 \end{equation}
-
+%
 By considering infinitesimal rotations we can come up with the commutation relations between the angular momentum operators
 
 \begin{equation}\label{eqn:qmTwoL20:50}
@@ -55,7 +55,7 @@ By considering infinitesimal rotations we can come up with the commutation relat
 \antisymmetric{J_{z}}{T(k, q)} &= \Hbar q T(k, q)
 \end{aligned}
 \end{equation}
-
+%
 Note that the text in (29.15) defines these, whereas in class these were considered consequences of \eqnref{eqn:qmTwoL20:10}, once infinitesimal rotations were used.
 
 Recall that these match our angular momentum raising and lowering identities
@@ -66,7 +66,7 @@ J_{\pm} \ket{k q} &= \Hbar \sqrt{(k \mp q)(k \pm q + 1)} \ket{k, q \pm 1} \\
 J_{z} \ket{k q} &= \Hbar q \ket{k, q}.
 \end{aligned}
 \end{equation}
-
+%
 Consider two problems
 
 \begin{equation}\label{eqn:qmTwoL20:70}
@@ -76,7 +76,7 @@ T(k, q)						& & \ket{k q} \\
 \antisymmetric{J_{z}}{T(k, q)} 			&\leftrightarrow &J_{z} \ket{k q}
 \end{array}
 \end{equation}
-
+%
 We have a correspondence between the spherical tensors and angular momentum kets
 
 \begin{equation}\label{eqn:qmTwoL20:330}
@@ -85,7 +85,7 @@ T_1(k_1, q_1)&\qquad q_1 = -k_1, \cdots, k_1 		& \qquad \ket{k_1 q_1} 		& \ket{k
 T_2(k_2, q_2)&\qquad q_2 = -k_2, \cdots, k_2		& \qquad q_1 = -k_1, \cdots k_1 	& q_2 = -k_2, \cdots k_2 \\
 \end{array}
 \end{equation}
-
+%
 So, as we can write for angular momentum
 \begin{equation}\label{eqn:qmTwoL20:410}
 \begin{aligned}
@@ -99,7 +99,7 @@ So, as we can write for angular momentum
 \ket{k q'} \braket{ k q'}{ k_1 q_1 k_2 q_2 }
 \end{aligned}
 \end{equation}
-
+%
 We also have for spherical tensors
 
 \begin{equation}\label{eqn:qmTwoL20:430}
@@ -116,7 +116,7 @@ T_2(k_2, q_2)
 T(k, q') \braket{ k q'}{ k_1 q_1 k_2 q_2 } &
 \end{aligned}
 \end{equation}
-
+%
 Can form eigenstates \(\ket{kq}\) of \((\text{total angular momentum})^2\) and (z-comp of the total angular momentum).
 FIXME: this will not be proven, but we are strongly suggested to try this ourselves.
 
@@ -126,7 +126,7 @@ FIXME: this will not be proven, but we are strongly suggested to try this oursel
 (\text{spherical vector})(\text{spherical vector})	&		 &\text{Cartesian tensor}
 \end{array}
 \end{equation}
-
+%
 We can check the dimensions for a spherical tensor decomposition into rank 0, rank 1 and rank 2 tensors.
 
 \begin{equation}\label{eqn:qmTwoL20:370}
@@ -138,13 +138,13 @@ We can check the dimensions for a spherical tensor decomposition into rank 0, ra
 \text{dimension check sum}       	&	 9	&         \\
 \end{array}
 \end{equation}
-
+%
 Or in the direct product and sum shorthand
 
 \begin{equation}\label{eqn:qmTwoL20:90}
 1 \otimes 1 = 0 \oplus 1 \oplus 2
 \end{equation}
-
+%
 Note that this is just like problem 4 in problem set 10 where we calculated the CG kets for the \(1 \otimes 1 = 0 \oplus 1 \oplus 2\) decomposition starting from kets \(\ket{1 m}\ket{1 m'}\).
 
 \begin{equation}\label{eqn:qmTwoL20:390}
@@ -156,7 +156,7 @@ Note that this is just like problem 4 in problem set 10 where we calculated the 
 \ket{2\overline{2}}	&				&
 \end{array}
 \end{equation}
-
+%
 \paragraph{Example}.
 
 How about a Cartesian tensor of rank 3?
@@ -164,7 +164,7 @@ How about a Cartesian tensor of rank 3?
 \begin{equation}\label{eqn:qmTwoL20:110}
 A_{ijk}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL20:450}
 \begin{aligned}
 1 \otimes 1 \otimes 1
@@ -179,7 +179,7 @@ A_{ijk}
 \end{array}
 \end{aligned}
 \end{equation}
-
+%
 \paragraph{Why bother?}
 
 Consider a tensor operator \(T(k, q)\) and an eigenket of angular momentum \(\ket{\alpha j m}\), where \(\alpha\) is a degeneracy index.
@@ -199,13 +199,13 @@ D^{(j)}_{m m'}
 T(k, q') \ket{\alpha j m'}
 \end{aligned}
 \end{equation}
-
+%
 This transforms like \(\ket{k q} \otimes \ket{j m}\).  We can say immediately
 
 \begin{equation}\label{eqn:qmTwoL20:150}
 \bra{\alpha' j' m'} T(k, q) \ket{\alpha j m} = 0
 \end{equation}
-
+%
 unless
 \begin{equation}\label{eqn:qmTwoL20:170}
 \begin{aligned}
@@ -213,7 +213,7 @@ unless
 m' &= m + q
 \end{aligned}
 \end{equation}
-
+%
 This is the ``selection rule''.
 
 Examples.
@@ -224,7 +224,7 @@ Examples.
 \begin{equation}\label{eqn:qmTwoL20:190}
 \bra{\alpha' j' m'} T(0, 0) \ket{\alpha j m} = 0 ,
 \end{equation}
-
+%
 unless \(j = j'\) and \(m = m'\).
 
 \item \(V_x, V_y, V_z\).  What are the non-vanishing matrix elements?
@@ -232,11 +232,11 @@ unless \(j = j'\) and \(m = m'\).
 \begin{equation}\label{eqn:qmTwoL20:210}
 V_x = \frac{ V_{-1} - V_{+1}}{\sqrt{2}}, \cdots
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL20:230}
 \bra{\alpha' j' m'} V_{x, y} \ket{\alpha j m} = 0 ,
 \end{equation}
-
+%
 unless
 \begin{equation}\label{eqn:qmTwoL20:250}
 \begin{aligned}
@@ -244,11 +244,11 @@ unless
 m' &= m \pm 1
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL20:270}
 \bra{\alpha' j' m'} V_{z} \ket{\alpha j m} = 0 ,
 \end{equation}
-
+%
 unless
 \begin{equation}\label{eqn:qmTwoL20:290}
 \begin{aligned}
@@ -266,7 +266,7 @@ Very generally one can prove (the Wigner-Eckart theory in the text \S 29.3)
 \bra{\alpha_2 j_2 } T(k) \ket{\alpha_1 j_1} \cdot
 \braket{j_2 m_2}{k q_1 ; j_1 m_1}
 \end{equation}
-
+%
 where we split into a ``reduced matrix element'' describing the ``physics'', and the CG coefficient for ``geometry'' respectively.
 
 

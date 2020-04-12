@@ -13,7 +13,7 @@ READING: \S 28 of \citep{desai2009quantum}.
 \begin{equation}\label{eqn:qmTwoL16:190}
 H = H_{1} \otimes H_{2}
 \end{equation}
-
+%
 where \(H_1\) and \(H_2\) are both spin Hamiltonian's for respective 2D Hilbert spaces.  Our complete Hilbert space is thus a 4D space.
 
 We will write
@@ -26,7 +26,7 @@ We will write
 \ket{-}_1 \otimes \ket{-}_2 &= \ket{--}
 \end{aligned}
 \end{equation}
-
+%
 Can introduce
 
 \begin{equation}\label{eqn:qmTwoL16:230}
@@ -35,7 +35,7 @@ Can introduce
 \BS_2 &= I^{(1)} \otimes \BS_2^{(2)}
 \end{aligned}
 \end{equation}
-
+%
 Here we ``promote'' each of the individual spin operators to spin operators in the complete Hilbert space.
 
 We write
@@ -46,18 +46,18 @@ S_{1z}\ket{++} &= \frac{\Hbar}{2} \ket{++} \\
 S_{1z}\ket{+-} &= \frac{\Hbar}{2} \ket{+-}
 \end{aligned}
 \end{equation}
-
+%
 Write
 \begin{equation}\label{eqn:qmTwoL16:270}
 \BS = \BS_1 + \BS_2,
 \end{equation}
-
+%
 for the full spin angular momentum operator.  The \(z\) component of this operator is
 
 \begin{equation}\label{eqn:qmTwoL16:290}
 S_z = S_{1z} + S_{2z}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL16:310}
 \begin{aligned}
 S_z\ket{++} &= (S_{1z} + S_{2z}) \ket{++} = \left( \frac{\Hbar}{2} +\frac{\Hbar}{2} \right) \ket{++} = \Hbar \ket{++} \\
@@ -66,7 +66,7 @@ S_z\ket{-+} &= (S_{1z} + S_{2z}) \ket{-+} = \left( -\frac{\Hbar}{2} +\frac{\Hbar
 S_z\ket{--} &= (S_{1z} + S_{2z}) \ket{--} = \left( -\frac{\Hbar}{2} -\frac{\Hbar}{2} \right) \ket{--} = -\Hbar \ket{--}
 \end{aligned}
 \end{equation}
-
+%
 So, we find that \(\ket{x x}\) are all eigenkets of \(S_z\).  These will also all be eigenkets of \(\BS_1^2 = S_{1x}^2 +S_{1y}^2 +S_{1z}^2\) since we have
 
 \begin{equation}\label{eqn:qmTwoL16:330}
@@ -75,7 +75,7 @@ S_1^2 \ket{x x} &= \Hbar^2 \left(\inv{2}\right) \left(1 + \inv{2}\right) \ket{x 
 S_2^2 \ket{x x} &= \Hbar^2 \left(\inv{2}\right) \left(1 + \inv{2}\right) \ket{x x} = \frac{3}{4} \Hbar^2 \ket{x x}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL16:350}
 \begin{aligned}
 \BS^2 &=
@@ -88,7 +88,7 @@ S_2^2 \ket{x x} &= \Hbar^2 \left(\inv{2}\right) \left(1 + \inv{2}\right) \ket{x 
 S_1^2 + S_2^2 + 2 \BS_1 \cdot \BS_2
 \end{aligned}
 \end{equation}
-
+%
 Note that we have a commutation assumption here \(\antisymmetric{S_{1i}}{S_{2i}} = 0\), since we have written \(2 \BS_1 \cdot \BS_2\) instead of \(\sum_i S_{1i}S_{2i} + S_{2i}S_{1i}\).  The justification for this appears to be the promotion of the spin operators in \eqnref{eqn:qmTwoL16:230} to operators in the complete Hilbert space, since each of these spin operators acts only on the kets associated with their index.
 
 Are all the product kets also eigenkets of \(\BS^2\)?  Calculate
@@ -106,7 +106,7 @@ Are all the product kets also eigenkets of \(\BS^2\)?  Calculate
 + 2 S_{1z} S_{2z} \ket{+-}
 \end{aligned}
 \end{equation}
-
+%
 For the \(z\) mixed terms, we have
 
 \begin{equation}\label{eqn:qmTwoL16:370}
@@ -116,7 +116,7 @@ For the \(z\) mixed terms, we have
 \left(-\frac{\Hbar}{2}\right)
 \ket{+-}
 \end{equation}
-
+%
 So
 
 \begin{equation}\label{eqn:qmTwoL16:390}
@@ -125,7 +125,7 @@ So
 + 2 S_{1x} S_{2x} \ket{+-}
 + 2 S_{1y} S_{2y} \ket{+-}
 \end{equation}
-
+%
 Since we have set our spin direction in the z direction with
 
 \begin{equation}\label{eqn:qmTwoL16:410}
@@ -142,7 +142,7 @@ Since we have set our spin direction in the z direction with
 \end{bmatrix}
 \end{aligned}
 \end{equation}
-
+%
 We have
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:650}
 \begin{aligned}
@@ -205,13 +205,13 @@ S_y\ket{-} &\rightarrow
 -\frac{i\Hbar}{2} \ket{+} \\
 \end{aligned}
 \end{equation}
-
+%
 And are able to arrive at the action of \(\BS^2\) on our mixed composite state
 
 \begin{equation}\label{eqn:qmTwoL16:430}
 \BS^2\ket{+-} = \Hbar^2 (\ket{+-} + \ket{-+} ).
 \end{equation}
-
+%
 For the action on the \(\ket{++}\) state we have
 
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:670}
@@ -231,7 +231,7 @@ For the action on the \(\ket{++}\) state we have
 2 \Hbar^2 \ket{++} \\
 \end{aligned}
 \end{equation}
-
+%
 and on the \(\ket{--}\) state we have
 
 \begin{equation}\label{eqn:qmTwoL16TwoSpin:690}
@@ -251,7 +251,7 @@ and on the \(\ket{--}\) state we have
 2 \Hbar^2 \ket{--}
 \end{aligned}
 \end{equation}
-
+%
 All of this can be assembled into a tidier matrix form
 
 \begin{equation}\label{eqn:qmTwoL16:450}
@@ -265,7 +265,7 @@ All of this can be assembled into a tidier matrix form
 0 & 0 & 0 & 2 \\
 \end{bmatrix},
 \end{equation}
-
+%
 where the matrix is taken with respect to the (ordered) basis
 
 \begin{equation}\label{eqn:qmTwoL16:470}
@@ -276,7 +276,7 @@ where the matrix is taken with respect to the (ordered) basis
 \ket{--}
 \}.
 \end{equation}
-
+%
 However,
 
 \begin{equation}\label{eqn:qmTwoL16:490}
@@ -285,7 +285,7 @@ However,
 \antisymmetric{S_i}{S_j} &= i \Hbar \sum_k \epsilon_{ijk} S_k
 \end{aligned}
 \end{equation}
-
+%
 (Also, \(\antisymmetric{\BS^2}{S_i} = 0\).)
 
 It should be possible to find eigenkets of \(\BS^2\) and \(S_z\)
@@ -296,7 +296,7 @@ It should be possible to find eigenkets of \(\BS^2\) and \(S_z\)
 S_z \ket{s m_s} &= \Hbar m_s \ket{s m_s}
 \end{aligned}
 \end{equation}
-
+%
 An orthonormal set of eigenkets of \(\BS^2\) and \(S_z\) is found to be
 
 \begin{equation}\label{eqn:qmTwoL16:530}
@@ -311,7 +311,7 @@ An orthonormal set of eigenkets of \(\BS^2\) and \(S_z\) is found to be
 & \mbox{\(s = 0\) and \(m_s = 0\)}
 \end{array}
 \end{equation}
-
+%
 The first three kets here can be grouped into a triplet in a 3D Hilbert space, whereas the last treated as a singlet in a 1D Hilbert space.
 
 Form a grouping
@@ -319,13 +319,13 @@ Form a grouping
 \begin{equation}\label{eqn:qmTwoL16:550}
 H = H_1 \otimes H_2
 \end{equation}
-
+%
 Can write
 
 \begin{equation}\label{eqn:qmTwoL16:570}
 \inv{2} \otimes \inv{2} = 1 \oplus 0
 \end{equation}
-
+%
 where the \(1\) and \(0\) here refer to the spin index \(s\).
 
 \paragraph{Other examples}
@@ -338,14 +338,14 @@ J_1^2 \ket{j_1 m_1} &= j_1(j_1+1)\Hbar^2 \ket{j_1 m_1} \\
 J_{1z} \ket{j_1 m_1} &= \Hbar m_1 \ket{j_1 m_1}
 \end{aligned}
 \end{equation}
-
+%
 \begin{equation}\label{eqn:qmTwoL16:610}
 \begin{aligned}
 J_2^2 \ket{j_2 m_2} &= j_2(j_2+1)\Hbar^2 \ket{j_2 m_2} \\
 J_{2z} \ket{j_2 m_2} &= \Hbar m_2 \ket{j_2 m_2}
 \end{aligned}
 \end{equation}
-
+%
 Consider the Hilbert space spanned by \(\ket{j_1 m_1} \otimes \ket{j_2 m_2}\), a \((2 j_1 + 1)(2 j_2 + 1)\) dimensional space.  How to find the eigenkets of \(J^2\) and \(J_z\)?
 
 
