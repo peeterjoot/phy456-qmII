@@ -102,14 +102,14 @@ for
 \sum_n {c_{ns}}^{(2)} \ket{{\psi_n}^{(0)}}
 + \cdots \\
 &=
-\left(
+\lr{
 1
 + \lambda {c_{ss}}^{(1)}
 + \lambda^2 {c_{ss}}^{(2)}
 + \cdots
-\right)
-\ket{{\psi_s}^{(0)}}
-+
+}
+\ket{{\psi_s}^{(0)}} \\
+&\quad +
 \lambda
 \sum_{n \ne s} {c_{ns}}^{(1)} \ket{{\psi_n}^{(0)}}
 +
@@ -207,25 +207,29 @@ H \ket{\overbar{\psi}_s} - E_s \ket{\overbar{\psi}_s} = 0.
 Expanding this, we have
 \begin{equation}\label{eqn:qmTwoL4:380}
 \begin{aligned}
-&(H_0 + \lambda H')
-\left(
-\ket{{\psi_s}^{(0)}}
-+
-\lambda \ket{{\psi_s}^{(1)}}
-+
-\lambda^2 \ket{{\psi_s}^{(2)}}
-+ \cdots
-\right) \\
+0 &= (H_0 + \lambda H')
+\lr{
+   \ket{{\psi_s}^{(0)}}
+   +
+   \lambda \ket{{\psi_s}^{(1)}}
+   +
+   \lambda^2 \ket{{\psi_s}^{(2)}}
+   + \cdots
+}
+\\
 &\quad -
-\left( {E_s}^{(0)} + \lambda {E_s}^{(1)} + \lambda^2 {E_s}^{(2)} + \cdots \right)
-\left(
-\ket{{\psi_s}^{(0)}}
-+
-\lambda \ket{{\psi_s}^{(1)}}
-+
-\lambda^2 \ket{{\psi_s}^{(2)}}
-+ \cdots
-\right)
+\lr{
+   {E_s}^{(0)} + \lambda {E_s}^{(1)} + \lambda^2 {E_s}^{(2)} + \cdots
+}
+\, \times \\ &\quad
+\lr{
+   \ket{{\psi_s}^{(0)}}
+   +
+   \lambda \ket{{\psi_s}^{(1)}}
+   +
+   \lambda^2 \ket{{\psi_s}^{(2)}}
+   + \cdots
+}
 = 0.
 \end{aligned}
 \end{equation}
@@ -398,15 +402,15 @@ Doing the same thing for \(\ket{C} = 0\) we form (or assume)
 &= \braket{{\psi_s}^{(0)}}{C}  \\
 &=
 \bra{{\psi_s}^{(0)}}
-\left(
-(H_0 - E_s^{(0)}) \ket{{\psi_s}^{(2)}}
-+(H' - E_s^{(1)}) \ket{{\psi_s}^{(1)}}
--E_s^{(2)} \ket{{\psi_s}^{(0)}}
-\right) \\
+\lr{
+   (H_0 - E_s^{(0)}) \ket{{\psi_s}^{(2)}}
+   +(H' - E_s^{(1)}) \ket{{\psi_s}^{(1)}}
+   -E_s^{(2)} \ket{{\psi_s}^{(0)}}
+} \\
 &=
 (E_s^{(0)} - E_s^{(0)})
-\braket{{\psi_s}^{(0)}}{{\psi_s}^{(2)}}
-+
+\braket{{\psi_s}^{(0)}}{{\psi_s}^{(2)}} \\
+&\quad +
 \bra{{\psi_s}^{(0)}}
 (H' - E_s^{(1)}) \ket{{\psi_s}^{(1)}}
 -E_s^{(2)} \braket{{\psi_s}^{(0)}}{{\psi_s}^{(0)}}
@@ -419,7 +423,7 @@ We need to know what the \(\braket{{\psi_s}^{(0)}}{{\psi_s}^{(1)}}\) is, and fin
 \braket{{\psi_s}^{(0)}}{{\psi_s}^{(1)}}
 =
 \bra{{\psi_s}^{(0)}}
-\sum_{n \ne s} {\overbar{c}_{ns}}^{(1)} \ket{{\psi_n}^{(0)}}
+\sum_{n \ne s} {\overbar{c}_{ns}}^{(1)} \ket{{\psi_n}^{(0)}}.
 \end{equation}
 %
 Again, suppose that \(s = 3\).  Our sum ranges over all \(n \ne 3\), so all the brakets are zero.  Utilizing that we have
@@ -448,7 +452,7 @@ E_s^{(2)}
 =
 \sum_{m \ne s}
 \frac{\Abs{{H'}_{ms}}^2 }
-{ E_s^{(0)} - E_m^{(0)} }
+{ E_s^{(0)} - E_m^{(0)} }.
 \end{equation}
 %
 We can now summarize by forming the first order terms of the perturbed energy and the corresponding kets

@@ -115,7 +115,7 @@ Using integration by parts, we find for the energy expectation
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:531}
 \begin{aligned}
-\bra{\phi} H \ket{\phi}
+\bra{\phi} &H \ket{\phi} \\
 &=
 \int_{-\infty}^\infty dx
 e^{- \beta \Abs{x}}
@@ -154,8 +154,8 @@ The first integral we can do
 \begin{equation}\label{eqn:variationHarmonicOscillator:551}
 \begin{aligned}
 2 \int_{0}^\infty dx
-e^{- 2 \beta x}
-\left( -\frac{\Hbar^2 \beta^2}{2m} + \inv{2} m \omega^2 x^2 \right)
+e^{- 2 \beta x} &
+\lr{ -\frac{\Hbar^2 \beta^2}{2m} + \inv{2} m \omega^2 x^2 } \\
 &=
 -\frac{\Hbar^2 \beta^2}{m}
 \int_{0}^\infty dx e^{- 2 \beta x}
@@ -248,8 +248,8 @@ Similarly we can calculate the energy expectation for this unnormalized state an
 &=
 \sum_n \Abs{c_n}^2 E_n
 + c_n^\conj c_\perp E_n
-\braket{\psi_n}{\psi_\perp}
-+ c_n c_\perp^\conj E_n \braket{\psi_\perp}{\psi_n}
+\braket{\psi_n}{\psi_\perp} \\
+&\quad + c_n c_\perp^\conj E_n \braket{\psi_\perp}{\psi_n}
 + \Abs{c_\perp}^2
 \bra{\psi_\perp} H \ket{\psi_\perp}
 %&=
@@ -262,9 +262,9 @@ Our normalized energy expectation is therefore the considerably messier
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:290}
 \begin{aligned}
-\frac{\bra{\phi} H \ket{\phi}}{
+&\frac{\bra{\phi} H \ket{\phi}}{
 \braket{\phi}{\phi}
-}
+} \\
 &=
 \frac{
 \sum_n \Abs{c_n}^2 E_n

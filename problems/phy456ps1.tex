@@ -120,7 +120,8 @@ Consider half of this braket
 %
 Squaring, utilizing the Hermitian nature of the \(X\) operator %, we have for \(n > 2\)
 %
-\begin{equation}\label{eqn:phy456ps1:500}
+%\begin{equation}\label{eqn:phy456ps1:500}
+\begin{dmath}\label{eqn:phy456ps1:500}
 \bra{n} X^4 \ket{n}
 =
 \frac{\Hbar^2}{4 m^2 \omega^2}
@@ -130,7 +131,8 @@ Squaring, utilizing the Hermitian nature of the \(X\) operator %, we have for \(
 =
 \frac{\Hbar^2}{4 m^2 \omega^2}
 \left( 6 n^2 + 4 n + 5 \right)
-\end{equation}
+\end{dmath}
+%\end{equation}
 %
 %It also looks like we can drop the \(n > 2\) restriction since the \(\sqrt{n-1}\) and \(\sqrt{n-2}\) factors kill off the
 \makeSubAnswer{Quadratic ground state}{pr:phy456ps1:1:b}
@@ -250,7 +252,7 @@ where \(F_{nl}\) is a real valued function defined in terms of Lagueere polynomi
 %
 \begin{equation}\label{eqn:phy456ps1:960}
 \begin{aligned}
-\bra{\Phi_{nlm}} X \ket{\Phi_{nlm}}
+\bra{\Phi_{nlm}} &X \ket{\Phi_{nlm}} \\
 &=
 \int
 \braket{\Phi_{nlm}}{\Br'} \bra{\Br'} X \ket{\Br} \braket{\Br}{\Phi_{nlm}} d^3 \Br d^3 \Br' \\
@@ -276,11 +278,13 @@ Recalling that the only \(\phi\) dependence in \(Y_l^m\) is \(e^{i m \phi}\) we 
 We have the same story for the \(Y\) expectation which is
 %
 \begin{equation}\label{eqn:phy456ps1:760}
-\bra{\Phi_{nlm}} X \ket{\Phi_{nlm}}
-\sim
-\int r^2 dr \Abs{F_{nl}\left( \frac{2 r}{ n a_0} \right)}^2 r
+\begin{aligned}
+\bra{\Phi_{nlm}} &X \ket{\Phi_{nlm}} \\
+&\sim
+\int r^2 dr \Abs{F_{nl}\left( \frac{2 r}{ n a_0} \right)}^2 r \times
 \int \sin\theta d\theta d\phi
 {Y_l^m}^\conj(\theta, \phi) \sin\theta \sin\phi Y_l^m(\theta, \phi).
+\end{aligned}
 \end{equation}
 %
 Our \(\phi\) integral is then just
@@ -293,7 +297,7 @@ also zero.  The \(Z\) expectation is a slightly different story.  There we have
 %
 \begin{equation}\label{eqn:phy456ps1:800}
 \begin{aligned}
-\bra{\Phi_{nlm}} Z \ket{\Phi_{nlm}}
+\bra{\Phi_{nlm}} &Z \ket{\Phi_{nlm}} \\
 &\sim
 \int dr \Abs{F_{nl}\left( \frac{2 r}{ n a_0} \right)}^2 r^3  \\
 &\quad \int_0^{2\pi} d\phi

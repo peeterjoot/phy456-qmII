@@ -70,10 +70,15 @@ we have
 %
 \begin{equation}\label{eqn:variationalHelium:100}
 \begin{aligned}
-\expectation{
--\frac{\Hbar^2}{2m}
-\left( \spacegrad_1^2 + \spacegrad_2^2\right)
-}
+%\expectation{
+\lexpectation
+%\Biggl\langle
+-\frac{\Hbar^2}{2m} &
+\lr{ \spacegrad_1^2 + \spacegrad_2^2 }
+%\Biggr\rangle
+\rexpectation
+%}
+\\
 &=
 -\frac{8 \Hbar^2}{m}
 \frac{ Z^2}{ a_0^2 }
@@ -145,9 +150,12 @@ Verification of (24.70) follows in a similar fashion.  We have
 %
 \begin{equation}\label{eqn:variationalHelium:120}
 \begin{aligned}
-\expectation{ 2 e^2
-\left( \inv{r_1} + \inv{r_2} \right)
-}
+\lexpectation
+%\expectation{
+2 e^2 &
+\lr{ \inv{r_1} + \inv{r_2} }
+%}
+\rexpectation \\
 &=
 2 e^2 \frac{Z^6}{ \pi^2 a_0^6} (4 \pi)^2 \int e^{-2 (r_1 + r_2) Z/a_0 } r_1^2 r_2^2 dr_1 dr_2
 \left( \inv{r_1} + \inv{r_2} \right)
@@ -179,6 +187,7 @@ We start with
 \int d^3 k \inv{k^2}
 \int d^3 r_1
 e^{i \Bk \cdot \Br_1 } e^{ -2 Z r_1 /a_0}
+\, \times \\ &\quad
 \int
 d^3 r_2
 e^{-i \Bk \cdot \Br_2 } e^{ -2 Z r_2/a_0} \\
