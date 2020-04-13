@@ -203,7 +203,7 @@ to proceed, we need to expand the matrix element
 %
 \begin{equation}\label{eqn:qmTwoPs4:490}
 \begin{aligned}
-\bra{\psi_{nm}} \delta(X_1 - X_2) \ket{\psi_{ab}}
+\bra{\psi_{nm}} &\delta(X_1 - X_2) \ket{\psi_{ab}} \\
 &=
 \int dx_1 dx_2 dy_1 dy_2
 \braket{\psi_{nm}}{x_1 x_2} \bra{x_1 x_2} \delta(X_1 - X_2) \ket{y_1 y_2 } \braket{y_1 y_2}{\psi_{ab}} \\
@@ -241,21 +241,19 @@ H_{11; 11}'
 %
 For the second order perturbation of the energy, it is clear that this will reduce the first order approximation for each matrix element that is non-zero.
 
-Attempting that calculation with \href{https://github.com/peeterjoot/physicsplay/blob/796c8e3739ae1a9ca26270a0e91384afba45661d/notes/phy456/problem\%20set\%204,\%20problem\%202.nb}{Mathematica} however, is deceiving, since Mathematica reports these all as zero after FullSimplify.  It appears, that as used, it does not allow for \(m = n\) and \(m = n \pm 1\) constraints properly where the denominators of the unsimplified integrals go zero.
-
-This worksheet can be seen to be giving misleading results, by evaluating
+Attempting that calculation with \href{https://github.com/peeterjoot/physicsplay/blob/796c8e3739ae1a9ca26270a0e91384afba45661d/notes/phy456/problem\%20set\%204,\%20problem\%202.nb}{Mathematica} however, is deceiving, since Mathematica reports these all as zero after FullSimplify.  It appears, that as used, it does not allow for \(m = n\) and \(m = n \pm 1\) constraints properly where the denominators of the unsimplified integrals go zero, and more careful evaluation is required.
 %
-\begin{equation}\label{eqn:qmTwoPs4:430}
-\int_{-\frac{L}{2}}^{\frac{L}{2}} \left(\frac{2}{L}\right)^2 \cos ^2\left(\frac{\pi  x}{L}\right) \cos ^2\left(\frac{3 \pi  x}{L}\right) \, dx = \frac{1}{L}
-\end{equation}
-%
-Yet, the FullSimplify gives
-%
-\begin{equation}\label{eqn:qmTwoPs4:450}
-\text{FullSimplify}\left[\int_{-\frac{L}{2}}^{\frac{L}{2}} \text{Cos}\left[\frac{\pi  x}{L}\right]^2 \left(\frac{2}{L}\right)^2 \text{Cos}\left[\frac{(2 n+1) \pi  x}{L}\right] \text{Cos}\left[\frac{(2 m+1) \pi  x}{L}\right] \, dx,\{m,n\}\in \text{Integers}\right] = 0
-\end{equation}
-%
-I am hoping that asking about this on \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} will clarify how to use Mathematica correctly for this calculation.
-
-
-
+%This worksheet can be seen to be giving misleading results, by evaluating
+%%
+%\begin{equation}\label{eqn:qmTwoPs4:430}
+%\int_{-\frac{L}{2}}^{\frac{L}{2}} \left(\frac{2}{L}\right)^2 \cos ^2\left(\frac{\pi  x}{L}\right) \cos ^2\left(\frac{3 \pi  x}{L}\right) \, dx = \frac{1}{L}
+%\end{equation}
+%%
+%Yet, the FullSimplify cowardly refuses to reduce.
+%%gives
+%%
+%%\begin{equation}\label{eqn:qmTwoPs4:450}
+%%\text{FullSimplify}\left[\int_{-\frac{L}{2}}^{\frac{L}{2}} \text{Cos}\left[\frac{\pi  x}{L}\right]^2 \left(\frac{2}{L}\right)^2 \text{Cos}\left[\frac{(2 n+1) \pi  x}{L}\right] \text{Cos}\left[\frac{(2 m+1) \pi  x}{L}\right] \, dx,\{m,n\}\in \text{Integers}\right] = 0
+%%\end{equation}
+%%
+%I am hoping that asking about this on \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} will clarify how to use Mathematica correctly for this calculation.

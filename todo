@@ -1,5 +1,9 @@
 - lots of equations overflow printable regions.
 
+- change link into bib reference: \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} ...
+
+  so that it can be looked up in text form.  For now I've just commented it out.
+
 - update page count on my blog when I repost the next version.
 
 - update chapter layout on my blog when I repost the next version.

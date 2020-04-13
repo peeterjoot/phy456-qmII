@@ -154,9 +154,12 @@ Should we wish to make a further approximation, we can take the wave function re
 \begin{aligned}
 \psi_\Bk(\Br)
 &=
-e^{i \Bk \cdot \Br} - \frac{\mu}{2 \pi \Hbar^2} \frac{ e^{i k r}}{r} \int e^{-i k \rcap \cdot \Br'} V(\Br') \left(
-e^{i \Bk \cdot \Br'} - \frac{\mu}{2 \pi \Hbar^2} \frac{ e^{i k r'}}{r'} \int e^{-i k \rcap' \cdot \Br''} V(\Br'') e^{i \Bk \cdot \Br''} d^3 \Br''
-\right) d^3 \Br' \\
+e^{i \Bk \cdot \Br} - \frac{\mu}{2 \pi \Hbar^2} \frac{ e^{i k r}}{r} \int e^{-i k \rcap \cdot \Br'} V(\Br') 
+\, \times \\ &\quad
+\lr{
+   e^{i \Bk \cdot \Br'} - \frac{\mu}{2 \pi \Hbar^2} \frac{ e^{i k r'}}{r'} \int e^{-i k \rcap' \cdot \Br''} V(\Br'') e^{i \Bk \cdot \Br''} d^3 \Br''
+}
+d^3 \Br' \\
 &=
 e^{i \Bk \cdot \Br} - \frac{\mu}{2 \pi \Hbar^2} \frac{ e^{i k r}}{r} \int e^{-i k \rcap \cdot \Br'} V(\Br') e^{i \Bk \cdot \Br'} d^3 \Br' \\
 &\quad +\frac{\mu^2}{(2 \pi)^2 \Hbar^4}
