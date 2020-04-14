@@ -13,7 +13,11 @@
 %\blogpage{http://sites.google.com/site/peeterjoot/math2011/variationalHelium.pdf}
 %\date{Sept 29, 2011}
 %
-\subsubsection{Helium atom, variational method, first steps.}
+\makeproblem{Helium atom, variational method, first steps.}{problem:variationalHelium:1}{
+Verify (24.69) from \citep{desai2009quantum}, calculating the required six fold integral.
+} % problem
+
+\makeanswer{problem:variationalHelium:1}{
 %
 To verify (24.69) from \citep{desai2009quantum}, a six fold integral is required
 %
@@ -168,12 +172,20 @@ Verification of (24.70) follows in a similar fashion.  We have
 4 e^2 \frac{Z}{ a_0}
 \end{aligned}
 \end{equation}
+} % answer
 %
-\subsubsection{Problem with subsequent derivation.}
-%
-In \S 24.2.1 of the text \citep{desai2009quantum} is an expectation value calculation associated with the Helium atom.  One of the equations (24.76) seems wrong (according to hand calculation as shown below and according to Mathematica).  Is there another compensating error somewhere?  Here I work the entire calculation in detail to attempt to find this.
 
-We start with
+\makeproblem{Helium expectation.}
+{problem:variationalHelium:2}{
+In \S 24.2.1 of the text \citep{desai2009quantum} is an expectation value calculation associated with the Helium atom.  Show that equation (24.76) is wrong.
+} % problem
+
+\makeanswer{problem:variationalHelium:2}{
+The following hand calculation and a Mathematica calculation
+shows that \S 24.2.1 \citep{desai2009quantum} is wrong, provided no
+compensating error was made by me.
+
+Start with
 %
 \begin{equation}\label{eqn:variationalHelium:140}
 \begin{aligned}
@@ -289,4 +301,5 @@ This gives us
 \frac{5 Z e^2} { 8 a_0 }
 \end{aligned}
 \end{equation}
+} % answer
 %
