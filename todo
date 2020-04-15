@@ -1,6 +1,22 @@
-- lots of equations overflow printable regions.
+1) mathematica notebook paths are too big in some cases.
 
-- change link into bib reference: \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} ...
+2) remaining gutter problems: pgs:
+
+   120 - 20
+   166 - 20
+   168 - 20
+   234 - 20
+   246 - 20
+
+3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
+
+4) switch link in
+
+      https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
+
+   when a new version is posted.
+
+  change link into bib reference: \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} ...
 
   so that it can be looked up in text form.  For now I've just commented it out.
 
@@ -12,29 +28,11 @@ want:
 
   stackoverflowMathematicaTrigSimplify
 
-- update page count on my blog when I repost the next version.
+5) spell check chapters.tex and rest of the .tex files.
 
-- update chapter layout on my blog when I repost the next version.
+6) shorten section names so they don't go out of the printable region.
 
-- switch link in
-
-      https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
-
-   when a new version is posted.
-
-- use nicer table formatting (like gabook)
-
-- mathematica notebook paths are too big in some cases.
-
-- spell check chapters.tex and rest of the .tex files.
-
-- shorten chapter names so they don't overlap the chapter numbers.
-
-- shorten section names so they go out of the printable region.
-
-- some figures still too big.
-
-- figures without valid captions:
+7) figures without valid captions:
 
 qmTwoL2fig1
 qmTwoL2fig2
@@ -45,18 +43,17 @@ qmTwoL2fig6
 qmTwoL21Fig9
 qmTwoL9fig7
 
-- L24: "and can as in" what is meant here?
+8) L24: "and can as in" what is meant here?
 
-- customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
-
-- Fri, Oct 25, 2013 12:05:02 AM
-   - started flattening the chapters, removing subsections.  Chapter and section is quite enough Bookmark hierarchy for these notes.
-
-- indexing:
+9) indexing:
    (indexed the chapter and section headings)
    - visit all the subsection/paragraph/problem markers
 
-- would be nice to restructure to have a more systematic layout.  Put the various worked problems and notes from the readings as problems at chapter ends for example.
+10) use nicer table formatting (like gabook)
+
+11) customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
+
+12) would be nice to restructure to have a more systematic layout.  Put the various worked problems and notes from the readings as problems at chapter ends for example.
 
    - started this.  problem set 1 moved into place (not all of it fits, perhaps move 1a to appendix)
 
@@ -73,6 +70,18 @@ qmTwoL9fig7
 
    - delete most of the initial attempt garbage in "./problems/variationHarmonicOscillator.tex" and just leave the part where it's done right (perhaps with a comment about why the niave attempt doesn't work).
 
+
+
+
+
+======================================================
+
+- update page count on my blog when I repost the next version.
+
+- update chapter layout on my blog when I repost the next version.
+
 - can make part (.) reference a hyperlink with exersize env.
 
-./phy456/problems/qmTwoPs4.tex:13:I was deceived by an incorrect result in Mathematica, which led me to believe that the second order energy perturbation was zero (whereas part (c) of the problem asked if it was greater or lesser than zero).  I started starting writing this up to show my reasoning, but our Professor quickly provided an example after class showing how this zero must be wrong, and I did not have to show him any of this.
+   where?
+
+- ./phy456/problems/qmTwoPs4.tex:13:I was deceived by an incorrect result in Mathematica, which led me to believe that the second order energy perturbation was zero (whereas part (c) of the problem asked if it was greater or lesser than zero).  I started starting writing this up to show my reasoning, but our Professor quickly provided an example after class showing how this zero must be wrong, and I did not have to show him any of this.
