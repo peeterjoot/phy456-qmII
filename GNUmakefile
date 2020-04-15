@@ -29,9 +29,18 @@ PRIMARY_SOURCES += FrontBackmatter/preface.tex
 GENERATED_SOURCES += mathematica.tex 
 GENERATED_SOURCES += backmatter.tex
 
+DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
+
 include ../latex/make.rules
 
 $(THISBOOK).pdf :: $(EXTERNAL_DEPENDENCIES)
+
+.PHONY: spellcheck
+spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
+
+%.sp : %.tex
+	spellcheck $^
+	touch $@
 
 backmatter.tex: ../latex/classicthesis_mine/backmatter_with_parts.tex
 	rm -f $@

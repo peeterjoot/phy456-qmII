@@ -1,12 +1,6 @@
 1) mathematica notebook paths are too big in some cases.
 
-2) remaining gutter problems: pgs:
-
-   120 - 20
-   166 - 20
-   168 - 20
-   234 - 20
-   246 - 20
+2) remaining gutter problems: too-big-table.
 
 3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
 
