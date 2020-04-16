@@ -1,10 +1,9 @@
-1) mathematica notebook paths are too big in some cases.
-
 3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
 
 4) switch link in
 
       https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
+      https://peeterjoot.wordpress.com/2011/12/10/evaluating-the-squared-sinc-integral/
 
    when a new version is posted.
 
@@ -41,7 +40,12 @@ qmTwoL9fig7
 
 10) use nicer table formatting (like gabook)
 
-   grep -n 'begin{array}' `cat spellcheckem.txt`
+   grep -ne 'begin{array}' -e 'begin{table}' `cat spellcheckem.txt`
+
+see:
+   peeters_tablebox
+
+   in GAbook
 
 11) customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
 

@@ -259,34 +259,57 @@ denote also by
 \ket{j m ; j_1 j_2},
 \end{equation}
 %
-but will often omit the \(; j_1 j_2\) portion.  Here's a tabulation of the first two, and the last value in the \( j = j_1 + j_2 - k \), progression with \( k = 0, \cdots 2 j_2 \)
+but will often omit the \(; j_1 j_2\) portion.  Tab. \ref{tab:qmTwoL17:10} tabulates the \( j = j_1 + j_2 - k \) progression of kets with \( k = 0, \cdots 2 j_2 \)
 %
-\begin{equation}\label{eqn:qmTwoL17:560}
-\begin{array}{| l | l | l |}
-\hline
- j = j_1 + j_2                      & j = j_1 + j_2 -1                     & j = j_1 - j_2                      \\
-\hline
-\hline
-  \ket{j_1 + j_2, j_1 + j_2}        &                                      &                                    \\
-\hline
-  \ket{j_1 + j_2, j_1 + j_2 - 1}    &  \ket{j_1 + j_2 - 1, j_1 + j_2 - 1}  &                                    \\
-\hline
-                                    &                                      & \ket{j_1 + j_2 - 1, j_1 + j_2 - 2} \\
-\hline
- \vdots                             &                                      & \ket{j_1 - j_2, j_1 - j_2}         \\
-\hline
- \vdots                             &                                      & \vdots                             \\
-\hline
- \vdots                             &                                      & \ket{j_1 - j_2, -(j_1 - j_2)}      \\
-\hline
- \vdots                             &                                      &                                    \\
-\hline
-  \ket{j_1 + j_2, -(j_1 + j_2 - 1)} & \ket{j_1 + j_2 -1, -(j_1 + j_2 - 1)} &                                    \\
-\hline
-  \ket{j_1 + j_2, -(j_1 + j_2)}     &                                      &                                    \\
-\hline
-\end{array}
-\end{equation}
+% https://tex.stackexchange.com/a/27105/15
+%%%\begin{table}
+%%%\resizebox{\textwidth}{!}{%
+%%%\begin{tabular}{|c|c|c|c|}
+%%%\hline
+%%%\( j = j_1 + j_2 \)                     & \( j = j_1 + j_2 -1 \)                     &\(\hdots\)& \( j = j_1 - j_2 \)                       \\
+%%%\hline
+%%%\hline
+%%%\(  \ket{j_1 + j_2, j_1 + j_2} \)       &                                            &&                                           \\
+%%%\hline
+%%%\(  \ket{j_1 + j_2, j_1 + j_2 - 1} \)   & \( \ket{j_1 + j_2 - 1, j_1 + j_2 - 1} \)   &&                                           \\
+%%%\hline                                  &                                            && \( \ket{j_1 + j_2 - 1, j_1 + j_2 - 2} \)  \\
+%%%\hline
+%%%\( \vdots \)                            &                                            && \( \ket{j_1 - j_2, j_1 - j_2} \)          \\
+%%%\hline
+%%%\( \vdots \)                            & \( \vdots \)                               && \( \vdots \)                              \\
+%%%\hline
+%%%\( \vdots \)                            &                                            && \( \ket{j_1 - j_2, -(j_1 - j_2)} \)       \\
+%%%\hline
+%%%&                                            &&                                           \\
+%%%\hline
+%%%\( \ket{j_1 + j_2, -(j_1 + j_2 - 1)} \) & \( \ket{j_1 + j_2 -1, -(j_1 + j_2 - 1)} \) &&                                           \\
+%%%\hline
+%%%\( \ket{j_1 + j_2, -(j_1 + j_2)} \)     &                                            &&                                           \\
+%%%\hline
+%%%\end{tabular}
+%%%}
+%%%\end{table}
+%
+%\begin{tablelabelbox}[tabularx={X||Y|Y|Y|Y}]{2D Multiplication table.}{label=tab:2dMultiplication:10}
+%        & \( 1 \) & \( \Be_1 \) & \( \Be_2 \) & \( \Be_1 \Be_2 \) \\ \hline
+%\( 1 \) & \( 1 \) & \( \Be_1 \) & \( \Be_2 \) & \( \Be_1 \Be_2 \) \\ \hline
+%\( \Be_1\) & \( \Be_1 \) & \( 1 \) & \( \Be_1 \Be_2 \) & \( \Be_2 \)\\ \hline
+%\( \Be_2\) & \( \Be_2 \) & \( -\Be_1 \Be_2 \) & \( 1 \) & \( -\Be_1 \)\\ \hline
+%\( \Be_1 \Be_2\) & \( \Be_1 \Be_2 \) & \( -\Be_2 \) & \( \Be_1 \) & \( -1 \) \\ \hline
+%\end{tablelabelbox}
+%
+\begin{tablelabelbox}[tabularx=c|c|c|c]{Clebsch-Gordan kets.}{label=tab:qmTwoL17:10}
+   \eqssmaller{ j = j_1 + j_2 }                     & \eqssmaller{ j = j_1 + j_2 -1 }                     &\eqssmaller{\hdots}& \eqssmaller{ j = j_1 - j_2 }                       \\ \hline\hline
+   \eqssmaller{  \ket{j_1 + j_2, j_1 + j_2} }       &                                                    &&                                                   \\ \hline
+   \eqssmaller{  \ket{j_1 + j_2, j_1 + j_2 - 1} }   & \eqssmaller{ \ket{j_1 + j_2 - 1, j_1 + j_2 - 1} }   &&                                                   \\ \hline
+                                                   &                                                    && \eqssmaller{ \ket{j_1 + j_2 - 1, j_1 + j_2 - 2} }  \\ \hline
+   \eqssmaller{ \vdots }                            &                                                    && \eqssmaller{ \ket{j_1 - j_2, j_1 - j_2} }          \\ \hline
+   \eqssmaller{ \vdots }                            & \eqssmaller{ \vdots }                               && \eqssmaller{ \vdots }                              \\ \hline
+   \eqssmaller{ \vdots }                            &                                                    && \eqssmaller{ \ket{j_1 - j_2, -(j_1 - j_2)} }       \\ \hline
+                                                   &                                                    &&                                                   \\ \hline
+   \eqssmaller{ \ket{j_1 + j_2, -(j_1 + j_2 - 1)} } & \eqssmaller{ \ket{j_1 + j_2 -1, -(j_1 + j_2 - 1)} } &&                                                   \\ \hline
+   \eqssmaller{ \ket{j_1 + j_2, -(j_1 + j_2)} }     &                                                    &&                                                   \\ \hline
+\end{tablelabelbox}
 %
 Look at
 %

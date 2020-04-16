@@ -1,11 +1,26 @@
 %-----------------------------------------
 \usepackage{macros_cal}
 
+\usepackage{peeters_tablebox}
 %----------------------------------------
 \newcommand{\mychapter}[1]{%
 \chapter{#1}%
 \thispagestyle{empty}%
 }
+
+%-----------------------------------------
+
+% macros for inline equations with reduced font size:
+% https://texblog.org/2012/08/29/changing-the-font-size-in-latex/
+
+\newcommand{\eqfont}[2]{%
+{#1\(#2\)}%
+}
+
+\newcommand{\eqsmall}[1]{\eqfont{\small}{#1}}
+\newcommand{\eqsmaller}[1]{\eqfont{\footnotesize}{#1}}
+\newcommand{\eqssmaller}[1]{\eqfont{\scriptsize}{#1}}
+\newcommand{\eqsssmaller}[1]{\eqfont{\tiny}{#1}}
 
 %-----------------------------------------
 %\usepackage{censor}
