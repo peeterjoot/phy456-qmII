@@ -1,7 +1,5 @@
 1) mathematica notebook paths are too big in some cases.
 
-2) remaining gutter problems: too-big-table.
-
 3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
 
 4) switch link in
@@ -21,8 +19,6 @@ want:
   added to myrefs:
 
   stackoverflowMathematicaTrigSimplify
-
-5) spell check chapters.tex and rest of the .tex files.
 
 6) shorten section names so they don't go out of the printable region.
 
@@ -44,6 +40,8 @@ qmTwoL9fig7
    - visit all the subsection/paragraph/problem markers
 
 10) use nicer table formatting (like gabook)
+
+   grep -n 'begin{array}' `cat spellcheckem.txt`
 
 11) customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
 
