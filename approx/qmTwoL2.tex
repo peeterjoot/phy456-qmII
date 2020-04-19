@@ -192,21 +192,20 @@ where
 R_y = \frac{\mu e^4}{2 \Hbar^2} \approx 13.6 \text{eV}.
 \end{equation}
 %
-The ground state wavefunction is
+The ground state wavefunction, plotted in \cref{fig:qmTwoL2:2}, is
 \begin{equation}\label{eqn:qmTwoL2:310}
-\braket{\Br}{\Psi_0} = \Phi_{100}(\Br) = \left( \inv{\pi a_0^3}\right)^{1/2} e^{-r/a_0}
+\braket{\Br}{\Psi_0} = \Phi_{100}(\Br) = \left( \inv{\pi a_0^3}\right)^{1/2} e^{-r/a_0},
 \end{equation}
 %
 where
 \begin{equation}\label{eqn:qmTwoL2:330}
-a_0 = \frac{\Hbar^2}{\mu e^2} \approx 0.53 \angstrom,
+a_0 = \frac{\Hbar^2}{\mu e^2} \approx 0.53 \angstrom.
 \end{equation}
-as plotted in
 %
 \imageFigure{../figures/phy456-qmII/hydrogenGroundStateFig2}{Hydrogen ground state magnitude.}{fig:qmTwoL2:2}{0.2}
 %\imageFigure{../figures/phy456-qmII/qmTwoL2fig2}{qmTwoL2fig2.}{fig:qmTwoL2:2}{0.2}
 %\imageFigure{../figures/phy456-qmII/qmTwoL2fig3}{qmTwoL2fig3.}{fig:qmTwoL2:3}{0.2}
-estimate
+We can estimate by evaluating
 %
 \begin{equation}\label{eqn:qmTwoL2:350}
 \begin{aligned}
@@ -215,39 +214,45 @@ estimate
 \end{aligned}
 \end{equation}
 %
-or guess shape
-\imageFigure{../figures/phy456-qmII/qmTwoL2fig4}{qmTwoL2fig4.}{fig:qmTwoL2:4}{0.2}
-Using the trial wave function \(e^{-\alpha r^2}\)
+Using the trial wave function \(\Psi = e^{-\alpha r^2}\), 
+plotted in \cref{fig:qmTwoL2:4}
+%\imageFigure{../figures/phy456-qmII/qmTwoL2fig4}{qmTwoL2fig4.}{fig:qmTwoL2:4}{0.2}
+\imageFigure{../figures/phy456-qmII/hydrogenGroundStateFig4}{Gaussian test function.}{fig:qmTwoL2:4}{0.2}
 %
+we want to calculate the ground state energy estimate associated with this \( \alpha \) parameter
 \begin{equation}\label{eqn:qmTwoL2:370}
-E[\Psi] \rightarrow E(\alpha)
+E[\Psi] \rightarrow E(\alpha).
 \end{equation}
-%
+Explicitly, this is
 \begin{equation}\label{eqn:qmTwoL2:390}
 E(\alpha) =
 \frac{\int d^3 \Br e^{-\alpha r^2} \left( -\frac{\Hbar^2}{2 \mu} \spacegrad^2 - \frac{e^2}{r} \right) e^{-\alpha r^2}}{
 \int d^3\Br e^{-2 \alpha r^2}
-}
+}.
 \end{equation}
 %
-find
+It can apparently be shown that this results in
 \begin{equation}\label{eqn:qmTwoL2:410}
-E(\alpha) = A \alpha - B \alpha^{1/2}
+E(\alpha) = A \alpha - B \alpha^{1/2},
 \end{equation}
 %
+where
 \begin{equation}\label{eqn:qmTwoL2:430}
 \begin{aligned}
 A &= \frac{3 \Hbar^2}{2\mu} \\
-B &= 2 e^2 \left( \frac{2}{\pi} \right)^{1/2}
+B &= 2 e^2 \left( \frac{2}{\pi} \right)^{1/2}.
 \end{aligned}
 \end{equation}
 %
-\imageFigure{../figures/phy456-qmII/qmTwoL2fig5}{qmTwoL2fig5.}{fig:qmTwoL2:5}{0.2}
-Minimum at
+(I tried to calculate this, and get a different answer, so I've either taken bad notes, or calculated wrong, or what was on the board
+was not right.)
+\Cref{eqn:qmTwoL2:410} is of the form \cref{fig:qmTwoL2:5}, with the minimum energy occuring at
+%\imageFigure{../figures/phy456-qmII/qmTwoL2fig5}{qmTwoL2fig5.}{fig:qmTwoL2:5}{0.2}
+\imageFigure{../figures/phy456-qmII/hydrogenGroundStateFig5}{Ground state energy for the Gaussian test function.}{fig:qmTwoL2:5}{0.2}
 %
 \begin{equation}\label{eqn:qmTwoL2:450}
 \alpha_0 =
-\left( \frac{\mu e^2}{ \Hbar^2 } \right) \frac{8 }{9 \pi}
+\left( \frac{\mu e^2}{ \Hbar^2 } \right) \frac{8 }{9 \pi}.
 \end{equation}
 %
 So
@@ -263,11 +268,6 @@ maybe not too bad...
 \makeexample{Helium atom}{approx:ex2}{
 Assume an infinite nuclear mass with nucleus charge \(2 e\)
 \imageFigure{../figures/phy456-qmII/qmTwoL2fig6}{qmTwoL2fig6.}{fig:qmTwoL2:6}{0.2}
-ground state wavefunction
-%
-\begin{equation}\label{eqn:qmTwoL2:490}
-\Psi_0(\Br_1, \Br_2)
-\end{equation}
 %
 The problem that we want to solve is
 %
@@ -279,18 +279,21 @@ The problem that we want to solve is
 +
 \frac{e^2}{\Abs{\Br_1 - \Br_2}}
 \right)
-\Psi_0(\Br_1, \Br_2) = E_0 \Psi_0(\Br_1, \Br_2)
+\Psi_0(\Br_1, \Br_2) = E_0 \Psi_0(\Br_1, \Br_2),
 \end{equation}
 %
+where \( \Psi_0(\Br_1, \Br_2) \) is the ground state wavefunction.
+%\begin{equation}\label{eqn:qmTwoL2:490}
+%\end{equation}
+%
 Nobody can solve this problem.  It is one of the simplest real problems in QM that cannot be solved exactly.
-
 Suppose that we neglected the electron, electron repulsion.  Then
 %
 \begin{equation}\label{eqn:qmTwoL2:530}
 \Psi_0(\Br_1, \Br_2)
 =
 \overbar{\Phi}_{100}(\Br_1)
-\overbar{\Phi}_{100}(\Br_2)
+\overbar{\Phi}_{100}(\Br_2),
 \end{equation}
 %
 where
@@ -298,17 +301,18 @@ where
 \begin{equation}\label{eqn:qmTwoL2:550}
 \left( -\frac{\Hbar^2}{2 m} \spacegrad^2
 - \frac{2 e}{r} \right)
-\overbar{\Phi}_{100}(\Br) = \epsilon \overbar{\Phi}_{100}(\Br)
+\overbar{\Phi}_{100}(\Br) = \epsilon \overbar{\Phi}_{100}(\Br),
 \end{equation}
 %
-with
+and where
 %
 \begin{equation}\label{eqn:qmTwoL2:570}
-\epsilon = - 4 R_y
+\epsilon = - 4 R_y,
 \end{equation}
 %
+and
 \begin{equation}\label{eqn:qmTwoL2:590}
-R_y = \frac{m e^4}{2 \Hbar^2}
+R_y = \frac{m e^4}{2 \Hbar^2}.
 \end{equation}
 %
 This is the solution to
@@ -333,7 +337,7 @@ E_0^{(0)} = - 8 R_y.
 %
 Now we want to put back in the electron electron repulsion, and make an estimate.
 
-Trial wavefunction
+With a trial wavefunction
 %
 \begin{equation}\label{eqn:qmTwoL2:650}
 \Psi(\Br_1, \Br_2, Z) =
@@ -346,11 +350,10 @@ Trial wavefunction
 \end{equation}
 %
 expect that the best estimate is for \(Z \in [1,2]\).
-
 This can be calculated numerically, and we find
 %
 \begin{equation}\label{eqn:qmTwoL2:670}
-E(Z) = 2 R_Y \left( Z^2 - 4 Z + \frac{5}{8} Z \right)
+E(Z) = 2 R_Y \left( Z^2 - 4 Z + \frac{5}{8} Z \right).
 \end{equation}
 %
 The \(Z^2\) comes from the kinetic energy.  The \(-4 Z\) is the electron nuclear attraction, and the final term is from the electron-electron repulsion.
@@ -358,13 +361,13 @@ The \(Z^2\) comes from the kinetic energy.  The \(-4 Z\) is the electron nuclear
 The actual minimum is
 %
 \begin{equation}\label{eqn:qmTwoL2:690}
-Z = 2 - \frac{5}{16}
+Z = 2 - \frac{5}{16},
 \end{equation}
 %
 \begin{equation}\label{eqn:qmTwoL2:710}
-E(2 - 5/16) = -77.5 \text{eV}
+E(2 - 5/16) = -77.5 \text{eV}.
 \end{equation}
 %
-Whereas the measured value is \(-78.6 \text{eV}\).
+As expected, this is greater than the actual interaction free value of \(-78.6 \text{eV}\).
 }
 %\shipoutAnswer
