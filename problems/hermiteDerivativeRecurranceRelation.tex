@@ -3,17 +3,27 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 %
-\label{chap:hermiteDerivativeRecurranceRelation}
+%\label{chap:hermiteDerivativeRecurranceRelation}
 %
 %\blogpage{http://sites.google.com/site/peeterjoot2/math2012/hermiteDerivativeRecurranceRelation.pdf}
 %\date{Jan 3, 2012}
-%
-For a QM problem I had need of a recurrence relation for Hermite polynomials.  I found it in \citep{abramowitz1964handbook} (also see: \cite[Eq.~18.9.25]{NIST:DLMF2020}), but thought I had try to derive the relation myself.
+\makeproblem{Hermite recurrence relations.}{problem:hermiteDerivativeRecurranceRelation:1}{
+Recall that Hermite polynomials are basis functions for the SHO wave functions (\citep{desai2009quantum} eq. 9.58).  Show that
+\begin{equation*}
+\frac{d}{dx} H_n(x)
+=
+2 n H_{n-1}(x).
+\end{equation*}
+} % problem
 
-The starting point I will use is the Rodgigues' formula definition of the Hermite polynomials
+\makeanswer{problem:hermiteDerivativeRecurranceRelation:1}{
+We could just look up this formula, and if we did so can find it in various places, such as
+\citep{abramowitz1964handbook}, or \cite[Eq.~18.9.25]{NIST:DLMF2020}.
+
+To derive it ourself, we can start with the Rodgigues' formula definition of the Hermite polynomials
 %
 \begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:10}
-H_n = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}
+H_n = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}.
 \end{equation}
 %
 Let us write \(D = d/dx\), and take the derivative of \(H_n\)
@@ -38,14 +48,15 @@ Let us write \(D = d/dx\), and take the derivative of \(H_n\)
 - 2 n D^{n-1} e^{-x^2}
 \right)  \\
 &=
-- 2 n e^{x^2} D^{n-1} e^{-x^2}
+- 2 n e^{x^2} D^{n-1} e^{-x^2}.
 \end{aligned}
 \end{equation}
-%
-So we have the rather simple end result
-%
-\begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:30}
-\frac{d}{dx} H_n(x)
-=
-2 n H_{n-1}(x).
-\end{equation}
+Rearranging proves the result.
+%So we have the rather simple end result
+%%
+%\begin{equation}\label{eqn:hermiteDerivativeRecurranceRelation:30}
+%\frac{d}{dx} H_n(x)
+%=
+%2 n H_{n-1}(x).  \qquad \qedmarker
+%\end{equation}
+} % answer

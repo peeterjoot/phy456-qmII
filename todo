@@ -1,3 +1,10 @@
+
+- Turn into problems:
+
+ \mychapter{Sinc squared integral.}
+
+Where is the first referenced?
+
 3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
 
 4) switch link in
@@ -23,9 +30,6 @@ want:
 
 7) figures without valid captions:
 
-qmTwoL2fig1
-qmTwoL2fig2
-qmTwoL2fig3
 qmTwoL2fig4
 qmTwoL2fig5
 qmTwoL2fig6

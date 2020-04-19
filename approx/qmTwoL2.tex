@@ -20,7 +20,7 @@
 In many situations one has a Hamiltonian \(H\)
 %
 \begin{equation}\label{eqn:qmTwoL2:10}
-H \ket{\Psi_{n \alpha}} = E_n \ket{\Psi_{n \alpha}}
+H \ket{\Psi_{n \alpha}} = E_n \ket{\Psi_{n \alpha}}.
 \end{equation}
 %
 Here \(\alpha\) is a ``degeneracy index'' (example: as in Hydrogen atom).
@@ -28,7 +28,7 @@ Here \(\alpha\) is a ``degeneracy index'' (example: as in Hydrogen atom).
 \paragraph{Why?}
 %
 \begin{itemize}
-\item Because this simplifies dynamics. Take
+\item Because this simplifies dynamics. Given an expansion of an initial state in some basis
 %
 \begin{equation}\label{eqn:qmTwoL2:730}
 \begin{aligned}
@@ -37,11 +37,11 @@ Here \(\alpha\) is a ``degeneracy index'' (example: as in Hydrogen atom).
 \ket{\Psi_{n \alpha}}
 \braket{\Psi_{n \alpha}}{\Psi(0)}
 &
-= \sum_{n\alpha} c_{n \alpha} \ket{\Psi_{n \alpha}}
+= \sum_{n\alpha} c_{n \alpha} \ket{\Psi_{n \alpha}},
 \end{aligned}
 \end{equation}
 %
-Then
+the time evolution of the state is
 \begin{equation}\label{eqn:qmTwoL2:750}
 \begin{aligned}
 \ket{\Psi(t)}
@@ -55,20 +55,20 @@ e^{-i H t/\Hbar}
 &=
 \sum_{n\alpha} c_{n \alpha}
 e^{-i E_n t/\Hbar}
-\ket{\Psi_{n \alpha}}
+\ket{\Psi_{n \alpha}}.
 \end{aligned}
 \end{equation}
 %
-\item ``Applied  field"' can often be thought of a driving the system from one eigenstate to another.
-\imageFigure{../figures/phy456-qmII/qmTwoL2fig1}{qmTwoL2fig1.}{fig:qmTwoL2:1}{0.2}
-\item Stat mech.
-In thermal equilibrium
+\item An ``applied  field"', as depicted crudely in \cref{fig:qmTwoL2:1},
+can often be thought of a driving the system from one eigenstate to another.
+\imageFigure{../figures/phy456-qmII/qmTwoL2fig1}{Stimulated emission.}{fig:qmTwoL2:1}{0.2}
+\item In Statistical mechanics, at thermal equilibrium, the expectation value of an observable \( \calO \) is
 %
 \begin{equation}\label{eqn:qmTwoL2:30}
 \expectation{\calO} =
 \frac{\sum_{n \alpha} \bra{\Psi_{n\alpha}} \calO \ket{\Psi_{n \alpha}}  e^{-\beta E_n}}{
 Z
-}
+},
 \end{equation}
 %
 where
@@ -80,7 +80,7 @@ where
 and
 %
 \begin{equation}\label{eqn:qmTwoL2:70}
-Z = \sum_{n \alpha} e^{-\beta E_n}
+Z = \sum_{n \alpha} e^{-\beta E_n}.
 \end{equation}
 \end{itemize}
 %
@@ -90,21 +90,23 @@ Z = \sum_{n \alpha} e^{-\beta E_n}
 Consider any ket
 %
 \begin{equation}\label{eqn:qmTwoL2:90}
-\ket{\Psi} = \sum_{n \alpha} c_{n \alpha} \ket{\Psi_{n \alpha}}
+\ket{\Psi} = \sum_{n \alpha} c_{n \alpha} \ket{\Psi_{n \alpha}},
 \end{equation}
 %
-(perhaps not even normalized), and where
+perhaps not even normalized, where the coefficients
 %
 \begin{equation}\label{eqn:qmTwoL2:110}
-c_{n \alpha} = \braket{\Psi_{n \alpha}}{\Psi}
+c_{n \alpha} = \braket{\Psi_{n \alpha}}{\Psi},
 \end{equation}
 %
-but we do not know these.
+are unknown.
 %
+We do know that
 \begin{equation}\label{eqn:qmTwoL2:130}
-\braket{\Psi}{\Psi} = \sum_{n \alpha} \Abs{c_{n \alpha}}^2
+\braket{\Psi}{\Psi} = \sum_{n \alpha} \Abs{c_{n \alpha}}^2,
 \end{equation}
 %
+and can relate the average energy to the ground state energy as follows
 \begin{equation}\label{eqn:qmTwoL2:770}
 \begin{aligned}
 \frac{
@@ -125,7 +127,7 @@ but we do not know these.
 \sum_{m \beta} \Abs{c_{m \beta}}^2
 }  \\
 &=
-E_0
+E_0.
 \end{aligned}
 \end{equation}
 %
@@ -137,7 +139,7 @@ So for any ket we can form the upper bound for the ground state energy
 }{
 \braket{\Psi}{\Psi}
 }
-\ge E_0
+\ge E_0.
 \end{equation}
 %
 There is a whole set of strategies based on estimating the ground state energy.  This is called the Variational principle for ground state.  See \S 24.2 in the text \citep{desai2009quantum}.
@@ -151,53 +153,59 @@ E[\Psi] =
 }{
 \braket{\Psi}{\Psi}
 }
-\ge E_0
+\ge E_0.
 \end{equation}
 %
-If \(\ket{\Psi} = c \ket{\Psi_0}\) where \(\ket{\Psi_0}\) is the normalized ground state, then
+In particular, if \(\ket{\Psi} = c \ket{\Psi_0}\) where \(\ket{\Psi_0}\) is the normalized ground state, then
 %
 \begin{equation}\label{eqn:qmTwoL2:190}
-E[ c \Psi_0 ] = E_0
+E[ c \Psi_0 ] = E_0.
 \end{equation}
 %
 \makeexample{Hydrogen atom}{approx:ex1}{
 %
+The solution of the Hydrogen problem is given by
 \begin{equation}\label{eqn:qmTwoL2:210}
-\bra{\Br} H \ket{\Br'} = \calH \delta^3(\Br - \Br')
+\bra{\Br} H \ket{\Br'} = \calH \delta^3(\Br - \Br'),
 \end{equation}
 %
 where
 %
 \begin{equation}\label{eqn:qmTwoL2:230}
-\calH = -\frac{\Hbar^2}{2 \mu} \spacegrad^2 - \frac{e^2}{r}
+\calH = -\frac{\Hbar^2}{2 \mu} \spacegrad^2 - \frac{e^2}{r},
 \end{equation}
 %
-Here \(\mu\) is the reduced mass.
+and \(\mu\) is the reduced mass.
 
-We know the exact solution:
+We know the exact ground state energy
 %
-\begin{equation}\label{eqn:qmTwoL2:250}
-H \ket{\Psi_0}
-\end{equation}
+%\begin{equation}\label{eqn:qmTwoL2:250}
+%H \ket{\Psi_0}
+%\end{equation}
 %
 \begin{equation}\label{eqn:qmTwoL2:270}
-E_0 = -R_y
+E_0 = -R_y,
 \end{equation}
 %
+where
 \begin{equation}\label{eqn:qmTwoL2:290}
-R_y = \frac{\mu e^4}{2 \Hbar^2} \approx 13.6 \text{eV}
+R_y = \frac{\mu e^4}{2 \Hbar^2} \approx 13.6 \text{eV}.
 \end{equation}
 %
+The ground state wavefunction is
 \begin{equation}\label{eqn:qmTwoL2:310}
 \braket{\Br}{\Psi_0} = \Phi_{100}(\Br) = \left( \inv{\pi a_0^3}\right)^{1/2} e^{-r/a_0}
 \end{equation}
 %
+where
 \begin{equation}\label{eqn:qmTwoL2:330}
-a_0 = \frac{\Hbar^2}{\mu e^2} \approx 0.53 \angstrom
+a_0 = \frac{\Hbar^2}{\mu e^2} \approx 0.53 \angstrom,
 \end{equation}
+as plotted in
 %
-\imageFigure{../figures/phy456-qmII/qmTwoL2fig2}{qmTwoL2fig2.}{fig:qmTwoL2:2}{0.2}
-\imageFigure{../figures/phy456-qmII/qmTwoL2fig3}{qmTwoL2fig3.}{fig:qmTwoL2:3}{0.2}
+\imageFigure{../figures/phy456-qmII/hydrogenGroundStateFig2}{Hydrogen ground state magnitude.}{fig:qmTwoL2:2}{0.2}
+%\imageFigure{../figures/phy456-qmII/qmTwoL2fig2}{qmTwoL2fig2.}{fig:qmTwoL2:2}{0.2}
+%\imageFigure{../figures/phy456-qmII/qmTwoL2fig3}{qmTwoL2fig3.}{fig:qmTwoL2:3}{0.2}
 estimate
 %
 \begin{equation}\label{eqn:qmTwoL2:350}
