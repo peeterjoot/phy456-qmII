@@ -6,13 +6,11 @@
 See \S 16.1 of the text \citep{desai2009quantum}.
 
 We can sometimes use this sort of physical insight to help construct a good approximation.  This is provided that we have some of this physical insight, or that it is good insight in the first place.
-
 This is the no-think (turn the crank) approach.
-
 Here we split our Hamiltonian into two parts
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:310}
-H = H_0 + H'
+H = H_0 + H',
 \end{equation}
 %
 where \(H_0\) is a Hamiltonian for which we know the energy eigenstates and the eigenkets.  The \(H'\) is the ``perturbation'' that is supposed to be small ``in some sense''.
@@ -23,74 +21,74 @@ Prof Sipe will provide some references later that provide a more specific meanin
 We would like to consider a range of problems of the form
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:330}
-H = H_0 + \lambda H'
+H = H_0 + \lambda H',
 \end{equation}
 %
 where
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:350}
-\lambda \in [0,1]
+\lambda \in [0,1].
 \end{equation}
 %
-So that when \(\lambda \rightarrow 0\) we have
+When \(\lambda \rightarrow 0\) we have
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:370}
-H \rightarrow H_0
+H \rightarrow H_0,
 \end{equation}
 %
-the problem that we already know, but for \(\lambda \rightarrow 1\) we have
+which is the problem that we already know.  However, for \(\lambda \rightarrow 1\) we have
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:390}
-H = H_0 + H'
+H = H_0 + H',
 \end{equation}
 %
 the problem that we would like to solve.
-
 We are assuming that we know the eigenstates and eigenvalues for \(H_0\).  Assuming no degeneracy
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:410}
 H_0 \ket{\psi_s^{(0)}} =
 E_s^{(0)}
-\ket{\psi_s^{(0)}}
+\ket{\psi_s^{(0)}}.
 \end{equation}
 %
 We seek
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:430}
 (H_0 + H')\ket{\psi_s} =
 E_s
-\ket{\psi_s}
+\ket{\psi_s},
 \end{equation}
 %
-(this is the \(\lambda = 1\) case).
+which is the \(\lambda = 1\) case.
 
 Once (if) found, when \(\lambda \rightarrow 0\) we will have
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:550}
 \begin{aligned}
 E_s &\rightarrow E_s^{(0)} \\
-\ket{\psi_s} &\rightarrow \ket{\psi_s^{(0)}}
+\ket{\psi_s} &\rightarrow \ket{\psi_s^{(0)}},
 \end{aligned}
 \end{equation}
 %
+We expand the energy as
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:450}
-E_s = E_s^{(0)}  + \lambda E_s^{(1)} + \lambda^2 E_s^{(2)}
+E_s = E_s^{(0)}  + \lambda E_s^{(1)} + \lambda^2 E_s^{(2)},
 \end{equation}
 %
+where
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:470}
-\psi_s = \sum_n c_{ns} \ket{\psi_n^{(0)}}
+\psi_s = \sum_n c_{ns} \ket{\psi_n^{(0)}}.
 \end{equation}
 %
 This we know we can do because we are assumed to have a complete set of states.
-
-with
+With
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:490}
-c_{ns} = c_{ns}^{(0)}  + \lambda c_{ns}^{(1)} + \lambda^2 c_{ns}^{(2)}
+c_{ns} = c_{ns}^{(0)}  + \lambda c_{ns}^{(1)} + \lambda^2 c_{ns}^{(2)},
 \end{equation}
 %
 where
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:510}
-c_{ns}^{(0)} = \delta_{ns}
+c_{ns}^{(0)} = \delta_{ns}.
 \end{equation}
 %
 There is a subtlety here that will be treated differently from the text.  We write
@@ -145,7 +143,7 @@ Take
 +
 \lambda
 \sum_{n \ne s} \overbar{c}_{ns}^{(1)}
-\ket{\psi_n^{(0)}} + \cdots
+\ket{\psi_n^{(0)}} + \cdots,
 \end{aligned}
 \end{equation}
 %
@@ -156,7 +154,7 @@ where
 \frac{c_{ns}^{(1)} }
 {
 1 + \lambda c_{ss}^{(1)}
-}
+}.
 \end{equation}
 %
 We have:
@@ -164,16 +162,15 @@ We have:
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:630}
 \begin{aligned}
 \overbar{c}_{ns}^{(1)} &= c_{ns}^{(1)} \\
-\overbar{c}_{ns}^{(2)} &\ne c_{ns}^{(2)}
+\overbar{c}_{ns}^{(2)} &\ne c_{ns}^{(2)}.
 \end{aligned}
 \end{equation}
 %
 FIXME: I missed something here.
 
-Note that this is no longer normalized.
+Note that this is no longer normalized
 %
 \begin{equation}\label{eqn:qmTwoL3TimeIndepPert:530}
-\braket{\overbar{\psi}_s}{\overbar{\psi}_s} \ne 1
+\braket{\overbar{\psi}_s}{\overbar{\psi}_s} \ne 1.
 \end{equation}
 %
-

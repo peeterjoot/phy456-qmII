@@ -34,19 +34,19 @@
 To recap, we were covering the time independent perturbation methods from \S 16.1 of the text \citep{desai2009quantum}.  We start with a known Hamiltonian \(H_0\), and alter it with the addition of a ``small'' perturbation
 %
 \begin{equation}\label{eqn:qmTwoL4:10}
-H = H_0 + \lambda H', \qquad \lambda \in [0,1]
+H = H_0 + \lambda H', \qquad \lambda \in [0,1].
 \end{equation}
 %
 For the original operator, we assume that a complete set of eigenvectors and eigenkets is known
 %
 \begin{equation}\label{eqn:qmTwoL4:30}
-H_0 \ket{{\psi_s}^{(0)}} = {E_s}^{(0)} \ket{{\psi_s}^{(0)}}
+H_0 \ket{{\psi_s}^{(0)}} = {E_s}^{(0)} \ket{{\psi_s}^{(0)}}.
 \end{equation}
 %
 We seek the perturbed eigensolution
 %
 \begin{equation}\label{eqn:qmTwoL4:50}
-H \ket{\psi_s} = E_s \ket{\psi_s}
+H \ket{\psi_s} = E_s \ket{\psi_s},
 \end{equation}
 %
 and assumed a perturbative series representation for the energy eigenvalues in the new system
@@ -58,7 +58,7 @@ E_s = {E_s}^{(0)} + \lambda {E_s}^{(1)} + \lambda^2 {E_s}^{(2)} + \cdots
 Given an assumed representation for the new eigenkets in terms of the known basis
 %
 \begin{equation}\label{eqn:qmTwoL4:90}
-\ket{\psi_s} = \sum_n c_{ns} \ket{{\psi_n}^{(0)}}
+\ket{\psi_s} = \sum_n c_{ns} \ket{{\psi_n}^{(0)}},
 \end{equation}
 %
 and a perturbative series representation for the probability coefficients
@@ -131,7 +131,7 @@ We rescaled our kets
 +
 \lambda^2
 \sum_{n \ne s} {\overbar{c}_{ns}}^{(2)} \ket{{\psi_n}^{(0)}}
-+ \cdots
++ \cdots,
 \end{equation}
 %
 where
@@ -143,7 +143,7 @@ where
 + \lambda {c_{ss}}^{(1)}
 + \lambda^2 {c_{ss}}^{(2)}
 + \cdots
-}
+}.
 \end{equation}
 %
 The normalization of the rescaled kets is then
@@ -157,7 +157,7 @@ The normalization of the rescaled kets is then
 \sum_{n \ne s} \Abs{{\overbar{c}_{ss}}^{(1)}}^2
 +
 \cdots
-\equiv \inv{Z_s},
+\equiv \inv{Z_s}.
 \end{equation}
 %
 One can then construct a renormalized ket if desired
@@ -183,7 +183,7 @@ That is as far as we got last time.  We continue by renaming terms in \eqnref{eq
 \lambda \ket{{\psi_s}^{(1)}}
 +
 \lambda^2 \ket{{\psi_s}^{(2)}}
-+ \cdots
++ \cdots,
 \end{equation}
 %
 where
@@ -291,7 +291,7 @@ How about \(\ket{B} = 0\)?  For this to be zero we require that both of the foll
 \begin{equation}\label{eqn:qmTwoL4:460}
 \begin{aligned}
 \braket{{\psi_s}^{(0)}}{B} &= 0 \\
-\braket{{\psi_m}^{(0)}}{B} &= 0, \qquad m \ne s
+\braket{{\psi_m}^{(0)}}{B} &= 0, \qquad m \ne s.
 \end{aligned}
 \end{equation}
 %
@@ -315,7 +315,7 @@ From the second condition we have
 0 = \bra{{\psi_m}^{(0)}}
 (H_0 - E_s^{(0)}) \ket{{\psi_s}^{(1)}}
 +\bra{{\psi_m}^{(0)}}
-(H' - E_s^{(1)}) \ket{{\psi_s}^{(0)}}
+(H' - E_s^{(1)}) \ket{{\psi_s}^{(0)}}.
 \end{equation}
 %
 Utilizing the Hermitian nature of \(H_0\) we can act backwards on \(\bra{{\psi_m}^{(0)}}\)
@@ -335,7 +335,7 @@ We note that \(\braket{{\psi_m}^{(0)}}{{\psi_s}^{(0)}} = 0, m \ne s\).  We can a
 \bra{{\psi_m}^{(0)}}
 \left(
 \sum_{n \ne s} {\overbar{c}_{ns}}^{(1)} \ket{{\psi_n}^{(0)}}
-\right) \\
+\right).
 \end{aligned}
 \end{equation}
 %
@@ -370,10 +370,10 @@ Utilizing this gives us
 ( E_m^{(0)} - E_s^{(0)})
 {\overbar{c}_{ms}}^{(1)}
 +
-{H'}_{ms}
+{H'}_{ms}.
 \end{equation}
 %
-And summarizing what we learn from our \(\ket{B} = 0\) conditions we have
+Summarizing what we learn from our \(\ket{B} = 0\) conditions we have
 %
 \begin{equation}\label{eqn:qmTwoL4:620}
 \begin{aligned}
@@ -381,7 +381,7 @@ E_s^{(1)} &= {H'}_{ss} \\
 {\overbar{c}_{ms}}^{(1)}
 &=
 \frac{{H'}_{ms} }
-{ E_s^{(0)} - E_m^{(0)} }
+{ E_s^{(0)} - E_m^{(0)} }.
 \end{aligned}
 \end{equation}
 %
@@ -413,7 +413,7 @@ Doing the same thing for \(\ket{C} = 0\) we form (or assume)
 &\quad +
 \bra{{\psi_s}^{(0)}}
 (H' - E_s^{(1)}) \ket{{\psi_s}^{(1)}}
--E_s^{(2)} \braket{{\psi_s}^{(0)}}{{\psi_s}^{(0)}}
+-E_s^{(2)} \braket{{\psi_s}^{(0)}}{{\psi_s}^{(0)}}.
 \end{aligned}
 \end{equation}
 %
@@ -436,7 +436,7 @@ E_s^{(2)}
 &=
 \bra{{\psi_s}^{(0)}} H' \sum_{m \ne s} {\overbar{c}_{ms}}^{(1)} \ket{{\psi_m}^{(0)}} \\
 &=
-\sum_{m \ne s} {\overbar{c}_{ms}}^{(1)} {H'}_{sm}
+\sum_{m \ne s} {\overbar{c}_{ms}}^{(1)} {H'}_{sm}.
 \end{aligned}
 \end{equation}
 %
@@ -478,7 +478,7 @@ We can continue calculating, but are hopeful that we can stop the calculation wi
 \begin{equation}\label{eqn:qmTwoL4:740}
 \sum_{m \ne s}
 \frac{{H'}_{ms}}
-{ E_s^{(0)} - E_m^{(0)} }
+{ E_s^{(0)} - E_m^{(0)} },
 \end{equation}
 %
 term is ``small'', then we can hope that truncating the sum will be reasonable for \(\lambda = 1\).  This would be the case if
@@ -488,5 +488,3 @@ term is ``small'', then we can hope that truncating the sum will be reasonable f
 \end{equation}
 %
 however, to put some mathematical rigour into making a statement of such smallness takes a lot of work.  We are referred to \citep{messiah1999quantum}.  Incidentally, these are loosely referred to as the first and second testaments, because of the author's name, and the fact that they came as two volumes historically.
-
-
