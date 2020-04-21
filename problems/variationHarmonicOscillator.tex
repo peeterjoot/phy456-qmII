@@ -109,7 +109,7 @@ We can find the normalization easily
 &= \int_{-\infty}^\infty e^{- 2 \beta \Abs{x}} dx \\
 &= 2 \inv{2 \beta} \int_{0}^\infty e^{- 2 \beta x} 2 \beta dx \\
 &= 2 \inv{2 \beta} \int_{0}^\infty e^{- u} du \\
-&= \inv{\beta}
+&= \inv{\beta}.
 \end{aligned}
 \end{equation}
 %
@@ -147,7 +147,7 @@ e^{ - 2 \beta x }
 dx
 e^{- \beta \Abs{x}}
 \frac{d^2}{dx^2}
-e^{- \beta \Abs{x}}
+e^{- \beta \Abs{x}}.
 \end{aligned}
 \end{equation}
 %
@@ -169,7 +169,7 @@ e^{- 2 \beta x} &
 + \frac{m \omega^2 }{8 \beta^3}
  \int_{0}^\infty du u^2 e^{- u}  \\
 &=
--\frac{\beta \Hbar^2}{2m} + \frac{m \omega^2}{4 \beta^3}
+-\frac{\beta \Hbar^2}{2m} + \frac{m \omega^2}{4 \beta^3}.
 \end{aligned}
 \end{equation}
 %
@@ -189,7 +189,7 @@ E[\beta] = -\frac{\beta^2 \Hbar^2}{2m} + \frac{m \omega^2}{4 \beta^2}.
 Observe that if we set the derivative of this equal to zero to find the ``best'' beta associated with this trial function
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:210}
-0 = \PD{\beta}{E} = -\frac{\beta \Hbar^2}{2m} - \frac{m \omega^2}{2 \beta^3}
+0 = \PD{\beta}{E} = -\frac{\beta \Hbar^2}{2m} - \frac{m \omega^2}{2 \beta^3},
 \end{equation}
 %
 we find that the parameter beta that best minimizes this ground state energy function is complex with value
@@ -201,10 +201,10 @@ we find that the parameter beta that best minimizes this ground state energy fun
 It appears at first glance that we can not minimize \eqnref{eqn:variationHarmonicOscillator:190} to find a best ground state energy estimate associated with the trial function \eqnref{eqn:variationHarmonicOscillator:130}.  We do however, know the exact ground state energy \(\Hbar \omega/2\) for the Harmonic oscillator.  Is is possible to show that for all \(\beta^2\) we have
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:250}
-\frac{\Hbar \omega}{2} \le -\frac{\beta^2 \Hbar^2}{2m} + \frac{m \omega^2}{4 \beta^2}
+\frac{\Hbar \omega}{2} \le -\frac{\beta^2 \Hbar^2}{2m} + \frac{m \omega^2}{4 \beta^2}?
 \end{equation}
 %
-?  This inequality would be expected if we can assume that the trial wavefunction has a Fourier series representation utilizing the actual energy eigenfunctions for the system.
+This inequality would be expected if we can assume that the trial wavefunction has a Fourier series representation utilizing the actual energy eigenfunctions for the system.
 
 The resolution to this question is avoided once we include the singularity.  This is explored in the last part of these notes.
 %
@@ -292,7 +292,7 @@ Our normalized energy expectation is therefore the considerably messier
 {
 \braket{\psi_\perp}{\psi_\perp} +
 \sum_m \Abs{c_m}^2 + 2 \Real \left(c_m^\conj c_\perp \braket{\psi_m}{\psi_\perp} \right)
-}
+}.
 \end{aligned}
 \end{equation}
 %
@@ -308,7 +308,7 @@ Our first few basis functions, with \(\alpha = \sqrt{m \omega/\Hbar}\) are
 \begin{aligned}
 u_0 &= \sqrt{\frac{\alpha}{\sqrt{\pi}}} e^{-\alpha^2 x^2/2} \\
 u_1 &= \sqrt{\frac{\alpha}{2 \sqrt{\pi}}} (2 \alpha x) e^{-\alpha^2 x^2/2} \\
-u_2 &= \sqrt{\frac{\alpha}{8 \sqrt{\pi}}} (4 \alpha^2 x^2 - 2) e^{-\alpha^2 x^2/2}
+u_2 &= \sqrt{\frac{\alpha}{8 \sqrt{\pi}}} (4 \alpha^2 x^2 - 2) e^{-\alpha^2 x^2/2}.
 \end{aligned}
 \end{equation}
 %
@@ -320,14 +320,14 @@ u_n &= N_n H_n(\alpha x) e^{-\alpha^2 x^2/2} \\
 N_n &= \sqrt{
 \frac{\alpha}{\sqrt{\pi} 2^n n!}
 } \\
-H_n(\eta) &= (-1)^n e^{\eta^2} \frac{d^n}{d\eta^n} e^{-\eta^2}
+H_n(\eta) &= (-1)^n e^{\eta^2} \frac{d^n}{d\eta^n} e^{-\eta^2},
 \end{aligned}
 \end{equation}
 %
-From which we find
+from which we find
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:471}
-\psi(x) = e^{-\alpha^2 x^2/2} (N_n)^2 H_n(\alpha x) \int_{-\infty}^\infty H_n(\alpha x) e^{-\alpha^2 x^2/2} \psi(x) dx
+\psi(x) = e^{-\alpha^2 x^2/2} (N_n)^2 H_n(\alpha x) \int_{-\infty}^\infty H_n(\alpha x) e^{-\alpha^2 x^2/2} \psi(x) dx.
 \end{equation}
 %
 Our wave function, with \(\beta=1\) is plotted in \cref{fig:variationHarmonicOscillator:expMinusBetsAbsX}.
@@ -337,7 +337,7 @@ The zeroth order fitting using the Gaussian exponential is found to be
 \begin{equation}\label{eqn:variationHarmonicOscillator:310}
 \psi_0(x) = \sqrt{2 \beta}
 \erfc\left(\frac{\beta }{\sqrt{2} \alpha }\right)
-e^{- \alpha^2 x^2/2 +\beta^2/(2 \alpha^2)}
+e^{- \alpha^2 x^2/2 +\beta^2/(2 \alpha^2)}.
 \end{equation}
 %
 With \(\alpha = \beta = 1\), this is plotted in \cref{fig:variationHarmonicOscillator:expMinusBetsAbsXfirstOrderFitting} and can be seen to match fairly well
@@ -373,7 +373,7 @@ Expressed this way, with the identification \(\theta'(x) = \delta(x)\), we have 
 \Abs{x}'
 &= x' \theta(x) - x' \theta(-x) + x \theta'(x) - x \theta'(-x) \\
 &= \theta(x) - \theta(-x) + x \delta(x) + x \delta(-x) \\
-&= \theta(x) - \theta(-x) + x \delta(x) + x \delta(x) \\
+&= \theta(x) - \theta(-x) + x \delta(x) + x \delta(x).
 \end{aligned}
 \end{equation}
 %
@@ -382,7 +382,7 @@ Observe that we have our expected unit derivative for \(x > 0\), and \(-1\) deri
 \begin{equation}\label{eqn:variationHarmonicOscillator:671}
 \begin{aligned}
 \evalbar{\Abs{x}' }{x=0}
-= 2 \evalbar{x \delta(x)}{x=0} \\
+= 2 \evalbar{x \delta(x)}{x=0}.
 \end{aligned}
 \end{equation}
 %
@@ -392,7 +392,7 @@ We have got zero times infinity here, so how do we give meaning to this?  As wit
 \begin{aligned}
 \int_{-\infty}^\infty dx \Abs{x}' f(x)
 &= 2 \int_{-\infty}^\infty dx x \delta(x) f(x) \\
-&= 2 (0) f(0)
+&= 2 (0) f(0).
 \end{aligned}
 \end{equation}
 %
@@ -414,7 +414,7 @@ This we can now take derivatives of, even at the origin, and find
 &= \cancel{\delta(x) e^{-\beta x} - \delta(x) e^{\beta x}} -\beta \theta(x) e^{-\beta x} + \beta \theta(-x) e^{\beta x} \\
 &= \beta \left(
 -\theta(x) e^{-\beta x} + \theta(-x) e^{\beta x}
-\right)
+\right).
 \end{aligned}
 \end{equation}
 %
@@ -432,7 +432,7 @@ Taking second derivatives we find
 -\delta(x) e^{-\beta x} - \delta(-x) e^{\beta x}
 +\beta \theta(x) e^{-\beta x} + \beta \theta(-x) e^{\beta x}
 \right) \\
-&= \beta^2 \psi - 2 \beta \delta(x)
+&= \beta^2 \psi - 2 \beta \delta(x).
 \end{aligned}
 \end{equation}
 %
@@ -489,7 +489,7 @@ Plugging this back in we find that our trial function associated with the minimu
 and that energy, after substitution, is
 %
 \begin{equation}\label{eqn:variationHarmonicOscillator:470}
-E[\beta_{\text{min}}] = \frac{\Hbar \omega}{2} \sqrt{2}
+E[\beta_{\text{min}}] = \frac{\Hbar \omega}{2} \sqrt{2}.
 \end{equation}
 %
 We have something that is \(1.4 \times\) the true ground state energy, but is at least a ball park value.  However, to get this result, we have to be very careful to treat our point of singularity.  A derivative that we would call undefined in first year calculus, is not only defined, but required, for this treatment to work!
