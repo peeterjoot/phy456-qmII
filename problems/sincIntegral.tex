@@ -16,12 +16,23 @@
 %\beginArtNoToc
 %
 %\generatetitle{Evaluating the squared sinc integral}
-\label{chap:sincIntegral}
-In the Fermi's golden rule lecture we used the result for the integral of the squared \(\sinc\) function.  Here is a reminder of the contours required to perform this integral.  We want to evaluate
+%\label{chap:sincIntegral}
+%
+\makeproblem{Sinc squared integral.}{problem:sincIntegral:1}{
+In the Fermi's golden rule lecture we used the result for the integral of the squared \(\sinc\) function, that is
+%\begin{equation}\label{eqn:sincIntegral:10}
+\begin{equation*}
+   \int_{-\infty}^\infty \frac{\sin^2 (x\Abs{\mu})}{x^2} dx = \pi \Abs{\mu}.
+\end{equation*}
+Prove this.
+} % problem
+\makeanswer{problem:sincIntegral:1}{
+We want to evaluate
 %
 \begin{equation}\label{eqn:sincIntegral:10}
-\int_{-\infty}^\infty \frac{\sin^2 (x\Abs{\mu})}{x^2} dx
+\int_{-\infty}^\infty \frac{\sin^2 (x\Abs{\mu})}{x^2} dx,
 \end{equation}
+for which we must remind ourselves about the appropriate contours required to do the evaluation.  
 %
 We make a few change of variables
 %
@@ -33,7 +44,7 @@ We make a few change of variables
 &=
 -i \Abs{\mu} \int_{-\infty}^\infty \frac{(e^{iy} - e^{-iy})^2}{(2 i y)^2} i dy \\
 &=
--\frac{i \Abs{\mu}}{4} \int_{-i\infty}^{i\infty} \frac{e^{2z} + e^{-2z} - 2}{z^2} dz
+-\frac{i \Abs{\mu}}{4} \int_{-i\infty}^{i\infty} \frac{e^{2z} + e^{-2z} - 2}{z^2} dz.
 \end{aligned}
 \end{equation}
 %
@@ -49,7 +60,7 @@ We employ Jordan's theorem (\S 8.12 \citep{lepage1980cva}) now to pick the conto
 \int_{C_0 + C_2} \frac{e^{2z}}{z^2} dz
 +\int_{C_0 + C_1} \frac{e^{-2z}}{z^2} dz
 -\int_{C_0 + C_1} \frac{2}{z^2} dz
-\right)
+\right).
 \end{equation}
 %
 The second two integrals both surround no poles (the contours were strategically placed to cowardly avoid the pole of the integrand at the origin), so we have only the first to deal with
@@ -58,7 +69,7 @@ The second two integrals both surround no poles (the contours were strategically
 \begin{aligned}
 \int_{C_0 + C_2} \frac{e^{2z}}{z^2} dz
 &= 2 \pi i \inv{1!} \evalbar{ \frac{d}{dz} e^{2z}}{z=0} \\
-&= 4 \pi i
+&= 4 \pi i.
 \end{aligned}
 \end{equation}
 %
@@ -68,10 +79,10 @@ Putting everything back together we have
 \int_{-\infty}^\infty \frac{\sin^2 (x\Abs{\mu})}{x^2} dx
 =
 -\frac{i \Abs{\mu}}{4} 4 \pi i
-= \pi \Abs{\mu}
+= \pi \Abs{\mu}.  \qquad \qedmarker
 \end{equation}
 %
-\paragraph{On the cavalier choice of contours}
+\paragraph{On the cavalier choice of contours.}
 %
 The choice of which contours to pick above may seem pretty arbitrary, but they are for good reason.  Suppose you picked \(C_0 + C_1\) for the first integral.  On the big \(C_1\) arc, then with a \(z = R e^{i \theta}\) substitution we have
 \begin{dmath}\label{eqn:sincIntegral:70}
@@ -144,4 +155,5 @@ d\theta
 =
 \frac{\pi e^{-2 R} }{R}.
 \end{dmath}
+} % answer
 %\EndArticle
