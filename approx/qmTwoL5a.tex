@@ -33,13 +33,13 @@ H = H_0 + \lambda H', \qquad \lambda \in [0,1]
 For the original operator, we assume that a complete set of eigenvectors and eigenkets is known
 %
 \begin{equation}\label{eqn:qmTwoL5a:30}
-H_0 \ket{{\psi_{s \alpha}}^{(0)}} = {E_s}^{(0)} \ket{{\psi_{s \alpha}}^{(0)}}
+H_0 \ket{{\psi_{s \alpha}}^{(0)}} = {E_s}^{(0)} \ket{{\psi_{s \alpha}}^{(0)}}.
 \end{equation}
 %
 We seek the perturbed eigensolution
 %
 \begin{equation}\label{eqn:qmTwoL5a:50}
-H \ket{\psi_{s \alpha}} = E_{s \alpha} \ket{\psi_{s \alpha}}
+H \ket{\psi_{s \alpha}} = E_{s \alpha} \ket{\psi_{s \alpha}},
 \end{equation}
 %
 and assumed a perturbative series representation for the energy eigenvalues in the new system
@@ -152,7 +152,7 @@ The normalization of the rescaled kets is then
 \sum_{n\beta \ne s\alpha} \Abs{{\overbar{c}_{ss}}^{(1)}}^2
 +
 \cdots
-\equiv \inv{Z_{s \alpha}},
+\equiv \inv{Z_{s \alpha}}.
 \end{equation}
 %
 One can then construct a renormalized ket if desired
@@ -287,7 +287,7 @@ How about \(\ket{B} = 0\)?  For this to be zero we require that both of the foll
 \begin{equation}\label{eqn:qmTwoL5a:460}
 \begin{aligned}
 \braket{{\psi_{s \alpha}}^{(0)}}{B} &= 0 \\
-\braket{{\psi_{m \beta}}^{(0)}}{B} &= 0, \qquad m \beta \ne s \alpha
+\braket{{\psi_{m \beta}}^{(0)}}{B} &= 0, \qquad m \beta \ne s \alpha.
 \end{aligned}
 \end{equation}
 %
@@ -311,7 +311,7 @@ From the second condition we have
 0 = \bra{{\psi_{m \beta}}^{(0)}}
 (H_0 - E_s^{(0)}) \ket{{\psi_{s \alpha}}^{(1)}}
 +\bra{{\psi_{m \beta}}^{(0)}}
-(H' - E_{s \alpha}^{(1)}) \ket{{\psi_{s \alpha}}^{(0)}}
+(H' - E_{s \alpha}^{(1)}) \ket{{\psi_{s \alpha}}^{(0)}}.
 \end{equation}
 %
 Utilizing the Hermitian nature of \(H_0\) we can act backwards on \(\bra{{\psi_m}^{(0)}}\)
@@ -331,7 +331,7 @@ We note that \(\braket{{\psi_{m \beta}}^{(0)}}{{\psi_{s \alpha}}^{(0)}} = 0, m \
 \bra{{\psi_{m \beta}}^{(0)}}
 \left(
 \sum_{n\delta \ne s\alpha} {\overbar{c}_{ns;\delta \alpha}}^{(1)} \ket{{\psi_{n \delta}}^{(0)}}
-\right) \\
+\right).
 \end{aligned}
 \end{equation}
 %
@@ -367,7 +367,7 @@ Utilizing this gives us, for \(\color{red}{m \beta \ne s \alpha}\)
 ( E_m^{(0)} - E_s^{(0)})
 {\overbar{c}_{ms ; \beta \alpha}}^{(1)}
 +
-{H'}_{ms ; \beta \alpha}
+{H'}_{ms ; \beta \alpha}.
 \end{equation}
 %
 Here we see our first sign of the trouble hinted at in lecture 5.  Just because \(m \beta \ne s \alpha\) does not mean that \(m \ne s\).  For example, with \(m \beta = 1\,1\) and \(s\alpha = 1\,2\) we would have
@@ -378,7 +378,7 @@ E_{1 2}^{(1)} &= {H'}_{1\,1 ; 2 2} \\
 {\overbar{c}_{1\,1 ; 1 2}}^{(1)}
 &=
 \frac{{H'}_{1\,1 ; 1 2} }
-{ E_1^{(0)} - E_1^{(0)} }
+{ E_1^{(0)} - E_1^{(0)} }.
 \end{aligned}
 \end{equation}
 %
@@ -387,12 +387,12 @@ We have got a \(\color{red}{\text{divide by zero}}\) unless additional restricti
 If we return to \eqnref{eqn:qmTwoL5a:600}, we see that, for the result to be valid, when \(m = s\), and there exists degeneracy for the \(s\) state, we require for \(\beta \ne \alpha\)
 %
 \begin{equation}\label{eqn:qmTwoL5a:610}
-{H'}_{ss ; \beta \alpha} = 0
+{H'}_{ss ; \beta \alpha} = 0,
 \end{equation}
 %
 (then \eqnref{eqn:qmTwoL5a:600} becomes a \(0 = 0\) equality, and all is still okay)
 
-And summarizing what we learn from our \(\ket{B} = 0\) conditions we have
+Summarizing what we learn from our \(\ket{B} = 0\) conditions we have
 %
 \begin{equation}\label{eqn:qmTwoL5a:620}
 \begin{aligned}
@@ -401,7 +401,7 @@ E_{s \alpha}^{(1)} &= {H'}_{ss ; \alpha \alpha} \\
 &=
 \frac{{H'}_{ms ; \beta \alpha} }
 { E_s^{(0)} - E_m^{(0)} }, \qquad {m \ne s} \\
-{H'}_{ss ; \beta \alpha} &= 0, \qquad \beta \alpha \ne 1\,1
+{H'}_{ss ; \beta \alpha} &= 0, \qquad \beta \alpha \ne 1\,1.
 \end{aligned}
 \end{equation}
 %
@@ -410,12 +410,13 @@ E_{s \alpha}^{(1)} &= {H'}_{ss ; \alpha \alpha} \\
 Doing the same thing for \(\ket{C} = 0\) we form (or assume)
 %
 \begin{equation}\label{eqn:qmTwoL5a:640}
-\braket{{\psi_{s \alpha}}^{(0)}}{C} = 0
+\braket{{\psi_{s \alpha}}^{(0)}}{C} = 0,
 \end{equation}
 % not used:
 %\braket{{\psi_{m \beta}}^{(0)}}{C} &= 0, \qquad m \ne s
 % not used:
 %
+and
 \begin{equation}\label{eqn:qmTwoL5a:780}
 \begin{aligned}
 0
@@ -435,7 +436,7 @@ Doing the same thing for \(\ket{C} = 0\) we form (or assume)
 (H' - E_{s \alpha}^{(1)}) \ket{{\psi_{s \alpha}}^{(1)}} \\
 &\quad
 -
-E_{s \alpha}^{(2)} \braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(0)}}
+E_{s \alpha}^{(2)} \braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(0)}}.
 \end{aligned}
 \end{equation}
 %
@@ -445,7 +446,7 @@ We need to know what the \(\braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(
 \braket{{\psi_{s \alpha}}^{(0)}}{{\psi_{s \alpha}}^{(1)}}
 =
 \bra{{\psi_{s \alpha}}^{(0)}}
-\sum_{n\beta \ne s\alpha} {\overbar{c}_{ns;\beta \alpha}}^{(1)} \ket{{\psi_{n \beta}}^{(0)}} = 0
+\sum_{n\beta \ne s\alpha} {\overbar{c}_{ns;\beta \alpha}}^{(1)} \ket{{\psi_{n \beta}}^{(0)}} = 0.
 \end{equation}
 %
 %Again, suppose that \(s = 3\).  Our sum ranges over all \(n \ne 3\), so all the brakets are zero.
@@ -459,7 +460,7 @@ E_{s \alpha}^{(2)}
 &=
 \bra{{\psi_{s \alpha}}^{(0)}} H' \sum_{m \beta \ne s \alpha} {\overbar{c}_{ms}}^{(1)} \ket{{\psi_{m \beta}}^{(0)}} \\
 &=
-\sum_{m \beta \ne s \alpha} {\overbar{c}_{ms ; \beta \alpha}}^{(1)} {H'}_{sm ; \alpha \beta}
+\sum_{m \beta \ne s \alpha} {\overbar{c}_{ms ; \beta \alpha}}^{(1)} {H'}_{sm ; \alpha \beta}.
 \end{aligned}
 \end{equation}
 %
@@ -473,7 +474,7 @@ E_{s \alpha}^{(2)}
 \sum_{m \beta \ne s \alpha, m \ne s}
 \frac{{H'}_{ms ; \beta \alpha} }
 { E_s^{(0)} - E_m^{(0)} }
-{H'}_{sm ; \alpha \beta}
+{H'}_{sm ; \alpha \beta}.
 \end{equation}
 %
 Again, only if \(H_{ss ; \alpha \beta} = 0\) for \(\beta \ne \alpha\) do we have a result we can use.  If that is the case, the first sum is killed without a divide by zero, leaving
@@ -501,12 +502,10 @@ E_{s \alpha} &= E_s^{(0)} + \lambda {H'}_{ss ; \alpha \alpha} + \lambda^2
 \frac{{H'}_{ms ; \beta \alpha}}
 { E_s^{(0)} - E_m^{(0)} } \ket{{\psi_{m \beta}}^{(0)}}
 + \cdots \\
-{H'}_{ss ; \beta \alpha} &= 0, \qquad \beta \alpha \ne 1\,1
+{H'}_{ss ; \beta \alpha} &= 0, \qquad \beta \alpha \ne 1\,1.
 \end{aligned}
 \end{equation}
 %
 \paragraph{Notational discrepancy:} OOPS.  It looks like I used different notation than in class for our matrix elements for the placement of the indices.
 %
 FIXME: looks like the \({c_{ss ; \alpha \alpha'}}^{(1)}\), for \(\alpha \ne \alpha'\) coefficients have been lost track of here?  Do we have to assume those are zero too?  Professor Sipe did not include those in his lecture \eqnref{eqn:qmTwoL5:190}, but I do not see the motivation here for dropping them in this derivation.
-
-
