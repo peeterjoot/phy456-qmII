@@ -148,17 +148,17 @@ and we suddenly change the Hamiltonian with potential \(V_0 \rightarrow V_F\) (w
 We had in this case the exact relation
 %
 \begin{equation}\label{eqn:qmTwoL8:240}
-H_0 \ket{\psi_0^{(0)}} = \inv{2} \Hbar \omega_0 \ket{\psi_0^{(0)}}
+H_0 \ket{\psi_0^{(0)}} = \inv{2} \Hbar \omega_0 \ket{\psi_0^{(0)}},
 \end{equation}
 %
 but we also have
 \begin{equation}\label{eqn:qmTwoL8:260}
-\ket{\psi_{\text{after}}} = \ket{\psi_{\text{before}}} = \ket{\psi_0^{(0)}}
+\ket{\psi_{\text{after}}} = \ket{\psi_{\text{before}}} = \ket{\psi_0^{(0)}},
 \end{equation}
 %
 and
 \begin{equation}\label{eqn:qmTwoL8:280}
-H_F \ket{\psi_n^{(f)}} = \inv{2} \Hbar \omega_F \left( n + \inv{2} \right) \ket{\psi_n^{(f)}}
+H_F \ket{\psi_n^{(f)}} = \inv{2} \Hbar \omega_F \left( n + \inv{2} \right) \ket{\psi_n^{(f)}}.
 \end{equation}
 %
 So
@@ -171,7 +171,7 @@ So
 \sum_n \ket{\psi_n^{(f)}}
 \mathLabelBox{\braket{\psi_n^{(f)}}{\psi_0^{(0)}} }{\(c_n\)} \\
 &=
-\sum_n c_n \ket{\psi_n^{(f)}}
+\sum_n c_n \ket{\psi_n^{(f)}},
 \end{aligned}
 \end{equation}
 %
@@ -193,7 +193,7 @@ whereas
 \begin{aligned}
 \ket{\psi(t)^{(o)}}
 &=
-e^{i \omega_0^{(0)} t} \ket{\psi_0^{(0)}},
+e^{i \omega_0^{(0)} t} \ket{\psi_0^{(0)}}.
 \end{aligned}
 \end{equation}
 %
@@ -213,7 +213,7 @@ I wondered what Adiabatic meant in this context.  The usage in class sounds like
 This is the reverse case, and we now vary the Hamiltonian \(H(t)\) \textunderline{very slowly}.
 %
 \begin{equation}\label{eqn:qmTwoL8:150f}
-\ddt{} \ket{\psi(t)} = \inv{i \Hbar} H(t) \ket{\psi(t)}
+\ddt{} \ket{\psi(t)} = \inv{i \Hbar} H(t) \ket{\psi(t)}.
 \end{equation}
 %
 We first consider only non-degenerate states, and at \(t = 0\) write
@@ -224,13 +224,13 @@ H(0) = H_0,
 %
 and
 \begin{equation}\label{eqn:qmTwoL8:320}
-H_0 \ket{\psi_s^{(0)}} = E_s^{(0)} \ket{\psi_s^{(0)}}
+H_0 \ket{\psi_s^{(0)}} = E_s^{(0)} \ket{\psi_s^{(0)}}.
 \end{equation}
 %
 Imagine that at each time \(t\) we can find the ``instantaneous'' energy eigenstates
 %
 \begin{equation}\label{eqn:qmTwoL8:340}
-H(t) \ket{\hat{\psi}_s(t)} = E_s(t) \ket{\hat{\psi}_s(t)}
+H(t) \ket{\hat{\psi}_s(t)} = E_s(t) \ket{\hat{\psi}_s(t)}.
 \end{equation}
 %
 These states do not satisfy Schr\"{o}dinger's equation, but are simply solutions to the eigen problem.  Our standard strategy in perturbation is based on analysis of
@@ -253,7 +253,7 @@ we will expand, not using our initial basis, but instead using the instantaneous
 \begin{aligned}
 H(t) \ket{\psi(t)}
 &= H(t) \sum_n b_n(t) \ket{\hat{\psi}_n(t)} \\
-&= \sum_n b_n(t) E_n(t) \ket{\hat{\psi}_n(t)}
+&= \sum_n b_n(t) E_n(t) \ket{\hat{\psi}_n(t)}.
 \end{aligned}
 \end{equation}
 %
@@ -270,7 +270,7 @@ i \Hbar
 \sum_n
 \ddt{b_n(t)} \ket{\hat{\psi}_n(t)}
 + \sum_n b_n(t) \ddt{} \ket{\hat{\psi}_n(t)} \\
-&= \sum_n b_n(t) E_n(t) \ket{\hat{\psi}_n(t)}
+&= \sum_n b_n(t) E_n(t) \ket{\hat{\psi}_n(t)}.
 \end{aligned}
 \end{equation}
 %
@@ -285,7 +285,7 @@ i \Hbar
 + \sum_n b_n(t)
 \bra{\hat{\psi}_m(t)}
 \ddt{} \ket{\hat{\psi}_n(t)} \\
-&= \sum_n b_n(t) E_n(t) \braket{\hat{\psi}_m(t)}{\hat{\psi}_n(t)} ,
+&= \sum_n b_n(t) E_n(t) \braket{\hat{\psi}_m(t)}{\hat{\psi}_n(t)},
 \end{aligned}
 \end{equation}
 %
@@ -298,7 +298,7 @@ i \Hbar
 \sum_n b_n(t)
 \bra{\hat{\psi}_m(t)}
 \ddt{} \ket{\hat{\psi}_n(t)}
-= b_m(t) E_m(t)
+= b_m(t) E_m(t).
 \end{equation}
 %
 If the Hamiltonian is changed \textunderline{very very} slowly in time, we can imagine that \(\ket{\hat{\psi}_n(t)}'\) is also changing very very slowly, but we are not quite there yet.  Let us first split our sum of bra and ket products
@@ -306,17 +306,17 @@ If the Hamiltonian is changed \textunderline{very very} slowly in time, we can i
 \begin{equation}\label{eqn:qmTwoL8:430}
 \sum_n b_n(t)
 \bra{\hat{\psi}_m(t)}
-\ddt{} \ket{\hat{\psi}_n(t)}
+\ddt{} \ket{\hat{\psi}_n(t)}.
 \end{equation}
 %
 into \(n \ne m\) and \(n = m\) terms.  Looking at just the \(n = m\) term
 %
 \begin{equation}\label{eqn:qmTwoL8:450}
 \bra{\hat{\psi}_m(t)}
-\ddt{} \ket{\hat{\psi}_m(t)}
+\ddt{} \ket{\hat{\psi}_m(t)}.
 \end{equation}
 %
-we note
+We note
 %
 \begin{equation}\label{eqn:qmTwoL8:610}
 \begin{aligned}
@@ -325,7 +325,7 @@ we note
 \ddt{} \braket{\hat{\psi}_m(t)}{\hat{\psi}_m(t)} \\
 &=
 \left( \ddt{} \bra{\hat{\psi}_m(t)} \right) \ket{\hat{\psi}_m(t)}
-+ \bra{\hat{\psi}_m(t)} \ddt{} \ket{\hat{\psi}_m(t)} \\
++ \bra{\hat{\psi}_m(t)} \ddt{} \ket{\hat{\psi}_m(t)}.
 \end{aligned}
 \end{equation}
 %
@@ -342,6 +342,3 @@ so \(\bra{\hat{\psi}_m(t)} \ddt{} \ket{\hat{\psi}_m(t)}\) must be purely imagina
 \end{equation}
 %
 where \(\Gamma_s\) is real.
-
-
-
