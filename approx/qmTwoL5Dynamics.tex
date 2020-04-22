@@ -10,30 +10,29 @@ We want to move on to time dependent problems.  In general for a time dependent 
 
 Before doing this, let us review our dynamics as covered in \S 3 of the text \citep{desai2009quantum}.
 %
-\paragraph{Schr\"{o}dinger and Heisenberg pictures}
+\paragraph{Schr\"{o}dinger and Heisenberg pictures.}
 %
 Our operator equation in the Schr\"{o}dinger picture is the familiar
 %
 \begin{equation}\label{eqn:qmTwoL5:220}
-i \Hbar \frac{d}{dt} \ket{\psi_s(t)} = H \ket{\psi_s(t)}
+i \Hbar \frac{d}{dt} \ket{\psi_s(t)} = H \ket{\psi_s(t)},
 \end{equation}
 %
-and most of our operators \(X, P, \cdots\) are time independent.
+and most of our operators \(X, P, \cdots\) are time independent, but our kets evolve with time
 %
 \begin{equation}\label{eqn:qmTwoL5:240}
 \expectation{O}(t) =
 \bra{\psi_s(t)} O_s
-\ket{\psi_s(t)}
+\ket{\psi_s(t)}.
 \end{equation}
 %
-where \(O_s\) is the operator in the Schr\"{o}dinger picture, and is non time dependent.
-
+Here \(O_s\) is the operator in the Schr\"{o}dinger picture, and is non time dependent.
 Formally, the time evolution of any state is given by
 %
 \begin{equation}\label{eqn:qmTwoL5:260}
 \ket{\psi_s(t)}
 e^{-i H t/\Hbar}
-\ket{\psi_s(0)} = U(t, 0) \ket{\psi_s(0)}
+\ket{\psi_s(0)} = U(t, 0) \ket{\psi_s(0)},
 \end{equation}
 %
 so the expectation of an operator can be written
@@ -73,7 +72,7 @@ Note that because the Hamiltonian commutes with its exponential (it commutes wit
 H_H = e^{i H t/\Hbar} H e^{-i H t/\Hbar} = H.
 \end{equation}
 %
-\paragraph{Time evolution and the Commutator}
+\paragraph{Time evolution and the Commutator.}
 %
 %The equivalent of the Hamiltonian equations for the time evolution of a particle in classical physics
 Taking the derivative of \eqnref{eqn:qmTwoL5:320} provides us with the time evolution of any operator in the Heisenberg picture
@@ -106,7 +105,7 @@ We can write this as a commutator
 i \Hbar \frac{d}{dt} O_H(t) = \antisymmetric{O_H}{H}.
 \end{equation}
 %
-\paragraph{Summarizing the two pictures}
+\paragraph{Summarizing the two pictures.}
 %
 \begin{equation}\label{eqn:qmTwoL5Dynamics:420}
 \begin{aligned}

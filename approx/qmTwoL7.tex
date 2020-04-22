@@ -61,14 +61,12 @@ i \Hbar \ddt{} U_I
 -
 \overbar{H}'(t) U_I(t, t_0) \frac{dt_0}{dt} \\
 &=
-\overbar{H}'(t) U_I(t, t_0)
+\overbar{H}'(t) U_I(t, t_0).
 \end{aligned}
 \end{equation}
 %
 This is a bit of a chicken and an egg expression, since it is cyclic with a dependency on unknown \(U_I(t', t_0)\) factors.
-
 We start with an initial estimate of the operator to be determined, and iterate.  This can seem like an odd thing to do, but one can find books on just this integral kernel iteration method (like the nice little Dover book \citep{tricomi1985integral} that has sat on my (Peeter's) shelf all lonely so many years).
-
 Suppose for \(t\) near \(t_0\), try
 %
 \begin{equation}\label{eqn:qmTwoL7:110}
@@ -87,7 +85,7 @@ I - \frac{i}{\Hbar} \int_{t_0}^{t'} dt'' \overbar{H}'(t'').
 \right) \\
 &=
 I - \frac{i}{\Hbar} \int_{t_0}^t dt' \overbar{H}'(t') + \left(\frac{-i}{\Hbar}\right)^2
-\int_{t_0}^t dt' \overbar{H}'(t') \int_{t_0}^{t'} dt'' \overbar{H}'(t'')
+\int_{t_0}^t dt' \overbar{H}'(t') \int_{t_0}^{t'} dt'' \overbar{H}'(t'').
 \end{aligned}
 \end{equation}
 %
@@ -197,7 +195,7 @@ i \Hbar \PD{t}{
 \tilde{c}_n(t)
 e^{
 i \omega_{mn}(t - t_0)}
-H_{mn}'(t)
+H_{mn}'(t).
 \end{equation}
 %
 Inverting \eqnref{eqn:qmTwoL7:210} and plugging in
@@ -230,7 +228,7 @@ c_m(t)
 \sum_n
 c_n(t)
 e^{i\omega_{mn}t}
-H_{mn}'(t)
+H_{mn}'(t).
 \end{equation}
 %
 We are now left with all of our time dependence nicely separated out, with the coefficients \(c_n(t)\) encoding all the non-oscillatory time evolution information
@@ -239,7 +237,7 @@ We are now left with all of our time dependence nicely separated out, with the c
 \begin{aligned}
 H &= H_0 + H'(t) \\
 \ket{\psi(t)} &= \sum_n c_n(t) e^{-i\omega_n t} \ket{\psi_n^{(0)}} \\
-i \Hbar \dot{c}_m &= \sum_n H_{mn}'(t) e^{i \omega_{mn} t} c_n(t)
+i \Hbar \dot{c}_m &= \sum_n H_{mn}'(t) e^{i \omega_{mn} t} c_n(t).
 \end{aligned}
 \end{equation}
 %
@@ -297,21 +295,21 @@ Suppose we have a set of energy levels as depicted in \cref{fig:qmTwoL7:1}.
 With \(c_n^{(i)} = 0\) before the perturbation for all \(i \ge 1, n\) and \(c_m^{(0)} = \delta_{ms}\), we can proceed iteratively, solving each equation, starting with
 %
 \begin{equation}\label{eqn:qmTwoL7:490}
-i \Hbar \dot{c}_m^{(1)} = H_{ms}'(t) e^{i \omega_{ms} t}
+i \Hbar \dot{c}_m^{(1)} = H_{ms}'(t) e^{i \omega_{ms} t}.
 \end{equation}
 %
 \makeexample{Slow nucleus passing an atom}{l7:ex1}{
 %
+Let
 \begin{equation}\label{eqn:qmTwoL7:510}
-H'(t) = - \Bmu \cdot \BE(t)
+H'(t) = - \Bmu \cdot \BE(t),
 \end{equation}
-%
-with
+where
 \begin{equation}\label{eqn:qmTwoL7:530}
 H_{ms}' = -\Bmu_{ms} \cdot \BE(t),
 \end{equation}
 %
-where
+and
 \begin{equation}\label{eqn:qmTwoL7:550}
 \Bmu_{ms} =
 \bra{\psi_m^{(0)}}
@@ -389,7 +387,7 @@ since we identify
 \begin{equation}\label{eqn:qmTwoL7:570b}
 \inv{2 \pi}
 \int_{-\infty}^\infty
-e^{i (\omega_{ms} -\omega) t'} dt' \equiv \delta(\omega_{ms} - \omega)
+e^{i (\omega_{ms} -\omega) t'} dt' \equiv \delta(\omega_{ms} - \omega).
 \end{equation}
 %
 Thus the steady state first order perturbation coefficient is
@@ -401,12 +399,12 @@ c_m^{(1)}(\infty)
 \BE(\omega_{ms}).
 \end{equation}
 %
-\paragraph{Frequency symmetry for the Fourier spectrum of a real field}
+\paragraph{Frequency symmetry for the Fourier spectrum of a real field.}
 %
 We will look further at this next week, but we first require an intermediate result from transform theory.  Because our field is real, we have
 %
 \begin{equation}\label{eqn:qmTwoL7:610}
-\BE^\conj(t) = \BE(t)
+\BE^\conj(t) = \BE(t),
 \end{equation}
 %
 so
@@ -415,7 +413,7 @@ so
 \begin{aligned}
 \BE^\conj(t)
 &= \int \frac{d\omega}{2 \pi} \BE^\conj(\omega) e^{i \omega t} \\
-&= \int \frac{d\omega}{2 \pi} \BE^\conj(-\omega) e^{-i \omega t} \\
+&= \int \frac{d\omega}{2 \pi} \BE^\conj(-\omega) e^{-i \omega t},
 \end{aligned}
 \end{equation}
 %
