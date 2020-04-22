@@ -43,7 +43,6 @@ and argued that
 \end{equation}
 %
 where \(\omega_0 t \gg 1\) for \(\omega_{mi} \sim \pm \omega_0\).
-
 We can also just integrate \eqnref{eqn:qmTwoL10:30} directly
 %
 \begin{equation}\label{eqn:qmTwoL10:30b}
@@ -67,7 +66,7 @@ where
 A_{mi}(\omega_0, t) =
 \frac{A_{mi}}{\Hbar}
 \frac{e^{i (\omega_{mi} - \omega_0) t} - 1}
-{ i (\omega_{mi} - \omega_0) }
+{ i (\omega_{mi} - \omega_0) }.
 \end{equation}
 %
 Factoring out the phase term, we have
@@ -81,7 +80,7 @@ e^{i (\omega_{mi} - \omega_0) t/2}
 (\omega_{mi} - \omega_0) t/2
 )
 }
-{ (\omega_{mi} - \omega_0) }
+{ (\omega_{mi} - \omega_0) }.
 \end{equation}
 %
 We we will have two lobes, centered on \(\pm \omega_0\), as illustrated in \cref{fig:qmTwoL10:qmTwoL10fig3}.
@@ -97,7 +96,7 @@ Note that we can have reflection from the well even in the continuum states wher
 \begin{equation}\label{eqn:qmTwoL10:110}
 \begin{aligned}
 \braket{x}{\psi_p} &\approx \frac{e^{i p x/\Hbar}}{\sqrt{2 \pi \Hbar}} \\
-\braket{\psi_p}{\psi_p'} &= \delta(p - p')
+\braket{\psi_p}{\psi_p'} &= \delta(p - p'),
 \end{aligned}
 \end{equation}
 %
@@ -106,7 +105,7 @@ or in 3d
 \begin{equation}\label{eqn:qmTwoL10:130}
 \begin{aligned}
 \braket{\Br}{\psi_{\Bp}} &\approx \frac{e^{i \Bp \cdot \Br/\Hbar}}{(2 \pi \Hbar)^{3/2} } \\
-\braket{\psi_{\Bp}}{\psi_{\Bp'}} &= \delta^3(\Bp - \Bp')
+\braket{\psi_{\Bp}}{\psi_{\Bp'}} &= \delta^3(\Bp - \Bp').
 \end{aligned}
 \end{equation}
 %
@@ -115,13 +114,13 @@ Let us consider the 1d model for the quantum well in more detail.  Including bot
 \begin{equation}\label{eqn:qmTwoL10:150}
 \ket{\psi(t)} =
 \sum_n c_n(t) e^{-i \omega_n t} \ket{\psi_n} +
-\int dp c_p(t) e^{-i \omega_p t} \ket{\psi_p}
+\int dp c_p(t) e^{-i \omega_p t} \ket{\psi_p}.
 \end{equation}
 %
 Imagine at \(t=0\) that the wave function started in some discrete state, and look at the probability that we ``kick the electron out of the well''.  Calculate
 %
 \begin{equation}\label{eqn:qmTwoL10:170}
-\calP = \int dp \Abs{c_p^{(1)}(t)}^2
+\calP = \int dp \Abs{c_p^{(1)}(t)}^2.
 \end{equation}
 %
 Now, we assume that our matrix element has the following form
@@ -129,7 +128,7 @@ Now, we assume that our matrix element has the following form
 \begin{equation}\label{eqn:qmTwoL10:190}
 H_{pi}'(t) = \left(
 \overbar{A}_{pi} e^{-i \omega_0 t}
-+\overbar{B}_{pi} e^{i \omega_0 t} \right) \theta(t)
++\overbar{B}_{pi} e^{i \omega_0 t} \right) \theta(t),
 \end{equation}
 %
 generalizing the wave train matrix element that we had previously
@@ -137,7 +136,7 @@ generalizing the wave train matrix element that we had previously
 \begin{equation}\label{eqn:qmTwoL10:210}
 H_{mi}'(t) = i A_{mi} \left(
 e^{-i \omega_0 t}
-- e^{i \omega_0 t} \right) \theta(t)
+- e^{i \omega_0 t} \right) \theta(t).
 \end{equation}
 %
 Doing the perturbation we have
@@ -146,7 +145,7 @@ Doing the perturbation we have
 \calP = \int dp \Abs{
 A_{pi}(\omega_0, t)
 + B_{pi}(-\omega_0, t)
-}^2
+}^2,
 \end{equation}
 %
 where
@@ -157,7 +156,7 @@ A_{pi}(\omega_0, t) =
 e^{i (\omega_{pi} - \omega_0) t/2}
 \frac{\sin((\omega_{pi} - \omega_0) t/2)}{
 \omega_{pi} - \omega_0
-}
+},
 \end{equation}
 %
 which is peaked at \(\omega_{pi} = \omega_0\), and
@@ -168,12 +167,11 @@ B_{pi}(\omega_0, t) =
 e^{i (\omega_{pi} + \omega_0) t/2}
 \frac{\sin((\omega_{pi} + \omega_0) t/2)}{
 \omega_{pi} + \omega_0
-}
+}.
 \end{equation}
 %
 which is peaked at \(\omega_{pi} = -\omega_0\).
-
-FIXME: show that this is the perturbation result.
+%FIXME: show that this is the perturbation result.
 
 In \eqnref{eqn:qmTwoL10:230} at \(t \gg 0\) the only significant contribution is from the \(A\) portion as illustrated in \cref{fig:qmTwoL10:qmTwoL10fig6} where we are down in the wiggles of \(A_{pi}\).
 \imageFigure{../figures/phy456-qmII/qmTwoL10fig6}{.}{fig:qmTwoL10:qmTwoL10fig6}{0.2}
@@ -182,7 +180,7 @@ Our probability to find the particle in the continuum range is now approximately
 \begin{equation}\label{eqn:qmTwoL10:290}
 \calP = \int dp \Abs{
 A_{pi}(\omega_0, t)
-}^2
+}^2,
 \end{equation}
 %
 With
@@ -226,7 +224,7 @@ with
 %
 \begin{equation}\label{eqn:qmTwoL10:370}
 \omega_{pi} = \inv{\Hbar}\left( \frac{p^2}{2m} - E_i
-\right)
+\right),
 \end{equation}
 %
 we have with a change of variables
@@ -253,7 +251,7 @@ Now suppose we have \(t\) small enough so that \(\calP_{+} \ll 1\) and \(t\) lar
 \Abs{
 \overbar{A}_{pi}
 }^2
-\frac{dp}{d\omega_{pi}}
+\frac{dp}{d\omega_{pi}},
 \end{equation}
 %
 is roughly constant over \(\Delta \omega\).  This is a sort of ``Goldilocks condition'', a time that can not be too small, and can not be too large, but instead has to be ``just right''.  Given such a condition
@@ -344,7 +342,7 @@ c_p^{(1)}(t)
 \Abs{
 \overbar{A}_{pi}
 }^2
-\delta(E_{pi} - \Hbar \omega_0)
+\delta(E_{pi} - \Hbar \omega_0),
 \end{aligned}
 \end{equation}
 %
@@ -381,5 +379,5 @@ This has been worked out for \(\calP_{+}\).  This can also be done for \(\calP_{
 While the above is not a formal derivation, but illustrates the form of what is called Fermi's golden rule.  Namely that such a rate has the structure
 %
 \begin{equation}\label{eqn:qmTwoL10:570}
-\frac{2 \pi}{\Hbar} \times (\text{matrix element})^2 \times \text{energy conservation}
+\frac{2 \pi}{\Hbar} \times (\text{matrix element})^2 \times \text{energy conservation}.
 \end{equation}

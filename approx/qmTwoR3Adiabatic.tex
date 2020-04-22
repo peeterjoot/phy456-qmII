@@ -6,26 +6,26 @@
 Utilizing instantaneous eigenstates
 %
 \begin{equation}\label{eqn:qmTwoR3:390}
-\ket{\psi(t)} = \sum_{\alpha} b_\alpha(t) \ket{\hat{\psi}_\alpha(t)}
+\ket{\psi(t)} = \sum_{\alpha} b_\alpha(t) \ket{\hat{\psi}_\alpha(t)},
 \end{equation}
 %
 where
 \begin{equation}\label{eqn:qmTwoR3:410}
 H(t) \ket{\hat{\psi}_\alpha(t)}
-= E_\alpha(t) \ket{\hat{\psi}_\alpha(t)}
+= E_\alpha(t) \ket{\hat{\psi}_\alpha(t)}.
 \end{equation}
 %
 We found
 %
 \begin{equation}\label{eqn:qmTwoR3:430}
-b_\alpha(t) = \overbar{b}_\alpha(t) e^{-\frac{i}{\Hbar} \int_0^t (E_\alpha(t') - \Hbar \Gamma_\alpha(t')) dt'}
+b_\alpha(t) = \overbar{b}_\alpha(t) e^{-\frac{i}{\Hbar} \int_0^t (E_\alpha(t') - \Hbar \Gamma_\alpha(t')) dt'},
 \end{equation}
 %
 where
 \begin{equation}\label{eqn:qmTwoR3:450}
 \Gamma_\alpha = i
 \bra{\hat{\psi}_\alpha(t)}
-\ddt{} \ket{\hat{\psi}_\alpha(t)}
+\ddt{} \ket{\hat{\psi}_\alpha(t)},
 \end{equation}
 %
 and
@@ -36,7 +36,7 @@ and
 -\sum_{\beta \ne \alpha} \overbar{b}_\beta(t)
 e^{-\frac{i}{\Hbar} \int_0^t (E_{\beta\alpha}(t') - \Hbar \Gamma_{\beta\alpha}(t')) dt'}
 \bra{\hat{\psi}_\alpha(t)}
-\ddt{} \ket{\hat{\psi}_\beta(t)}
+\ddt{} \ket{\hat{\psi}_\beta(t)}.
 \end{equation}
 %
 Suppose we start in a subspace
@@ -44,7 +44,7 @@ Suppose we start in a subspace
 \begin{equation}\label{eqn:qmTwoR3:490}
 \Span \left\{
 \inv{\sqrt{2}}( \ket{2,0,0} \pm \ket{2,1,0} ), \ket{2, 1, \pm 1}
-\right\}
+\right\}.
 \end{equation}
 %
 Now expand the bra derivative kets
@@ -76,7 +76,7 @@ Now expand the bra derivative kets
    E_\beta^{(0)}
    -E_{\gamma'}^{(0)}
    }
-\right)
+\right).
 \end{aligned}
 \end{equation}
 %
@@ -101,7 +101,7 @@ E_\beta^{(0)}
 }{
 E_\beta^{(0)}
 -E_{\alpha}^{(0)}
-}
+},
 \end{aligned}
 \end{equation}
 %
@@ -130,7 +130,7 @@ H(t) \ket{\hat{\psi}_\beta(t)} = E_\beta(t) \ket{\hat{\psi}_\beta(t)},
 %
 \begin{equation}\label{eqn:qmTwoR3:630}
 \ddt{H(t)} \ket{\hat{\psi}_\beta(t)} + H(t) \ddt{}\ket{\hat{\psi}_\beta(t)} = \ddt{E_\beta(t)} \ket{\hat{\psi}_\beta(t)}
-+ E_\beta(t) \ddt{} \ket{\hat{\psi}_\beta(t)}
++ E_\beta(t) \ddt{} \ket{\hat{\psi}_\beta(t)}.
 \end{equation}
 %
 Bra'ing \(\bra{\hat{\psi}_\alpha(t)}\) into this we have, for \(\alpha \ne \beta\), the LHS is
@@ -158,7 +158,7 @@ and for the RHS
 }
 +
 \bra{\hat{\psi}_\alpha(t)}
-E_\beta(t) \ddt{} \ket{\hat{\psi}_\beta(t)}
+E_\beta(t) \ddt{} \ket{\hat{\psi}_\beta(t)},
 \end{equation}
 %
 so
@@ -186,8 +186,7 @@ e^{-\frac{i}{\Hbar} \int_0^t (E_{\beta\alpha}(t') - \Hbar \Gamma_{\beta\alpha}(t
 \bra{\hat{\psi}_\alpha(t)}
 \ddt{H(t)} \ket{\hat{\psi}_\beta(t)}
 }
-{E_\beta(t) - E_\alpha(t)}
+{E_\beta(t) - E_\alpha(t)}.
 \end{equation}
 %
 }
-
