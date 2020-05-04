@@ -27,15 +27,17 @@
 Covered in \S 26 of the text \citep{desai2009quantum}.
 %
 \makeexample{Time translation.}{example:qmTwoL11:1}{
+One of the simplest examples of a generator, is that of time translation
 %
 \begin{equation}\label{eqn:qmTwoL11:10}
-\ket{\psi(t)} = e^{-i H t/\Hbar} \ket{\psi(0)} .
+\ket{\psi(t)} = e^{-i H t/\Hbar} \ket{\psi(0)}.
 \end{equation}
 %
 The Hamiltonian ``generates'' evolution (or translation) in time.
 }
 %
 \makeexample{Spatial translation.}{example:qmTwoL11:2}{
+Similarily, we may apply an operator to translate the ket associated with a given position
 %
 \begin{equation}\label{eqn:qmTwoL11:30}
 \ket{\Br + \Ba} =
@@ -45,7 +47,6 @@ e^{-i \Ba \cdot \BP/\Hbar}
 %
 \imageFigure{../figures/phy456-qmII/qmTwoL11fig1}{Vector translation.}{fig:qmTwoL11:qmTwoL11fig1}{0.2}
 %\cref{fig:qmTwoL11:qmTwoL11fig1}
-
 \(\BP\) is the operator that generates translations.  Written out, we have
 %
 \begin{equation}\label{eqn:qmTwoL11:50}
@@ -159,7 +160,7 @@ so
 or
 %
 \begin{equation}\label{eqn:qmTwoL11:270}
-\psi'(\Br) = \psi(\Br - \Ba)
+\psi'(\Br) = \psi(\Br - \Ba).
 \end{equation}
 %
 This is what we expect of a translated function, as illustrated in \cref{fig:qmTwoL11:qmTwoL11fig2}.
@@ -242,20 +243,18 @@ so
 %
 or
 \begin{equation}\label{eqn:qmTwoL11:430}
-\psi'(\Br) = \psi( \calR^{-1}(\Br) )
+\psi'(\Br) = \psi( \calR^{-1}(\Br) ).
 \end{equation}
 }
 %
 \section{Generalizations.}
 %
 Recall what you did last year, where \(H\), \(\BP\), and \(\BL\) were defined mechanically.  We found
-
 \begin{itemize}
 \item \(H\) generates time evolution (or translation in time).
 \item \(\BP\) generates spatial translation.
 \item \(\BL\) generates spatial rotation.
 \end{itemize}
-
 For our mechanical definitions we have
 %
 \begin{equation}\label{eqn:qmTwoL11:450}
@@ -328,19 +327,17 @@ We will see that these behave qualitatively different than one component wave fu
 \begin{enumerate}
 \item A temperature field
 %
-\begin{equation}\label{eqn:qmTwoL11:590}
-T(\Br)
-\end{equation}
+%\begin{equation}\label{eqn:qmTwoL11:590}
+\(T(\Br)\).
+%\end{equation}
 %
 \item Electric field
 %
-\begin{equation}\label{eqn:qmTwoL11:610}
-\begin{bmatrix}
-E_x(\Br) \\
-E_y(\Br) \\
-E_z(\Br)
-\end{bmatrix}
-\end{equation}
+%\begin{equation}\label{eqn:qmTwoL11:610}
+%\begin{bmatrix}
+\((E_x(\Br), E_y(\Br), E_z(\Br)\).
+%\end{bmatrix}
+%\end{equation}
 %
 \end{enumerate}
 
@@ -366,11 +363,9 @@ E_z(\Br)
 E_x(\calR^{-1}(\Br)) \\
 E_y(\calR^{-1}(\Br)) \\
 E_z(\calR^{-1}(\Br))
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 \paragraph{No.}  Because the components get mixed as well as the positions at which those components are evaluated.
 %
-We will work with many component wave functions, some of which will behave like vectors, and will have to develop the methods and language to tackle this.
-
-
+We will work with many component wave functions, some of which will behave like vectors, and will have to develop the methods and language to tackle this.  

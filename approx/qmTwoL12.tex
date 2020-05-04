@@ -18,18 +18,18 @@
 \section{WKB (Wentzel-Kramers-Brillouin) Method.}
 \index{Wentzel-Kramers-Brillouin method}
 
-This is covered in \S 24 in the text \citep{desai2009quantum}.  Also \S 8 of \citep{griffiths2005introduction}.
+This lecture covers material from \S 24 of the text \citep{desai2009quantum}, and \S 8 of \citep{griffiths2005introduction}.
 
 We start with the 1D time independent Schr\"{o}dinger equation
 %
 \begin{equation}\label{eqn:qmTwoL12:10}
--\frac{\Hbar^2}{2m} \frac{d^2 U}{dx^2} + V(x) U(x) = E U(x)
+-\frac{\Hbar^2}{2m} \frac{d^2 U}{dx^2} + V(x) U(x) = E U(x),
 \end{equation}
 %
 which we can write as
 %
 \begin{equation}\label{eqn:qmTwoL12:30}
-\frac{d^2 U}{dx^2} + \frac{2m}{\Hbar^2} (E - V(x)) U(x) = 0
+\frac{d^2 U}{dx^2} + \frac{2m}{\Hbar^2} (E - V(x)) U(x) = 0.
 \end{equation}
 %
 Consider a finite well potential as in \cref{fig:qmTwoL13:qmTwoL12fig1}.
@@ -43,16 +43,16 @@ k^2 &= \frac{2m (E - V)}{\Hbar},\qquad E > V \\
 \end{aligned}
 \end{equation}
 %
-we have for a bound state within the well
+the bound state within the well is approximately
 %
 \begin{equation}\label{eqn:qmTwoL12:50}
-U \propto e^{\pm i k x}
+U \propto e^{\pm i k x},
 \end{equation}
 %
-and for that state outside the well
+and outside of the well is of the form
 %
 \begin{equation}\label{eqn:qmTwoL12:70}
-U \propto e^{\pm \kappa x}
+U \propto e^{\pm \kappa x}.
 \end{equation}
 %
 In general we can hope for something similar.  Let us look for that something, but allow the constants \(k\) and \(\kappa\) to be functions of position
@@ -120,13 +120,13 @@ or
 A second round of approximation we use \eqnref{eqn:qmTwoL12:250} and obtain
 %
 \begin{equation}\label{eqn:qmTwoL12:250b}
-\phi''(x) = \pm k'(x)
+\phi''(x) = \pm k'(x).
 \end{equation}
 %
 Plugging back into \eqnref{eqn:qmTwoL12:190} we have
 %
 \begin{equation}\label{eqn:qmTwoL12:270}
--(\phi'(x))^2 \pm i k'(x) + k^2(x) = 0,
+-(\phi'(x))^2 \pm i k'(x) + k^2(x) = 0.
 \end{equation}
 %
 Things get a little confusing here with the \(\pm\) variation since we have to take a second set of square roots, so let's consider these separately.
@@ -173,7 +173,7 @@ U(x)
 &\sim \exp \left(i\left(
 \int dx k(x) + i \inv{2} \ln k(x)
 \right)\right) \\
-&= e^{i \int dx k(x)} e^{-\inv{2} \ln k(x)} \\
+&= e^{i \int dx k(x)} e^{-\inv{2} \ln k(x)},
 \end{aligned}
 \end{equation}
 or
@@ -189,7 +189,7 @@ Now treat \(\phi' \approx -k\).  This gives us
 = \pm
 \lr{
 k(x) - i \frac{k'(x)}{2 k(x)}
-}
+}.
 \end{equation}
 This time we want the negative root to match \(\phi' \approx -k\).  Integrating, we have
 \begin{dmath}\label{eqn:qmTwoL12:470}
@@ -217,7 +217,7 @@ U(x) \propto \inv{\sqrt{\kappa(x)}} e^{\pm \int dx \kappa(x)},
 \end{equation}
 this time, provided that our potential satisfies
 \begin{equation}\label{eqn:qmTwoL12:310b}
-\frac{\kappa'(x)}{\kappa^2(x)} \ll 1,
+\frac{\kappa'(x)}{\kappa^2(x)} \ll 1.
 \end{equation}
 \paragraph{Validity.}
 For this to be valid we require that
@@ -243,5 +243,3 @@ so we get into trouble where \(k(x) \sim 0\).  There are some methods for dealin
 The idea is that one finds the WKB solution in the regions of validity, and then looks for a polynomial solution in the patching region where we are closer to the turning point, probably requiring lookup of various special functions.
 
 This power series method is also outlined in \citep{wiki:wkb}, where solutions to connect the regions are expressed in terms of Airy functions.
-
-
