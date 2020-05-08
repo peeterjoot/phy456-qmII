@@ -39,7 +39,7 @@ I
 +
 \inv{3!}
 \left(-i \theta \ncap \cdot \BS/\Hbar\right)^3
-+ \cdots
++ \cdots,
 \end{dmath}
 %
 or
@@ -80,13 +80,11 @@ I
 -i
 (\ncap \cdot \Bsigma) \left( \frac{\theta}{2} - \inv{3!}\left(\frac{\theta}{2}\right)^3 + \cdots \right) \\
 &=
-\cos(\theta/2) \sigma_0 - i \sin(\theta/2) (\ncap \cdot \Bsigma)
+\cos(\theta/2) \sigma_0 - i \sin(\theta/2) (\ncap \cdot \Bsigma),
 \end{aligned}
 \end{equation}
 %
-where we have used the fact that \((\ncap \cdot \Bsigma)^2 = \sigma_0\).
-
-So our representation of the spin operator is
+where we have used the fact that \((\ncap \cdot \Bsigma)^2 = \sigma_0\).  The representation of the spin operator is thus
 %
 \begin{equation}\label{eqn:qmTwoL15:30}
 \begin{aligned}
@@ -100,26 +98,26 @@ e^{-i \theta \ncap \cdot \BS/\Hbar}
 \begin{bmatrix}
 \cos(\theta/2) -i n_z \sin(\theta/2) & -i (n_x -i n_y) \sin(\theta/2) \\
 -i (n_x + i n_y) \sin(\theta/2) & \cos(\theta/2) +i n_z \sin(\theta/2)
-\end{bmatrix}
+\end{bmatrix}.
 \end{aligned}
 \end{equation}
 %
-Note that, in particular,
+In particular,
 %
 \begin{equation}\label{eqn:qmTwoL15:50}
-e^{-2 \pi i \ncap \cdot \BS/\Hbar} \rightarrow \cos\pi \sigma_0 = -\sigma_0
+e^{-2 \pi i \ncap \cdot \BS/\Hbar} \rightarrow \cos\pi \sigma_0 = -\sigma_0.
 \end{equation}
 %
 This ``rotates'' the ket, but introduces a phase factor.
 
-Can do this in general for other degrees of spin, for \(s = 1/2, 3/2, 5/2, \cdots\).
+This can be generalized to other degrees of spin, for \(s = 1/2, 3/2, 5/2, \cdots\).
 %
 \paragraph{Unfortunate interjection by me.}
 %
 I mentioned the half angle rotation operator that requires a half angle operator sandwich.  Prof. Sipe thought I might be talking about a Heisenberg picture representation, where we have something like this in expectation values
 %
 \begin{equation}\label{eqn:qmTwoL15:70}
-\ket{\psi'} = e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{\psi}
+\ket{\psi'} = e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{\psi},
 \end{equation}
 %
 so that
@@ -130,23 +128,24 @@ so that
 e^{i \theta \ncap \cdot \BJ/\Hbar}
 \calO
 e^{-i \theta \ncap \cdot \BJ/\Hbar}
-\ket{\psi}
+\ket{\psi}.
 \end{equation}
 %
 \input{spin/qmTwoL15halfAngle}
 %
 \section{Spin dynamics.}
-At least classically, the angular momentum of charged objects is associated with a magnetic moment as illustrated in \cref{fig:qmTwoL15:qmTwoL15fig1}.
-\imageFigure{../figures/phy456-qmII/qmTwoL15fig1}{Magnetic moment due to steady state current.}{fig:qmTwoL15:qmTwoL15fig1}{0.2}
+At least classically, the angular momentum of charged objects
 %
 \begin{equation}\label{eqn:qmTwoL15:110}
-\Bmu = I A \Be_\perp
+\Bmu = I A \Be_\perp,
 \end{equation}
+is associated with a magnetic moment as illustrated in \cref{fig:qmTwoL15:qmTwoL15fig1}.
+\imageFigure{../figures/phy456-qmII/qmTwoL15fig1}{Magnetic moment due to steady state current.}{fig:qmTwoL15:qmTwoL15fig1}{0.2}
 %
 In our scheme, following the (cgs?) text conventions of \citep{desai2009quantum}, where the \(\BE\) and \(\BB\) have the same units, we write
 %
 \begin{equation}\label{eqn:qmTwoL15:130}
-\Bmu = \frac{I A}{c} \Be_\perp
+\Bmu = \frac{I A}{c} \Be_\perp.
 \end{equation}
 %
 For a charge moving in a circle as in \cref{fig:qmTwoL15:qmTwoL15fig2}.
@@ -159,7 +158,7 @@ I
 &=
 \frac{\text{distance}}{\text{time}} \frac{\text{charge}}{\text{distance}} \\
 &=
-\frac{q v}{ 2 \pi r}
+\frac{q v}{ 2 \pi r},
 \end{aligned}
 \end{equation}
 %
@@ -170,29 +169,28 @@ so the magnetic moment is
 \mu
 &= \frac{q v}{ 2 \pi r} \frac{\pi r^2}{c}  \\
 &= \frac{q }{ 2 m c } (m v r) \\
-&= \gamma L
+&= \gamma L.
 \end{aligned}
 \end{equation}
 %
-Here \(\gamma\) is the gyromagnetic ratio
-
+Here \(\gamma\) is the gyromagnetic ratio.
 Recall that we have a torque, as shown in \cref{fig:qmTwoL15:qmTwoL15fig3}.
 \imageFigure{../figures/phy456-qmII/qmTwoL15fig3}{Induced torque in the presence of a magnetic field.}{fig:qmTwoL15:qmTwoL15fig3}{0.2}
 %
 \begin{equation}\label{eqn:qmTwoL15:190}
-\BT = \Bmu \cross \BB
+\BT = \Bmu \cross \BB,
 \end{equation}
 %
 tending to line up \(\Bmu\) with \(\BB\).  The energy is then
 %
 \begin{equation}\label{eqn:qmTwoL15:210}
--\Bmu \cdot \BB
+-\Bmu \cdot \BB.
 \end{equation}
 %
 Also recall that this torque leads to precession as shown in \cref{fig:qmTwoL15:qmTwoL15fig4}.
 %
 \begin{equation}\label{eqn:qmTwoL15:230}
-\ddt{\BL} = \BT = \gamma \BL \cross \BB,
+\ddt{\BL} = \BT = \gamma \BL \cross \BB.
 \end{equation}
 %
 \imageFigure{../figures/phy456-qmII/qmTwoL15fig4}{Precession due to torque.}{fig:qmTwoL15:qmTwoL15fig4}{0.2}
@@ -205,7 +203,7 @@ This has precession frequency
 For a current due to a moving electron
 %
 \begin{equation}\label{eqn:qmTwoL15:270}
-\gamma = -\frac{e}{2 m c} < 0
+\gamma = -\frac{e}{2 m c} < 0,
 \end{equation}
 %
 where we are, here, writing for charge on the electron \(-e\).
@@ -215,32 +213,30 @@ where we are, here, writing for charge on the electron \(-e\).
 For the translational motion of an electron, even if it is not moving in a steady way, regardless of its dynamics
 %
 \begin{equation}\label{eqn:qmTwoL15:290}
-\Bmu_0 = - \frac{e}{2 m c} \BL
+\Bmu_0 = - \frac{e}{2 m c} \BL.
 \end{equation}
 %
-Now, back to quantum mechanics, we turn \(\Bmu_0\) into a dipole moment operator and \(\BL\) is ``promoted'' to an angular momentum operator.
+Now, back to quantum mechanics, we turn \(\Bmu_0\) into a dipole moment operator and \(\BL\) is ``promoted'' to an angular momentum operator
 %
 \begin{equation}\label{eqn:qmTwoL15:310}
-H_{\text{int}} = - \Bmu_0 \cdot \BB
+H_{\text{int}} = - \Bmu_0 \cdot \BB.
 \end{equation}
 %
-What about the ``spin''?
-
-Perhaps
+What about the ``spin''?  Perhaps
 %
 \begin{equation}\label{eqn:qmTwoL15:330}
-\Bmu_s = \gamma_s \BS
+\Bmu_s = \gamma_s \BS.
 \end{equation}
 %
-we write this as
+We write this as
 \begin{equation}\label{eqn:qmTwoL15:350}
-\Bmu_s = g \left( -\frac{e}{ 2 m c} \right)\BS
+\Bmu_s = g \left( -\frac{e}{ 2 m c} \right)\BS,
 \end{equation}
 %
 so that
 %
 \begin{equation}\label{eqn:qmTwoL15:370}
-\gamma_s = - \frac{g e}{ 2 m c}
+\gamma_s = - \frac{g e}{ 2 m c}.
 \end{equation}
 %
 Experimentally, one finds to very good approximation
@@ -250,9 +246,9 @@ g = 2
 \end{equation}
 %
 There was a lot of trouble with this in early quantum mechanics where people got things wrong, and cancelled the wrong factors of \(2\).
-
+%
 In fact, Dirac's relativistic theory for the electron predicts \(g=2\).
-
+%
 When this is measured experimentally, one does not get exactly \(g=2\), and a theory that also incorporates photon creation and destruction and the interaction with the electron with such (virtual) photons.  We get
 %
 \begin{equation}\label{eqn:qmTwoL15:410}
@@ -264,10 +260,8 @@ g_{\text{theory}}
 g_{\text{experimental}}
 &= 2 \left(
 1.0011596521884 (\pm 43)
-\right)
+\right).
 \end{aligned}
 \end{equation}
 %
 Richard Feynman compared the precision of quantum mechanics, referring to this measurement, ``to predicting a distance as great as the width of North America to an accuracy of one human hair's breadth''.
-
-

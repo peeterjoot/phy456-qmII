@@ -25,7 +25,7 @@
 READING: Covering \S 26.5 of the text \citep{desai2009quantum}.
 %
 \begin{equation}\label{eqn:qmTwoL17:20}
-\inv{2} \otimes \inv{2} = 1 \oplus 0
+\inv{2} \otimes \inv{2} = 1 \oplus 0,
 \end{equation}
 %
 where \(1\) is a triplet state for \(s=1\) and \(0\) the ``singlet'' state with \(s=0\).  We want to consider the angular momentum of the entire system
@@ -44,12 +44,14 @@ so, in that case, the eigenstates of the total angular momentum are also energy 
 %
 \paragraph{Rotation operator.}
 %
+Form
 \begin{equation}\label{eqn:qmTwoL17:80}
-e^{-i \theta \ncap \cdot \BJ/\Hbar}
+e^{-i \theta \ncap \cdot \BJ/\Hbar},
 \end{equation}
 %
+where
 \begin{equation}\label{eqn:qmTwoL17:100}
-\ncap \cdot \BJ = n_x J_x + n_y J_y + n_z J_z
+\ncap \cdot \BJ = n_x J_x + n_y J_y + n_z J_z.
 \end{equation}
 %
 Recall the definitions of the raising or lowering operators
@@ -62,7 +64,7 @@ or
 \begin{equation}\label{eqn:qmTwoL17:140}
 \begin{aligned}
 J_x &= \inv{2} (J_{+} + J_{-}) \\
-J_y &= \inv{2i} (J_{+} - J_{-})
+J_y &= \inv{2i} (J_{+} - J_{-}).
 \end{aligned}
 \end{equation}
 %
@@ -84,23 +86,22 @@ and
 J_\pm \ket{j m} = \Hbar \Bigl(
 (j \mp m)(j \pm m_1)
 \Bigr)^{1/2}
-\ket{j, m \pm 1}
+\ket{j, m \pm 1}.
 \end{equation}
 %
 So
 %
 \begin{equation}\label{eqn:qmTwoL17:200}
-\bra{j' m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m} = 0
+\bra{j' m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m} = 0,
 \end{equation}
 %
 unless \(j = j'\).
 %
 \begin{equation}\label{eqn:qmTwoL17:220}
-\bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m}
+\bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m},
 \end{equation}
 %
 is a \((2j + 1) \times (2 j+ 1)\) matrix.
-
 Combining rotations
 %
 \begin{equation}\label{eqn:qmTwoL17:240}
@@ -115,7 +116,7 @@ e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
 e^{-i \theta_b \ncap_a \cdot \BJ/\Hbar}
 \ket{j m''} \bra{j m''}
 e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
- \ket{j m}
+ \ket{j m}.
 \end{aligned}
 \end{equation}
 %
@@ -124,7 +125,7 @@ If
 e^{-i \theta \ncap \cdot \BJ/\Hbar}
 =
 e^{-i \theta_b \ncap_a \cdot \BJ/\Hbar}
-e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
+e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar},
 \end{equation}
 %
 (something that may be hard to compute but possible), then
@@ -137,7 +138,7 @@ e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
 e^{-i \theta_b \ncap_a \cdot \BJ/\Hbar}
 \ket{j m''} \bra{j m''}
 e^{-i \theta_a \ncap_b \cdot \BJ/\Hbar}
- \ket{j m}
+ \ket{j m}.
 \end{equation}
 %
 For fixed \(j\), the matrices \(\bra{j m'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j m}\) form a representation of the rotation group.  The \((2 j + 1)\) representations are irreducible.  (This will not be proven).
@@ -152,19 +153,19 @@ j_1 \otimes j_2 = ?
 %
 If we use
 \begin{equation}\label{eqn:qmTwoL17:320}
-\ket{j_1 m_1} \otimes \ket{j_2 m_2}
+\ket{j_1 m_1} \otimes \ket{j_2 m_2}.
 \end{equation}
 %
 If a \(j_1\) and a \(j_2\) are picked then
 %
 \begin{equation}\label{eqn:qmTwoL17:340}
-\bra{j_1 m_1' ; j_2 m_2'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j_1 m_1 ; j_2 m_2}
+\bra{j_1 m_1' ; j_2 m_2'} e^{-i \theta \ncap \cdot \BJ/\Hbar} \ket{j_1 m_1 ; j_2 m_2},
 \end{equation}
 %
 is also a representation of the rotation group, but these sort of matrices can be simplified a \textunderline{lot}.  This basis of dimensionality \((2 j_1 + 1)(2 j_2 + 1)\) is \textunderline{reducible}.
 
 A lot of this is motivation, and we still want a representation of \(j_1 \otimes j_2\).
-
+%
 Recall that
 %
 \begin{equation}\label{eqn:qmTwoL17:360}
@@ -172,7 +173,7 @@ Recall that
 =
 \left(\inv{2} + \inv{2} \right)
  \oplus
-\left(\inv{2} - \inv{2} \right)
+\left(\inv{2} - \inv{2} \right).
 \end{equation}
 %
 Might guess that, for \(j_1 \ge j_2\)
@@ -184,13 +185,13 @@ j_1 \otimes j_2 =
 \left( j_1 + j_2 - 1 \right)
  \oplus
 \cdots
-\left( j_1 - j_2 \right)
+\left( j_1 - j_2 \right).
 \end{equation}
 %
 Suppose that this is right.  Then
 %
 \begin{equation}\label{eqn:qmTwoL17:400}
-5 \otimes \inv{2} = \frac{11}{2} \oplus \frac{9}{2}
+5 \otimes \inv{2} = \frac{11}{2} \oplus \frac{9}{2}.
 \end{equation}
 %
 Check for dimensions:
@@ -198,7 +199,7 @@ Check for dimensions:
 \begin{equation}\label{eqn:qmTwoL17:420}
 \begin{array}{l l l l l l l l l}
 1 &\otimes &1 &= &2 &\oplus &1 &\oplus &0 \\
-3 & \times &3 &= &5 & +     &3 & +     &1
+3 & \times &3 &= &5 & +     &3 & +     &1.
 \end{array}
 \end{equation}
 %
@@ -206,7 +207,6 @@ Check for dimensions:
 %
 It was just made up.  We are creating a shorthand to say that we have a number of different basis states for each of the groupings.  
 %\textunderline{I Need an example!}
-
 Check for dimensions in general
 %
 \begin{equation}\label{eqn:qmTwoL17:440}
@@ -222,37 +222,38 @@ We find
 -
 \sum_{j=0}^{j_1 - j_2 - 1} (2 j + 1) \\
 &=
-(2 j_1 + 1)(2 j_2 + 1)
+(2 j_1 + 1)(2 j_2 + 1).
 \end{aligned}
 \end{equation}
 %
 Using
 %
 \begin{equation}\label{eqn:qmTwoL17:460}
-\sum_{n=0}^N n = \frac{N(N+1)}{2}
+\sum_{n=0}^N n = \frac{N(N+1)}{2},
 \end{equation}
 %
+then
 \begin{equation}\label{eqn:qmTwoL17:480}
 j_1 \otimes j_2
 =
 (j_1 + j_2) \oplus
 (j_1 + j_2 - 1) \oplus
 \cdots
-(j_1 - j_2)
+(j_1 - j_2).
 \end{equation}
 %
-In fact, this is correct.  Proof ``by construction'' to follow.
+In fact, this is correct.  Proof ``by construction'' to follow
 %
 \begin{equation}\label{eqn:qmTwoL17:500}
 \ket{j_1 m_1}
 \otimes
-\ket{j_2 m_2}
+\ket{j_2 m_2},
 \end{equation}
 %
 \begin{equation}\label{eqn:qmTwoL17:520}
 \begin{aligned}
 J^2 \ket{j m} &= j (j+1) \Hbar^2 \ket{j m} \\
-J_z \ket{j m} &= m \Hbar \ket{j m}
+J_z \ket{j m} &= m \Hbar \ket{j m},
 \end{aligned}
 \end{equation}
 %
@@ -316,7 +317,7 @@ but will often omit the \(; j_1 j_2\) portion.  Tab. \ref{tab:qmTwoL17:10} tabul
 Look at
 %
 \begin{equation}\label{eqn:qmTwoL17:580}
-\ket{j_1 + j_2, j_1 + j_2}
+\ket{j_1 + j_2, j_1 + j_2},
 \end{equation}
 %
 \begin{equation}\label{eqn:qmTwoL17:600}
@@ -324,7 +325,7 @@ J_z
 \ket{j_1 + j_2, j_1 + j_2}
 =
 (j_1 + j_2) \Hbar
-\ket{j_1 + j_2, j_1 + j_2}
+\ket{j_1 + j_2, j_1 + j_2},
 \end{equation}
 %
 \begin{equation}\label{eqn:qmTwoL17:620}
@@ -332,7 +333,7 @@ J_z
 \Bigl(\ket{j_1 m_1} \otimes \ket{j_2 m_2} \Bigr)
 =
 (m_1 + m_2) \Hbar
-\Bigl(\ket{j_1 m_1} \otimes \ket{j_2 m_2} \Bigr)
+\Bigl(\ket{j_1 m_1} \otimes \ket{j_2 m_2} \Bigr),
 \end{equation}
 %
 we must have
@@ -340,7 +341,7 @@ we must have
 \begin{equation}\label{eqn:qmTwoL17:640}
 \ket{j_1 + j_2, j_1 + j_2}
 = e^{i\phi}
-\Bigl(\ket{j_1 j_1} \otimes \ket{j_2 j_2} \Bigr)
+\Bigl(\ket{j_1 j_1} \otimes \ket{j_2 j_2} \Bigr).
 \end{equation}
 %
 So \(\ket{j_1 + j_2, j_1 + j_2}\) must be a superposition of states \(\ket{j_1 m_1} \otimes \ket{j_2 m_2} \) with \(m_1 + m_2 = j_1 + j_2\).  Choosing \(e^{i\phi} = 1\) is called the Clebsch-Gordan convention.
@@ -350,7 +351,7 @@ So \(\ket{j_1 + j_2, j_1 + j_2}\) must be a superposition of states \(\ket{j_1 m
 \begin{equation}\label{eqn:qmTwoL17:660}
 \ket{j_1 + j_2, j_1 + j_2}
 =
-\ket{j_1 j_1} \otimes \ket{j_2 j_2}
+\ket{j_1 j_1} \otimes \ket{j_2 j_2}.
 \end{equation}
 %
 We now move down column.
@@ -362,7 +363,7 @@ J_{-} \ket{j_1 + j_2, j_1 + j_2}
 \Bigl(
 2 (j_1 + j_2)
 \Bigr)^{1/2}
-\ket{j_1 + j_2, j_1 + j_2 - 1}
+\ket{j_1 + j_2, j_1 + j_2 - 1}.
 \end{equation}
 %
 So
@@ -386,8 +387,7 @@ J_{-} \ket{j_1 + j_2, j_1 + j_2}
 \Bigl(
 2 (j_1 + j_2)
 \Bigr)^{1/2}
-}
+}.
 \end{aligned}
 \end{equation}
 %
-
