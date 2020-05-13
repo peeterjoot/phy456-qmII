@@ -1,4 +1,4 @@
-3) fix "equation grammar", adding commas and periods, and adjusting new paragraphs.
+0) pg 182 eq (14.24) -- out of range.  split set of six equations into two pairs of three.
 
 4) switch link in
 
@@ -18,8 +18,6 @@ want:
   added to myrefs:
 
   stackoverflowMathematicaTrigSimplify
-
-6) shorten section names so they don't go out of the printable region.
 
 8) L24: "and can as in" what is meant here?
 
@@ -45,9 +43,6 @@ want:
    - have two mathematica references in "phy456/problems/variationalHelium.tex" ... convert to nbref
 
    - delete most of the initial attempt garbage in "./problems/variationHarmonicOscillator.tex" and just leave the part where it's done right (perhaps with a comment about why the niave attempt doesn't work).
-
-
-
 
 
 ======================================================
