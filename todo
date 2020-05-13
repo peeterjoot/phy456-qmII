@@ -1,31 +1,18 @@
-8) L24: "and can as in" what is meant here?
+For KDP:
 
-9) indexing:
-   (indexed the chapter and section headings)
-   - visit all the subsection/paragraph/problem markers
+   0) L24: "and can as in" what is meant here?
 
-11) customize the dedication and change the rules to avoid the generic one being used (do this for phy485)
+   1) indexing:
+      (indexed the chapter and section headings)
+      - visit all the subsection/paragraph/problem markers
 
-12) introduce a more systematic layout.  Put the various worked problems and notes from the readings as problems at chapter ends for example.
+   2) have two mathematica references in "phy456/problems/variationalHelium.tex" ... convert to nbref
 
-   - started this.  problem set 1 moved into place (not all of it fits, perhaps move 1a to appendix)
+   3) use nbref for any mathematica generated figures.
 
-   - thought I'd work through problem sets, adding descriptions and makeproblem/answer env,
-      and move into place along with the lecture notes ...
-
-      However, I can only find ps1 written up?
-
-      Perhaps all the problem
-      sets were ungraded and I only did them on paper (I have all those qmII notebooks ...
-      maybe I kept them because I intended to review what I'd done).
-
-   - have two mathematica references in "phy456/problems/variationalHelium.tex" ... convert to nbref
-
-   - delete most of the initial attempt garbage in "./problems/variationHarmonicOscillator.tex" and just leave the part where it's done right (perhaps with a comment about why the niave attempt doesn't work).
-
+   4) review the preface.
 
 ======================================================
-
 - Once posted:
 
    - update page count on my blog when I repost the next version.
@@ -36,6 +23,15 @@
 
       https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
       https://peeterjoot.wordpress.com/2011/12/10/evaluating-the-squared-sinc-integral/
+
+======================================================
+Long term:
+
+- purge or move stuff from the appendix (formerly in the 'notes and problems' \part) into their more natural homes.
+
+- thorough review.  Lots of the stuff is incomplete seeming, or has various fixme comments, or unresolved issues.
+
+- delete most of the initial attempt garbage in "./problems/variationHarmonicOscillator.tex" and just leave the part where it's done right (perhaps with a comment about why the niave attempt doesn't work).
 
 - can make part (.) reference a hyperlink with exersize env.
 
