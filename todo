@@ -1,24 +1,3 @@
-0) pg 182 eq (14.24) -- out of range.  split set of six equations into two pairs of three.
-
-4) switch link in
-
-      https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
-      https://peeterjoot.wordpress.com/2011/12/10/evaluating-the-squared-sinc-integral/
-
-   when a new version is posted.
-
-  change link into bib reference: \href{http://stackoverflow.com/questions/7743774/proper-way-to-simplify-integral-result-in-mathematica-given-integer-constraints}{stackoverflow} ...
-
-  so that it can be looked up in text form.  For now I've just commented it out.
-
-want:
-
-  https://stackoverflow.com/a/7754414/189270
-
-  added to myrefs:
-
-  stackoverflowMathematicaTrigSimplify
-
 8) L24: "and can as in" what is meant here?
 
 9) indexing:
@@ -47,9 +26,16 @@ want:
 
 ======================================================
 
-- update page count on my blog when I repost the next version.
+- Once posted:
 
-- update chapter layout on my blog when I repost the next version.
+   - update page count on my blog when I repost the next version.
+
+   - update chapter layout on my blog when I repost the next version.
+
+   - switch link in
+
+      https://peeterjoot.wordpress.com/2012/01/03/derivative-recurrence-relation-for-hermite-polynomials/#comment-28234
+      https://peeterjoot.wordpress.com/2011/12/10/evaluating-the-squared-sinc-integral/
 
 - can make part (.) reference a hyperlink with exersize env.
 
