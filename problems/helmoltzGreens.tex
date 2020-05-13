@@ -19,7 +19,7 @@ In class this week, looking at an instance of the Helmholtz equation
 We were told that the Green's function
 %
 \begin{equation}\label{eqn:helmholtzGreens:30}
-\left( \spacegrad^2 + \Bk^2\right) G^0(\Br, \Br') = \delta(\Br- \Br')
+\left( \spacegrad^2 + \Bk^2\right) G^0(\Br, \Br') = \delta(\Br- \Br'),
 \end{equation}
 %
 that can be used to solve for a particular solution this differential equation via convolution
@@ -133,7 +133,7 @@ So we have
 \begin{equation}\label{eqn:helmholtzGreens:170}
 \begin{aligned}
 \spacegrad \mu &= \frac{\Br - \Br'}{\mu} \\
-(\spacegrad \mu)^2 &= 1
+(\spacegrad \mu)^2 &= 1.
 \end{aligned}
 \end{equation}
 %
@@ -184,7 +184,7 @@ Inserting this and \((\spacegrad \mu)^2\) into \eqnref{eqn:helmholtzGreens:150} 
 \left( -k^2 - \frac{ 2 i k }{\mu} + \frac{2}{\mu^2} \right)
 \frac{e^{i k \mu}}{\mu}
 &=
--k^2 \frac{e^{i k \mu}}{\mu}
+-k^2 \frac{e^{i k \mu}}{\mu}.
 \end{aligned}
 \end{equation}
 %
@@ -202,7 +202,7 @@ Having shown that we end up with zero everywhere that \(\Br \ne \Br'\) we are le
 \begin{dmath}\label{eqn:helmoltzGreens:50}
 -\inv{4\pi} \int_{\text{all space}} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br'
 =
--\inv{4\pi} \int_{\Abs{\Br - \Br'} < \epsilon} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br'
+-\inv{4\pi} \int_{\Abs{\Br - \Br'} < \epsilon} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br'.
 \end{dmath}
 %
 We make the change of variables \(\Br' = \Br + \Ba\).  We add an explicit \(\Br\) suffix to our Laplacian at the same time to remind us that it is taking derivatives with respect to the coordinates of \(\Br = (x, y, z)\), and not the coordinates of our integration variable \(\Ba = (a_x, a_y, a_z)\).  Assuming sufficient continuity and ``well behavedness'' of \(s(\Br')\) we will be able to pull it out of the integral, giving
@@ -213,7 +213,7 @@ We make the change of variables \(\Br' = \Br + \Ba\).  We add an explicit \(\Br\
 &=
 -\frac{1}{4\pi} \int_{\Abs{\Ba} < \epsilon} \left( \spacegrad_\Br^2 + \Bk^2 \right) \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} s(\Br + \Ba) d^3 \Ba \\
 &=
--\frac{s(\Br)}{4\pi} \int_{\Abs{\Ba} < \epsilon} \left( \spacegrad_\Br^2 + \Bk^2 \right) \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba
+-\frac{s(\Br)}{4\pi} \int_{\Abs{\Ba} < \epsilon} \left( \spacegrad_\Br^2 + \Bk^2 \right) \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba.
 \end{aligned}
 \end{equation}
 %
@@ -234,7 +234,7 @@ so with \(\Ba = \Br - \Br'\), we can rewrite our Laplacian as
 =
 \spacegrad_\Ba^2 \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}}
 =
-\spacegrad_\Ba \cdot \left(\spacegrad_\Ba \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} \right)
+\spacegrad_\Ba \cdot \left(\spacegrad_\Ba \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} \right).
 \end{equation}
 %
 This gives us
@@ -253,7 +253,7 @@ This gives us
 \int_{dA} \left( \spacegrad_\Ba \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} \right) \cdot \acap d^2 \Ba
 -\frac{s(\Br)}{4\pi}
 \int_{dV}
-\Bk^2 \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba
+\Bk^2 \frac{e^{i k \Abs{\Ba}}}{\Abs{\Ba}} d^3 \Ba.
 \end{aligned}
 \end{equation}
 %
@@ -279,7 +279,7 @@ u e^{i u} du  \\
 {\left.
 (-i u + 1) e^{i u} \right\vert}_0^{k \epsilon} \\
 &=
-4 \pi \left( (-i k \epsilon + 1)e^{i k \epsilon} - 1 \right)
+4 \pi \left( (-i k \epsilon + 1)e^{i k \epsilon} - 1 \right).
 \end{aligned}
 \end{equation}
 %
@@ -297,7 +297,7 @@ To evaluate the surface integral we note that we will require only the radial po
 e^{i k a} \\
 &=
 \left( i k a - 1 \right)
-\frac{e^{i k a}}{a^2}
+\frac{e^{i k a}}{a^2}.
 \end{aligned}
 \end{equation}
 %
@@ -333,10 +333,10 @@ Putting everything back together we have
 -s(\Br)
 \left(
 (-i k \epsilon + 1 + i k \epsilon - 1 )e^{i k \epsilon} - 1
-\right)
+\right).
 \end{aligned}
 \end{equation}
-But this is just
+This is just
 \boxedEquation{eqn:shortTimeDepPertubation:330}{
 -\inv{4\pi} \int_{\text{all space}} \left(\spacegrad^2 + \Bk^2\right) \frac{e^{i k \Abs{\Br - \Br'}}}{\Abs{\Br - \Br'}} s(\Br') d^3 \Br' = s(\Br).
 }

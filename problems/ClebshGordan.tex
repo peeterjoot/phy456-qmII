@@ -25,7 +25,7 @@ We are taking an arbitrary two particle ket and decomposing it utilizing an inse
 \ket{j_1 m_1'} \ket{j_2 m_2'}
 \bra{j_1 m_1'} \bra{j_2 m_2'}
 \Bigr)
-\ket{jm}
+\ket{jm},
 \end{equation}
 %
 with \(j_1\) and \(j_2\) fixed, this is written with the shorthand
@@ -40,7 +40,7 @@ with \(j_1\) and \(j_2\) fixed, this is written with the shorthand
 so that we write
 %
 \begin{equation}\label{eqn:ClebshGordan:70}
-\ket{jm} = \sum_{m_1' m_2'} \ket{m_1' m_2'} \braket{m_1' m_2'}{jm}
+\ket{jm} = \sum_{m_1' m_2'} \ket{m_1' m_2'} \braket{m_1' m_2'}{jm}.
 \end{equation}
 %
 \section{The \texorpdfstring{\(J_z\)}{J z} action.}
@@ -51,7 +51,7 @@ We have two ways that we can apply the operator \(J_z\) to \(\ket{jm}\).  One is
 \begin{aligned}
 J_z \ket{jm}
 &= \sum_{m_1' m_2'} J_z \ket{m_1' m_2'} \braket{m_1' m_2'}{jm} \\
-&= \Hbar \sum_{m_1' m_2'} (m_1' + m_2') \ket{m_1' m_2'} \braket{m_1' m_2'}{jm} \\
+&= \Hbar \sum_{m_1' m_2'} (m_1' + m_2') \ket{m_1' m_2'} \braket{m_1' m_2'}{jm}.
 \end{aligned}
 \end{equation}
 %
@@ -69,8 +69,7 @@ J_z \ket{jm} \\
 \Hbar m
 \sum_{m_1' m_2'}
 \ket{m_1' m_2'}
-\braket{m_1' m_2'}{jm}
-\\
+\braket{m_1' m_2'}{jm}.
 \end{aligned}
 \end{equation}
 %
@@ -81,17 +80,15 @@ m
 \sum_{m_1' m_2'}
 \ket{m_1' m_2'}
 \braket{m_1' m_2'}{jm}
-= \sum_{m_1' m_2'} (m_1' + m_2') \ket{m_1' m_2'} \braket{m_1' m_2'}{jm}
+= \sum_{m_1' m_2'} (m_1' + m_2') \ket{m_1' m_2'} \braket{m_1' m_2'}{jm}.
 \end{equation}
 %
 This equality must be valid for any \(\ket{jm}\), and since all the kets \(\ket{m_1' m_2'}\) are linearly independent, we must have for any \(m_1', m_2'\)
 %
 \begin{equation}\label{eqn:ClebshGordan:110}
-(m - m_1' - m_2') \braket{m_1' m_2'}{jm} \ket{m_1' m_2'} = 0
+(m - m_1' - m_2') \braket{m_1' m_2'}{jm} \ket{m_1' m_2'} = 0.
 \end{equation}
 %
 We have two ways to get this zero.  One of them is a \(m = m_1' + m_2'\) condition, and the other is for the CG coeff \(\braket{m_1' m_2'}{jm}\) to be zero whenever \(m \ne m_1' + m_2'\).
-
+%
 It is not a difficult argument, but one that was not clear from a read of the text (at least to me).
-
-

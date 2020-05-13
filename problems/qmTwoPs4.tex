@@ -17,25 +17,25 @@ I was deceived by an incorrect result in Mathematica, which led me to believe th
 Recall first the one dimensional particle in a box.  Within the box we have to solve
 %
 \begin{equation}\label{eqn:qmTwoPs4:10}
-\frac{P^2}{2m} \psi = E\psi
+\frac{P^2}{2m} \psi = E\psi,
 \end{equation}
 %
 and find
 %
 \begin{equation}\label{eqn:qmTwoPs4:30}
 \psi \sim
-e^{\frac{i}{\Hbar} \sqrt{2 m E} x}
+e^{\frac{i}{\Hbar} \sqrt{2 m E} x}.
 \end{equation}
 %
 With
 \begin{equation}\label{eqn:qmTwoPs4:50}
-k = \frac{\sqrt{2 m E}}{\Hbar}
+k = \frac{\sqrt{2 m E}}{\Hbar},
 \end{equation}
 %
 our general state, involving terms of each sign, takes the form
 \begin{equation}\label{eqn:qmTwoPs4:70}
 \psi =
-A e^{ i k x } +B e^{ -i k x }
+A e^{ i k x } +B e^{ -i k x }.
 \end{equation}
 %
 Inserting boundary conditions gives us
@@ -52,7 +52,7 @@ e^{ i k \frac{L}{2} } +e^{ -i k \frac{L}{2} }
 \begin{bmatrix}
 A \\
 B
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 %
 The determinant is zero
@@ -83,7 +83,7 @@ To complete the task of matching boundary value conditions we cheat and recall t
 %
 \begin{equation}\label{eqn:qmTwoPs4:190}
 \evalbar{\sin\left( \frac{\pi n x }{L} \right) }{x = \pm L/2} =
-\pm \sin\left(\frac{\pi n}{2}\right)
+\pm \sin\left(\frac{\pi n}{2}\right).
 \end{equation}
 %
 So sines are the wave functions for \(n = 2, 4, ...\) since \(\sin(n \pi) = 0\) for integer \(n\).  Similarly
@@ -94,7 +94,7 @@ So sines are the wave functions for \(n = 2, 4, ...\) since \(\sin(n \pi) = 0\) 
 \end{equation}
 %
 Cosine becomes zero at \(\pi/2, 3\pi/2, \cdots\), so our wave function is the cosine for \(n = 1, 3, 5, \cdots\).
-
+%
 Normalizing gives us
 %
 \begin{equation}\label{eqn:qmTwoPs4:230}
@@ -114,13 +114,13 @@ Forming the Hamiltonian for two particles in the box without interaction, we hav
 \begin{equation}\label{eqn:qmTwoPs4:250}
 H =
 \frac{P_1^2}{2m}
-+\frac{P_2^2}{2m}
++\frac{P_2^2}{2m},
 \end{equation}
 %
 we can apply separation of variables, and it becomes clear that our wave functions have the form
 %
 \begin{equation}\label{eqn:qmTwoPs4:270}
-\psi_{nm}(x_1, x_2) = \psi_n(x_1) \psi_m(x_2)
+\psi_{nm}(x_1, x_2) = \psi_n(x_1) \psi_m(x_2).
 \end{equation}
 %
 Plugging in
@@ -141,7 +141,7 @@ H \psi_{nm}
 \right)
 \psi_{nm} \\
 &=
-\frac{1}{2m} \left(\frac{\Hbar \pi}{L}\right)^2 ( n^2 + m^2 ) \psi_{nm}
+\frac{1}{2m} \left(\frac{\Hbar \pi}{L}\right)^2 ( n^2 + m^2 ) \psi_{nm}.
 \end{aligned}
 \end{equation}
 %
@@ -166,7 +166,7 @@ It is clear that our lowest energy levels are
 \begin{aligned}
 \frac{1}{m} \left(\frac{\Hbar \pi}{L}\right)^2  \\
 \frac{5}{2m} \left(\frac{\Hbar \pi}{L}\right)^2  \\
-\frac{4}{m} \left(\frac{\Hbar \pi}{L}\right)^2
+\frac{4}{m} \left(\frac{\Hbar \pi}{L}\right)^2,
 \end{aligned}
 \end{equation}
 %
@@ -177,7 +177,7 @@ with degeneracies \(1, 2, 1\) respectively.
 With \(c_0\) positive and an interaction potential of the form
 %
 \begin{equation}\label{eqn:qmTwoPs4:350}
-U(X_1, X_2) = - c_0 \delta(X_1 - X_2)
+U(X_1, X_2) = - c_0 \delta(X_1 - X_2).
 \end{equation}
 %
 The second order perturbation of the ground state energy is
@@ -185,7 +185,7 @@ The second order perturbation of the ground state energy is
 \begin{equation}\label{eqn:qmTwoPs4:370}
 E = E_{11}^{(0)} +
 H_{11;11}' +
-\sum_{nm \ne 11} \frac{\Abs{H_{11;11}' }^2}{E_{11} - E_{nm}}
+\sum_{nm \ne 11} \frac{\Abs{H_{11;11}' }^2}{E_{11} - E_{nm}},
 \end{equation}
 %
 where
@@ -195,10 +195,10 @@ E_{11}^{(0)} = \frac{1}{m} \left(\frac{\Hbar \pi}{L}\right)^2,
 %
 and
 \begin{equation}\label{eqn:qmTwoPs4:410}
-H_{nm;ab}' = -c_0 \bra{\psi_{nm}} \delta(X_1 - X_2) \ket{\psi_{ab}}
+H_{nm;ab}' = -c_0 \bra{\psi_{nm}} \delta(X_1 - X_2) \ket{\psi_{ab}}.
 \end{equation}
 %
-to proceed, we need to expand the matrix element
+To proceed, we need to expand the matrix element
 %
 \begin{equation}\label{eqn:qmTwoPs4:490}
 \begin{aligned}
@@ -215,7 +215,7 @@ to proceed, we need to expand the matrix element
 &=
 \int_{-L/2}^{L/2} dx
 \psi_{nm}(x, x)
-\psi_{ab}(x, x)
+\psi_{ab}(x, x).
 \end{aligned}
 \end{equation}
 %
@@ -234,12 +234,12 @@ H_{11; 11}'
 \int_{-L/2}^{L/2} dx
 \cos^4( \pi x /L ) \\
 &=
-- \frac{3 c_0}{2 L}
+- \frac{3 c_0}{2 L}.
 \end{aligned}
 \end{equation}
 %
 For the second order perturbation of the energy, it is clear that this will reduce the first order approximation for each matrix element that is non-zero.
-
+%
 Attempting that calculation with \href{https://github.com/peeterjoot/physicsplay/blob/796c8e3739ae1a9ca26270a0e91384afba45661d/notes/phy456/problem\%20set\%204,\%20problem\%202.nb}{Mathematica} however, is deceiving, since Mathematica reports these all as zero after FullSimplify.  It appears, that as used, it does not allow for \(m = n\) and \(m = n \pm 1\) constraints properly where the denominators of the unsimplified integrals go zero, and more careful evaluation is required.
 %
 %This worksheet can be seen to be giving misleading results, by evaluating

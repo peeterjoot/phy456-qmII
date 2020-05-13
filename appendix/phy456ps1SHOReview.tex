@@ -6,11 +6,11 @@
 %
 Consider
 \begin{equation}\label{eqn:phy456ps1:10}
-H_0 = \frac{P^2}{2m} + \inv{2} m \omega^2 X^2
+H_0 = \frac{P^2}{2m} + \inv{2} m \omega^2 X^2.
 \end{equation}
 %
 Since it has been a while let us compute the raising and lowering factorization that was used so extensively for this problem.
-
+%
 It was of the form
 %
 \begin{equation}\label{eqn:phy456ps1:30}
@@ -18,13 +18,13 @@ H_0 = (a X - i b P)(a X + i b P) + \cdots
 \end{equation}
 %
 Why this factorization has an imaginary in it is a good question.  It is not one that is given any sort of rationale in the text \citep{desai2009quantum}.
-
+%
 It is clear that we want \(a = \sqrt{m/2} \omega\) and \(b = 1/\sqrt{2m}\).  The difference is then
 %
 \begin{equation}\label{eqn:phy456ps1:50}
 H_0 - (a X - i b P)(a X + i b P)
 =
-- i a b \antisymmetric{X}{P}  = - i \frac{\omega}{2} \antisymmetric{X}{P}
+- i a b \antisymmetric{X}{P}  = - i \frac{\omega}{2} \antisymmetric{X}{P}.
 \end{equation}
 %
 That commutator is an \(i\Hbar\) value, but what was the sign?  Let us compute so we do not get it wrong
@@ -35,16 +35,16 @@ That commutator is an \(i\Hbar\) value, but what was the sign?  Let us compute s
 &= -i \Hbar \antisymmetric{x}{\partial_x} \psi \\
 &= -i \Hbar ( x \partial_x \psi - \partial_x (x \psi) ) \\
 &= -i \Hbar ( - \psi ) \\
-&= i \Hbar \psi
+&= i \Hbar \psi,
 \end{aligned}
 \end{equation}
 %
-So we have
+so we have
 %
 \begin{equation}\label{eqn:phy456ps1:70}
 H_0 =
 \left(\omega \sqrt{\frac{m}{2}} X - i \sqrt{\frac{1}{2m}} P\right)\left(\omega \sqrt{\frac{m}{2}} X + i \sqrt{\frac{1}{2m}} P\right)
-+ \frac{\Hbar \omega}{2}
++ \frac{\Hbar \omega}{2}.
 \end{equation}
 %
 Factoring out an \(\Hbar \omega\) produces the form of the Hamiltonian that we used before
@@ -73,7 +73,7 @@ Observe that we can find the inverse relations
 \begin{equation}\label{eqn:phy456ps1:115}
 \begin{aligned}
 X &= \sqrt{ \frac{\Hbar}{2 m \omega} } \left( a + a^\dagger \right) \\
-P &= i \sqrt{ \frac{m \Hbar \omega}{2} } \left( a^\dagger  - a \right)
+P &= i \sqrt{ \frac{m \Hbar \omega}{2} } \left( a^\dagger  - a \right).
 \end{aligned}
 \end{equation}
 %
@@ -109,7 +109,7 @@ a^\dagger a ( a \ket{n} )
 \end{equation}
 %
 so we see that \(a \ket{n}\) is an eigenstate of \(a^\dagger a\) with eigenvalue \(\lambda_n - 1\).
-
+%
 Similarly for the raising operator
 %
 \begin{equation}\label{eqn:phy456ps1SHOReview:360}
@@ -129,7 +129,7 @@ and find that \(a^\dagger \ket{n}\) is also an eigenstate of \(a^\dagger a\) wit
 Supposing that there is a lowest energy level (because the potential \(V(x) = m \omega x^2 /2\) has a lower bound of zero) then the state \(\ket{0}\) for which the energy is the lowest when operated on by \(a\) we have
 %
 \begin{equation}\label{eqn:phy456ps1:220}
-a \ket{0} = 0
+a \ket{0} = 0.
 \end{equation}
 %
 Thus
@@ -145,15 +145,15 @@ and
 \end{equation}
 %
 This seems like a small bit of slight of hand, since it sneakily supplies an integer value to \(\lambda_0\) where up to this point \(0\) was just a label.
-
+%
 If the eigenvalue equation we are trying to solve for the Hamiltonian is
 %
 \begin{equation}\label{eqn:phy456ps1:280}
-H_0 \ket{n} = E_n \ket{n}.
+H_0 \ket{n} = E_n \ket{n},
 \end{equation}
 %
-Then we must then have
+then we must have
 %
 \begin{equation}\label{eqn:phy456ps1:300}
-E_n = \Hbar \omega \left(\lambda_n + \inv{2} \right) = \Hbar \omega \left(n + \inv{2} \right)
+E_n = \Hbar \omega \left(\lambda_n + \inv{2} \right) = \Hbar \omega \left(n + \inv{2} \right).
 \end{equation}
