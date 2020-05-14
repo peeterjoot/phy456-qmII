@@ -1,17 +1,5 @@
 For KDP:
 
-   0) L24: "and can as in" what is meant here?
-
-   1) indexing:
-      (indexed the chapter and section headings)
-      - visit all the subsection/paragraph/problem markers
-
-   2) have two mathematica references in "phy456/problems/variationalHelium.tex" ... convert to nbref
-
-   3) use nbref for any mathematica generated figures.
-
-   4) review the preface.
-
 ======================================================
 - Once posted:
 
@@ -29,7 +17,13 @@ Long term:
 
 - purge or move stuff from the appendix (formerly in the 'notes and problems' \part) into their more natural homes.
 
-- thorough review.  Lots of the stuff is incomplete seeming, or has various fixme comments, or unresolved issues.
+- visit all the subsection/paragraph/problem markers and index those if applicable (chapters and sections are done.)
+
+- made two vague references in "problems/variationalHelium.tex" to mathematica notebooks.  Track those down and add nbref references.
+
+- use nbref for any mathematica generated figures.
+
+- thorough review.  Lots of the stuff is incomplete seeming, or has various fixme comments, or unresolved issues.  Also see preface for defect list.
 
 - delete most of the initial attempt garbage in "./problems/variationHarmonicOscillator.tex" and just leave the part where it's done right (perhaps with a comment about why the niave attempt doesn't work).
 
@@ -37,4 +31,7 @@ Long term:
 
    where?
 
-- ./phy456/problems/qmTwoPs4.tex:13:I was deceived by an incorrect result in Mathematica, which led me to believe that the second order energy perturbation was zero (whereas part (c) of the problem asked if it was greater or lesser than zero).  I started starting writing this up to show my reasoning, but our Professor quickly provided an example after class showing how this zero must be wrong, and I did not have to show him any of this.
+- problems/qmTwoPs4.tex:13:I was deceived by an incorrect result in Mathematica, which led me to believe that the second order energy perturbation was zero (whereas part (c) of the problem asked if it was greater or lesser than zero).  I started starting writing this up to show my reasoning, but our Professor quickly provided an example after class showing how this zero must be wrong, and I did not have to show him any of this.
+
+- should do another full spellcheck pass.
+
