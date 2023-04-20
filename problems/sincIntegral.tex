@@ -85,11 +85,12 @@ Putting everything back together we have
 \paragraph{On the cavalier choice of contours.}
 %
 The choice of which contours to pick above may seem pretty arbitrary, but they are for good reason.  Suppose you picked \(C_0 + C_1\) for the first integral.  On the big \(C_1\) arc, then with a \(z = R e^{i \theta}\) substitution we have
-\begin{dmath}\label{eqn:sincIntegral:70}
+\begin{equation}\label{eqn:sincIntegral:70}
+\begin{aligned}
 \Abs{
 \int_{C_1} \frac{e^{2 z}}{z^2} dz
 }
-=
+&=
 \Abs{
 \int_{\theta = \pi/2}^{-\pi/2}
 \frac{
@@ -98,30 +99,32 @@ e^{ 2 R (\cos\theta + i \sin\theta) }
 R^2 e^{ 2 i \theta}
 }
 R i e^{i \theta} d\theta
-}
-=
+} \\
+&=
 \frac{1}{R}
 \Abs{
 \int_{\theta = \pi/2}^{-\pi/2}
 e^{ 2 R (\cos\theta + i \sin\theta) }
 e^{-i \theta} d\theta
-}
-\le
+} \\
+&\le
 \frac{1}{R}
 \int_{\theta = -\pi/2}^{\pi/2}
 \Abs{
 e^{ 2 R \cos\theta }
 }
-d\theta
-\le
+d\theta \\
+&\le
 \frac{\pi e^{2 R}}{R}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 This clearly doesn't have the zero convergence property that we desire.  We need to pick the \(C_2\) contour for the first (positive exponent) integral since in that \([\pi/2, 3\pi/2]\) range, \(\cos\theta\) is always negative.  We can however, use the \(C_1\) contour for the second (negative exponent) integral.  Explicitly, again by example, using \(C_2\) contour for the first integral, over that portion of the arc we have
-\begin{dmath}\label{eqn:sincIntegral:90}
+\begin{equation}\label{eqn:sincIntegral:90}
+\begin{aligned}
 \Abs{
 \int_{C_2} \frac{e^{2 z}}{z^2} dz
 }
-=
+&=
 \Abs{
 \int_{\theta = \pi/2}^{3 \pi/2}
 \frac{
@@ -130,30 +133,31 @@ e^{ 2 R (\cos\theta + i \sin\theta) }
 R^2 e^{ 2 i \theta}
 }
 R i e^{i \theta} d\theta
-}
-=
+} \\
+&=
 \frac{1}{R}
 \Abs{
 \int_{\theta = \pi/2}^{3 \pi/2}
 e^{ 2 R (\cos\theta + i \sin\theta) }
 e^{-i \theta} d\theta
-}
-\le
+} \\
+&\le
 \frac{1}{R}
 \int_{\theta = \pi/2}^{3 \pi/2}
 \Abs{
 e^{ 2 R \cos\theta }
 d\theta
-}
-\approx
+} \\
+&\approx
 \frac{1}{R}
 \int_{\theta = \pi/2}^{3 \pi/2}
 \Abs{
 e^{ -2 R }
 d\theta
-}
-=
+} \\
+&=
 \frac{\pi e^{-2 R} }{R}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 } % answer
 %\EndArticle

@@ -158,11 +158,10 @@ and form, to first order in time our approximation for the coefficient is
 %
 Let us do the second order term too.  For that we have
 %
-\begin{dmath}\label{eqn:adiabaticApprox:510}
-%\begin{aligned}
-\evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
-%&
-= - \sum_{n \ne s}
+\begin{equation}\label{eqn:adiabaticApprox:510}
+\begin{aligned}
+&\evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0} \\
+&= - \sum_{n \ne s}
 \evalbar{
 \lr{
    \lr{
@@ -179,8 +178,8 @@ Let us do the second order term too.  For that we have
    }
 }
 }{t=0}.
-%\end{aligned}
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the \(\gamma_{sn}\) derivative we note that
 %
@@ -192,86 +191,68 @@ For the \(\gamma_{sn}\) derivative we note that
 %
 so we have
 %
-\begin{dmath}\label{eqn:adiabaticApprox:530}
-%\begin{aligned}
-\evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
-%&
-= - \sum_{n \ne s}
-\Bigl(
+\begin{equation}\label{eqn:adiabaticApprox:530}
+\begin{aligned}
+&\evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0} \\
+&= - \sum_{n \ne s}
+\Biglr{
    - (1 - \delta_{nm}) \braket{n}{m'}
    +
    \delta_{nm} i
    (
    \omega_{sn}(0) - i\braket{s}{s'} + i\braket{n}{n'}
    )
-\Bigr)
-\braket{s}{n'}
+}
+\braket{s}{n'} \\
+&\qquad
 +\delta_{nm}
-\Bigl(
+\Biglr{
    \braket{s'}{n'}
    +\braket{s}{n''}
-\Bigr).
-%\end{aligned}
-\end{dmath}
+}
+.
+\end{aligned}
+\end{equation}
 %
 Again for \(s = m\), all terms are killed.  That is somewhat surprising, but suggests that we will need to normalize the coefficients after the perturbation calculation, since we have unity for one of them.
 %
 For \(s \ne m\) we have
 %
-\begin{dmath}\label{eqn:adiabaticApprox:550}
-%\begin{aligned}
+\begin{equation}\label{eqn:adiabaticApprox:550}
+\begin{aligned}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
-%&
-= \sum_{n \ne s}
-\Bigl(
-\braket{n}{m'}
--
-\delta_{nm} i
-(
-\omega_{sn}(0) - i\braket{s}{s'} + i\braket{n}{n'}
-)
-\Bigr)
-\braket{s}{n'}
--\delta_{nm}
-\Bigl(
-\braket{s'}{n'}
-+\braket{s}{n''}
-\Bigr)
-%\\
-%&
-=
--
-i
-(
-\omega_{sm}(0) - i\braket{s}{s'} + i\braket{m}{m'}
-)
-\Bigr)
-\braket{s}{m'}
--
-\Bigl(
-\braket{s'}{m'}
-+\braket{s}{m''}
-\Bigr)
+&= \sum_{n \ne s}
+\Biglr{ 
+   \braket{n}{m'} - \delta_{nm} i ( \omega_{sn}(0) - i\braket{s}{s'} + i\braket{n}{n'})
+}
+\braket{s}{n'} \\
+&\qquad
+-\delta_{nm} \Biglr{ \braket{s'}{n'} +\braket{s}{n''} }
+\\
+&= - i ( \omega_{sm}(0) - i\braket{s}{s'} + i\braket{m}{m'}) \braket{s}{m'}
+- \Biglr{ \braket{s'}{m'} +\braket{s}{m''} } \\
+&\quad
 +
-\sum_{n \ne s}
-\braket{n}{m'} \braket{s}{n'}.
-%\end{aligned}
-\end{dmath}
+\sum_{n \ne s} \braket{n}{m'} \braket{s}{n'}.
+\end{aligned}
+\end{equation}
 %
 So we have, for \(s \ne m\)
 %
-\begin{dmath}\label{eqn:adiabaticApprox:330}
+\begin{equation}\label{eqn:adiabaticApprox:330}
+\begin{aligned}
 \evalbar{\frac{d^2}{dt^2} \barb_s(t)}{t=0}
-=
-(\braket{m}{m'} - \braket{s}{s'} ) \braket{s}{m'}
--i \omega_{sm}(0) \braket{s}{m'}
--
-\braket{s'}{m'}
--\braket{s}{m''}
+&=
+\lr{ \braket{m}{m'} - \braket{s}{s'} } \braket{s}{m'}
+- i \omega_{sm}(0) \braket{s}{m'} \\
+&\quad
+- \braket{s'}{m'}
+- \braket{s}{m''}
 +
 \sum_{n \ne s}
 \braket{n}{m'} \braket{s}{n'}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 It is not particularly illuminating looking, but possible to compute, and we can use it to form a second order approximate solution for our perturbed state.
 %
