@@ -1,0 +1,13 @@
+These are my personal lecture notes for the Fall 2011, University of Toronto Quantum mechanics II course (PHY456H1F), taught by Prof. John E Sipe.
+<p>
+The official description of this course was:
+<ul>
+<li>Quantum dynamics in Heisenberg and Schrodinger Pictures
+<li>WKB approximation
+<li>Variational Method
+<li>Time-Independent Perturbation Theory
+<li>Spin
+<li>Addition of Angular Momentum
+<li>Time-Dependent Perturbation Theory
+<li>Scattering.
+</ul>
